@@ -15,10 +15,10 @@ The TEI is not the only way to represent documents digitally. However, it is the
      * Well-formedness. 
 * Introduce a basic TEI structure (use oXygen's TEI template), and point out the major hierarchical portions. 
 * Modeling problems to discuss:
-    * overhapping hierarchies (first a simple poem: Do we care more about the structure of the lines or the structure of grammatical sentences?)
+    * Overhapping hierarchies (first a simple poem: Do we care more about the structure of the lines or the structure of grammatical sentences?)
     * TEI method for handling this. Is it problematic?
     * A serious hierarchy problem for digital editions: Do we care more about page-by-page representation or semantic unit by unit (as in chapters, letters, volumes)? 
-    * EXAMPLES: Fluid-text edition of Walden, vs. Shelley-Godwin Archive page rendering.
+    * Examples: Fluid-text edition of Walden, vs. Shelley-Godwin Archive page rendering.
     * Discussion of controversies and multiple ways of encoding “primary source” materials in the TEI 
 
 
