@@ -1,5 +1,11 @@
 # Scholarly editing and the fluid text
 
+As we've seen, scholarly editing involves making claims about a text *as* text: for example, who authored it, what genre it belongs to, how many versions of the text exist, and how those versions differ. These claims entail decisions about how best to present a text to readers.
+
+The claims made by scholarly editors are rarely if ever claims of fact. On the contrary, they almost always involve interpretive judgments. They don't stand apart from, but are rather informed by, and may in turn inform, the type of interpretation that we usually associate with the term *close reading*.
+
+The relationship between scholarly editing and close reading becomes especially clear when we consider the case of "fluid texts" — texts whose meaning can't be fully understood apart from what we know about their textual history.
+
 ## What is a fluid text?
 
 In *The Fluid Text: A Theory of Revision and Editing for Book and Screen* (1988), the Melville scholar John Bryant explores the implications of regarding all literary texts as inherently fluid. A work of literature doesn't spring fully formed from its author's mind but is rather the product of multiple revisions. Some of these  revisions reflect changes in the author's overall conception of the work — their evolving sense of the work's general purpose and organization. Others reflect the author's efforts to fine-tune particular words and phrases. Some revisions originate from sources other than the author: for example, an editor or publisher. Once a work is published, it may undergo further revision in subsequent editions — again, sometimes reflecting authorial decisions and sometimes editorial ones. Finally, works that capture the reading public's imagination typically find themselves re-made in multiple ways across multiple media. Think, for example, of the many derivative works that have developed out of Charles Dickens's *A Christmas Carol*, Lewis Carroll's *Alice* books, or Jane Austen's novels — not to mention the plays of Shakespeare.
