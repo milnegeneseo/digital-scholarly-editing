@@ -86,4 +86,4 @@ To rotate an image region, replace the `0` with the desired rotation (e.g., `90`
 
 For example, the URI `https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/434/800,737,1450,5870/pct:30/90/default.jpg` will bring up the region with coordinates `800,737,1450,5870` on p. 1 of the B-C Version (xml:id hm924v3n434 in the Google sheet manifest) rotated 90 degrees at 30%, making it easier to read what Thoreau has written vertically in the left margin:
 
-<https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/434/800,737,1430,5870/pct:30/90/default.jpg>
+![Rotated manuscript image](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/434/800,737,1430,5870/pct:30/90/default.jpg)
