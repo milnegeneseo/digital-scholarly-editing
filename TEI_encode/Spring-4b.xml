@@ -8,7 +8,7 @@
          <titleStmt>
             <title>Walden MS</title>
             <editor>Elisa Beshero-Bondar</editor>
-         </titleStmt>
+         </titleStmt><!--We need the sourceDesc and msDesc here. And can describe the inks in much more detail. -->
          <publicationStmt>
             <p>Publication Information</p>
          </publicationStmt>
@@ -19,17 +19,51 @@
    </teiHeader>
    <sourceDoc><!--See examples of sourceDoc in TEI P5 
       https://www.tei-c.org/release/doc/tei-p5-doc/en/html//examples-sourceDoc.html  -->
-      <surfaceGrp n="Spring-foliage"><!--labelling the collection of leaves we'll represent here -->
+      <surfaceGrp n="Spring_Sand-Foliage"><!--labelling the collection of leaves we'll represent here -->
          <surface xml:id="hm924v1n232"> 
             <graphic url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/full/0/default.jpg"/>
             <zone type="main">
                <!--ebb: Stealing this use of the @type for the moment from Shelley-Godwin Archive. 
-               See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml  -->
+               See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml
+               Notes during 2020-04-15 meeting: We'd like to indicate zone as placement on page, could use 
+               TEI coordinates?
+               -->
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. This is an attempt to stitch 
                moments in the photo facsimile to passages in the fluid-text ed.-->
                <lb/><milestone unit="line" edRef="Spring-A-4b"/>river—and he dropped down with-
                <lb/>out obstruction, from Sudbury, where
+               <milestone unit="paraB"/>
                
+               <lb/>NOT DELETED.  <del rend="strikethrough">Deleted text  Deleted text Deleted text Deleted text Deleted text 
+               <lb/>Deleted text Deleted text Deleted text
+                  <lb/>Deleted Text.</del>...Not Deleted
+               <!--ebb: How will we refer to common kinds of deletions?
+               The one we see on this page, observes Beth, is often used for a passage he intends to replace.
+               LOOK FOR an image elsewhere which starts with the words "muddy bottom"! 
+               
+               What are his standard deletion marks?
+               Horizontal strikethrough
+               Vertical strikethrough
+               Vertical zag (if it starts vertically and turns horizontal)
+               Horizontal zag
+               
+               Definitely we'll mark the @medium when the hand changes. 
+               Questions to investigate: where to use <handShift>? And where to add @medium to the element,
+               as in <del medium="pencil"/>
+               
+              Medium categories:
+              bluePencil (Sanborn-blue)
+              pencil
+              ink1 (doesn't get identified, b/c it is the prevailing ink on the page)
+              ink2 (any other ink used on the page that appears to be used later)
+              @cert (?)
+             
+             
+             Thoreau's ink colors: sometimes red for deletion marks
+               -->
+               <milestone unit="paraE"/>
+               
+              
             </zone>
             
          </surface>
