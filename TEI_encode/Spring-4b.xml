@@ -13,7 +13,7 @@
             <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Coding experiment: Spring: MS leaves 231? - 236?</p>
+            <p>Coding experiment: Spring: MS leaves 232—235</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
@@ -30,7 +30,7 @@
                -->
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. This is an attempt to stitch 
                moments in the photo facsimile to passages in the fluid-text ed.-->
-               <lb/><milestone unit="line" edRef="Spring-A-4b"/>river—and he dropped down with-
+               <lb/><milestone unit="line" edRef="S-4b"/>river—and he dropped down with-
                <lb/>out obstruction, from Sudbury, where
                <milestone unit="paraB"/>
                
