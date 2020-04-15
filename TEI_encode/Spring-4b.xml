@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Walden MS</title>
+            <editor>Elisa Beshero-Bondar</editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Coding experiment: Spring: MS leaves 231? - 236?</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <sourceDoc><!--See examples of sourceDoc in TEI P5 
+      https://www.tei-c.org/release/doc/tei-p5-doc/en/html//examples-sourceDoc.html  -->
+      <surfaceGrp n="Spring-foliage"><!--labelling the collection of leaves we'll represent here -->
+         <surface xml:id="hm924v1n232"> 
+            <graphic url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/full/0/default.jpg"/>
+            <zone type="main">
+               <!--ebb: Stealing this use of the @type for the moment from Shelley-Godwin Archive. 
+               See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml  -->
+               <!--ebb: On the milestone element, let's think about the attributes we want to apply. This is an attempt to stitch 
+               moments in the photo facsimile to passages in the fluid-text ed.-->
+               <lb/><milestone unit="line" edRef="Spring-A-4b"/>river—and he dropped down with-
+               <lb/>out obstruction, from Sudbury, where
+               
+            </zone>
+            
+         </surface>
+         
+         
+         
+         <surface facs="page1.png">
+            <zone>All the writing on page 1</zone>
+         </surface>
+         <surface>
+            <graphic url="page2-highRes.png"/>
+            <graphic url="page2-lowRes.png"/>
+            <zone>
+               <line>A line of writing on page 2</line>
+               <line>Another line of writing on page 2</line>
+            </zone>
+         </surface>
+      </surfaceGrp>
+   </sourceDoc>
+
+</TEI>
