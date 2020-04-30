@@ -26,9 +26,9 @@
           <graphic
                url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
             <zone n="tenPercent" ulx="137" uly="527" lrx="788" lry="978"/>
-            
- 
-            <zone n="full-but-not" ulx="1128" uly="4104" lrx="6184" lry="7696"/>
+           <!-- URL gives us expected results
+              <zone xmlns:ebb="https://newtfire.org" n="tenPercent" ulx="137" uly="527" lrx="788" lry="978" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/1370,5270,6510,4510/pct:10/0/default.jpg"/>/>
+ -->
             <zone type="main">
                <!--ebb: Stealing this use of the @type for the moment from Shelley-Godwin Archive. 
                See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml
