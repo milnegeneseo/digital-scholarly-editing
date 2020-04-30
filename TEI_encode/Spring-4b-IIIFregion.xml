@@ -21,7 +21,7 @@
          <!--labelling the collection of leaves we'll represent here -->
          <surface xml:id="hm924v1n232">
           <graphic url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
-            <zone xmlns:ebb="https://newtfire.org" ulx="1370" uly="5270" lrx="7880" lry="9780" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/1370,5270,6510,4510/pct:10/0/default.jpg"/>
+            <zone ulx="1370" uly="5270" lrx="7880" lry="9780" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/1370,5270,6510,4510/pct:10/0/default.jpg"/>
            <!-- URL gives us expected results
               <zone xmlns:ebb="https://newtfire.org" n="tenPercent" ulx="137" uly="527" lrx="788" lry="978" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/1370,5270,6510,4510/pct:10/0/default.jpg"/>/>
  -->
