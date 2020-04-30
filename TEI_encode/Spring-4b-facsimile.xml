@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Walden MS</title>
+            <editor>Elisa Beshero-Bondar</editor>
+         </titleStmt>
+         <!--We need the sourceDesc and msDesc here. And can describe the inks in much more detail. -->
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Coding experiment: Spring: MS leaves 232—235</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile corresp="#hm924v1n232" n="deletion">
+      <graphic
+         url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/2000,/0/default.jpg"/>
+   </facsimile>
+  
+</TEI>
