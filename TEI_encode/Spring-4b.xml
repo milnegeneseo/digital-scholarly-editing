@@ -24,9 +24,11 @@
          <!--labelling the collection of leaves we'll represent here -->
          <surface xml:id="hm924v1n232">
           <graphic
-               url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/full/0/default.jpg"/>
+               url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
+            <zone n="tenPercent" ulx="137" uly="527" lrx="788" lry="978"/>
+            
  
-            <zone ulx="1128" uly="4104" lrx="6184" lry="7696"/>
+            <zone n="full-but-not" ulx="1128" uly="4104" lrx="6184" lry="7696"/>
             <zone type="main">
                <!--ebb: Stealing this use of the @type for the moment from Shelley-Godwin Archive. 
                See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml
