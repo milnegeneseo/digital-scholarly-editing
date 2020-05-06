@@ -1,4 +1,4 @@
-## Review
+## Using TimelineJS to tell a story about manuscript revisions
 
 In the previous pages, we’ve covered
 
@@ -10,7 +10,7 @@ In the previous pages, we’ve covered
 
 With these concepts and tools, we can begin to think about what it would look like to tell the story of some interesting change that Thoreau made to *Walden*
 
-## A story about the epigraph to *Walden*
+### A story about the epigraph to *Walden*
 
 The title page of the first edition of *Walden* includes this epigraph:
 
@@ -22,7 +22,7 @@ Here’s [one way to tell the story of these changes, using TimelineJS](http://b
 
 Follow the link and click through the timeline.
 
-## Telling your own revision story
+### Telling your own revision story
 
 Select some manuscript images to tell your own story about a revision or revisions to *Walden* that strike you as interesting or significant.
 

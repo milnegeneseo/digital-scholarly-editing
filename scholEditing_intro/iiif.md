@@ -1,6 +1,8 @@
+## Using manuscript images in a timeline
+
 The previous page explained how to build a basic timeline using TimelineJS. You saw there that the only way to include an image in your timeline is to point to the image file on the web. You do that by typing (or copy-pasting) the web address of the image file in the “Media” column of the spreadsheet for the appropriate row of the spreadsheet.
 
-## Working with IIIF images
+### Working with IIIF images
 
 Many manuscript images are available on the web using a standard called the “International Image Interoperability Framework,” or IIIF for short.
 
@@ -10,7 +12,7 @@ You perform these actions by following the protocols for the IIIF API. “API”
 
 Let’s take a look at the different ways you can display a manuscript image using the IIIF API, taking the *Walden* manuscript as our example.
 
-## Calling an image at full size
+### Calling an image at full size
 
 Type the following address (also known as a “URI”) into your web browser’s location bar and hit `Return` or `Enter`:
 
@@ -22,7 +24,7 @@ Your browser probably loaded a scaled-down version of the image so that the enti
 
 The size of high-quality scans is one reason the IIIF standard is so important: if you had to use all these images at full size in your project, your users would spend a lot of time drumming their fingers, waiting for your images to arrive on their screens.
 
-## Calling an image at a percentage of its original size
+### Calling an image at a percentage of its original size
 
 The URI you entered in your browser’s location bar above should have (eventually\!) delivered the first page of the “A” version of Thoreau’s *Walden*. What if you wanted to call the image at a specified fraction of its original size so that it would load much faster?
 
@@ -40,7 +42,7 @@ We can bring the reduced-size image into the present page by typing
 
 ![Page 1 of *Walden* Version A](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/pct:10/0/default.jpg)
 
-## URI syntax
+### URI syntax
 
 There’s a regular pattern to the IIIF URIs, as explained on [this page explaining the IIIF URI syntax](https://iiif.io/api/image/2.1/#uri-syntax).
 
@@ -65,7 +67,7 @@ For our purposes, what matters most are the following bits of the URI:
   - *size*: In the first example, the image is displayed at its **full** size. In the second, it’s dispalyed at **pct:10** (i.e., 10%) of its full size.
   - *rotation*: In both examples, the rotation is **0**. We could replace `0` with `90`, `180`, or `270` to rotate the image clockwise by the corresponding number of degrees.
 
-## Displaying a page section
+### Displaying a page section
 
 To display a section of an image — in other words, a *region* other than `full` — you can specify the coordinates of the section by replacing `full` with `x,y,w,h` where
 
@@ -84,7 +86,7 @@ Determining the right coordinates for a limited image region takes some finaglin
 
 **For your timeline project in ENGL 340, you don’t need to worry about displaying an image section. If you have a strong desire to do so, make an appointment for a video chat with me.**
 
-## Rotating images
+### Rotating images
 
 This, too, is unnecessary for your project, but the infomration is included here in case you’d like to give rotating a try.
 
