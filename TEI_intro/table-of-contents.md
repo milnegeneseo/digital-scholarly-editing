@@ -3,7 +3,7 @@
 Files in this directory are meant to be read in this order:
 
 1. [intro-to-encoding-1.md](intro-to-encoding-1.md)
-2. [intro-to-encoding-2.md]intro-to-encoding-2.md)
+2. [intro-to-encoding-2.md](intro-to-encoding-2.md)
 3. [why-tei.md](why-tei.md)
 4. [machines-that-read.md](machines-that-read.md)
 5. [data-analysis.md](data-analysis.md)
