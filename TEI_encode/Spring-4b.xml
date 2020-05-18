@@ -86,7 +86,7 @@
                <lb/>them. The ice was melted out
                <lb/>3 or 4 rods from the shore, and
                <lb/>there was a smooth and warm sheet
-               <lb/>of water, with a <del rend="vstrike"><handShift medium="pencil"/>muddy bottom
+               <lb/>of water, with a <zone ulx="135" uly="784" lrx="145" lry="785" type="blockDeletion"><mod><handShift medium="pencil"/><add place="left-margin-bottom">?</add><del rend="vstrike">muddy bottom
                <lb/>such as the ducks love within, and
                <lb/>he thought it likely that some would 
                <lb/>be along pretty soon. After he
@@ -100,7 +100,7 @@
                <lb/>would have a universal and
                <lb/>memorable ending—a sudden
                <lb/>rush and roar, which seemed
-               <lb/>to him, all at once, like the sound</del>
+               <lb/>to him, all at once, like the sound</del></mod></zone>
             </zone>
          </surface>
          <surface facs="page1.png">
