@@ -31,6 +31,11 @@
     </xsl:function> 
     <xsl:template match="zone[@ulx]">
         <xsl:element name="{local-name()}" namespace="http://www.tei-c.org/ns/1.0">
+            <xsl:if test="@type">
+                <xsl:attribute name="type">
+                    <xsl:value-of select="@type"/>
+                </xsl:attribute>
+            </xsl:if>
         <xsl:for-each select="(@ulx, @uly, @lrx, @lry)">
             <xsl:attribute name="{current()/name()}">
                 <xsl:value-of select=". * $reductionFactor"/>
