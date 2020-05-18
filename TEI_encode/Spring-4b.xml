@@ -40,8 +40,8 @@
                Horizontal zag
                
                Definitely we'll mark the @medium when the hand changes. 
-               Questions to investigate: where to use <handShift>? And where to add @medium to the element,
-               as in <del medium="pencil"/>
+               Questions to investigate: where to use <handShift>? And where to add medium information to the element,
+               as in <del hand="pencil"/>
                -->
          --></p></editorialDecl>
       </encodingDesc>
@@ -54,6 +54,13 @@
          <surface xml:id="hm924v1n232">
           <graphic
                url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
+            <zone ulx="83" uly="111" lrx="158" lry="173" type="margin">
+               <add place="left-margin-top"><handShift medium="bluePencil"/>p. 468</add>
+            </zone>
+            <zone ulx="90" uly="890" lrx="165" lry="946">
+               <add place="left-margin-bottom"><handShift medium="bluePencil"/>p. 469</add>
+            </zone>
+            
             <zone n="tenPercent" ulx="137" uly="527" lrx="788" lry="978"/>
            <!-- URL gives us expected results
               <zone xmlns:ebb="https://newtfire.org" n="tenPercent" ulx="137" uly="527" lrx="788" lry="978" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/1370,5270,6510,4510/pct:10/0/default.jpg"/>/>
@@ -64,8 +71,11 @@
                -->
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. The @edRef attribute below is an attempt to stitch 
                moments in the photo facsimile to passages in the fluid-text ed.-->
-               <lb/><milestone unit="line" edRef="S-4b"/>river—and he dropped down with- <lb/>out
-               obstruction, from Sudbury, where
+               <lb/><milestone unit="line" edRef="S-4b"/>river—and he dropped down with- 
+               <lb/>out obstruction, from Sudbury, where 
+               <lb/>he lived; to Fair Haven Pond, which
+               <lb/>he found unexpectedly, <del rend="hzag"><handShift medium="pencil"/> was</del>covered <mod type="insert"><handShift medium="ink2"/><metamark rend="caret" function="insertion" target="#insert1"/><add xml:id="insert1" place="above">for the most part</add></mod>
+               <lb/>with a firm field of ice. It was a 
              
       
             </zone>
