@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Walden MS</title>
+            <title>Walden MS: Spring: MS leaves 232-235</title>
             <editor>Elisa Beshero-Bondar</editor>
          </titleStmt>
          <!--We need the sourceDesc and msDesc here. And can describe the inks in much more detail. 
@@ -22,7 +22,7 @@
             <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Coding experiment: Spring: MS leaves 232—235</p>
+            <p>Coding experiment: Spring: MS leaves 232—235  <!--Huntington info...--></p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
