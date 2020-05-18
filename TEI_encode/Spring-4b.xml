@@ -123,7 +123,8 @@
                </del><metamark rend="caret-down" function="note-signal"/><add place="below"><note resp="#hdt" anchored="true">end of Sand foliage <milestone unit="phrase" edRef="S-5"/>At length the sun’s rays</note></add></mod>
                </zone>
                
-               <lb/><milestone unit="paragraph-Start" edRef="S-11"/><!--2020-05-17 ebb: How shall we encode paragraph beginnings? -->But we must not let
+               <zone ulx="85" uly="499" lrx="780" lry="966" type="blockDeletion">
+               <mod><handShift medium="pencil"/><del rend="vstrike"><lb/><milestone unit="paragraph-Start" edRef="S-11"/><!--2020-05-17 ebb: How shall we encode paragraph beginnings? -->But we must not let
                <lb/>the winter go so easily. When
                <lb/>the ground is <mod><handShift medium="pencil"/><del rend="hstrike">completely</del><add place="above">partially</add></mod> bare of
                <lb/>snow and a few warm days have
@@ -138,8 +139,11 @@
                <lb/>sown <mod><handShift medium="ink2"/><add place="below">even</add></mod> <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><del rend="vzag vstrike"><add place="above">their seeds</add></del></mod>their seeds—<mod><handShift medium="ink2"/><del rend="hstrike">and graceful <mod><handShift medium="pencil"/><add place="above">the</add></mod>
                   <lb/>reeds and rushes whose winter is <mod><handShift medium="pencil"/><metamark rend="caret" place="above" function="insertion"/><add place="above"><del rend="hstrike"><unclear unit="char" quantity="11"><supplied resp="ebb" cert="low">rush grass</supplied></unclear></del> cotton grass catt tail <mod><handShift medium="ink2"/><del rend="hstrike"><handShift medium="pencil"/><unclear unit="char" quantity="5"><add place="above"><gap reason="illegible"/></add></unclear></del></mod> mulleins &amp;c &amp;c
                      <lb/>hard hack &amp; meadowsweet</add></mod>more gay and stately than their</del></mod>
+               </del></mod></zone>
+               <zone type="margin"><mod><handShift medium="ink2"></handShift><del rend="vstrike"><mod><handShift medium="pencil"/><note resp="#hdt">2 [ </note></mod></del></mod><note resp="#ebb">In pencil, the number two followed by a bracket spanning the last two lines of the page, specifically surrounding the pencilled additions perhaps indicating a passage to be moved or replaced. This notation has then been cancelled in ink.</note>
+               </zone>
             </zone>
-           <zone type="margin"><mod><handShift medium="ink2"/><del rend="vstrike"><mod><handShift medium="pencil"/><note resp="#hdt">2 [ </note></mod></del></mod><note resp="#ebb">In pencil, the number two followed by a bracket spanning the last two lines of the page, specifically surrounding the pencilled additions perhaps indicating a passage to be moved or replaced. This notation has then been cancelled in ink.</note></zone>
+       
          </surface>
       
       </surfaceGrp>
