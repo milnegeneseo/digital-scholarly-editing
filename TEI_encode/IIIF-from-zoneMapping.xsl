@@ -43,6 +43,7 @@
          <xsl:variable name="IIIF-region" as="xs:string" select="ebb:IIIF-regions(@ulx, @uly, @lrx, @lry)" />
            <xsl:value-of select="replace($IIIF-URI, '(\d+/)full', concat('$1', $IIIF-region))"/> 
               </xsl:attribute>
+            <xsl:apply-templates/>
     </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
