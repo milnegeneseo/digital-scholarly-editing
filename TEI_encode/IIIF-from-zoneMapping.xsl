@@ -10,7 +10,7 @@
     <!--2020-04-30 ebb: This stylesheet processes zone coordinate data that defines regions of an image supplied by working with 
         by a scaled-down IIIF URL fashioned in this format (where pct:10 indicates a 10% reduction in this case.
         https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg
-        Coordinate data was supplied for the source TEI document by using the oXygen Image Mapping editor, 
+        Coordinate data was supplied for the source TEI document by using the oXygen TEI Facsimile Plugin, 
         which automatically supplies x and y coordinates for the top left and bottom right corners of a rectangular region. 
         
         The $reductionFactor variable below represents the percentage reduction applied to 
