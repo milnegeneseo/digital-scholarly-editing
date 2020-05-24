@@ -51,6 +51,35 @@
                --></p>
          </editorialDecl>
       </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson><!--ebb: This is a very rudimentary participant description just to get it started!  -->
+               <person xml:id="hdt">
+                  <persName>Henry David Thoreau</persName>
+               </person>
+               <person xml:id="fs">
+                  <persName>Franklin Sanborn</persName>
+               </person>
+               <person xml:id="ps">
+                  <persName>Paul Schacht</persName>
+                  <note>PI, organizer, and editor on the Walden MS project</note>
+               </person>
+               <person xml:id="ehw">
+                  <persName>Elizabeth Witherell</persName>
+                  <note>Editor-in-chief of the <bibl><title level="s">The Writings of Henry D. Thoreau</title> <ptr target="http://thoreau.library.ucsb.edu/"></ptr></bibl>, editor on the Walden MS project</note>
+               </person>
+               <person xml:id="ebb">
+                  <persName>Elisa Beshero-Bondar</persName>
+                  <note>editor on the Walden MS project</note>
+               </person>
+               <person xml:id="nw">
+                  <persName>Nikolaus Wasmoen</persName>
+                  <note>editor on the Walden MS project</note>
+               </person>
+               <!-- Add others who work on the TEI code for this project, giving each a distinct identifier for reference in @resp attributes for <note> and <supplied> elements. -->
+            </listPerson>
+         </particDesc>
+      </profileDesc>
    </teiHeader>
    <!--See examples of sourceDoc in TEI P5 
       https://www.tei-c.org/release/doc/tei-p5-doc/en/html//examples-sourceDoc.html  -->

@@ -40,12 +40,13 @@
             <moduleRef key="tei"/>
             <moduleRef key="core" except="binaryObject cb divGen media meeting mentioned pb teiCorpus"/><!--ebb: NOTE: I've excluded pb here b/c I think we don't need it with markup of each <surface>. -->
             <moduleRef key="header"/>
+            <moduleRef key="corpus" include="particDesc"/><!--ebb: We need this for the participant list to include in the profileDesc of the TEI Header. -->
             <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7 text"/>
             <moduleRef key="analysis"/><!--ebb: From this we are currently using <w> to break words around line endings. I'm keeping this fully inclusive since we may want other elements from the module. -->
             <moduleRef key="linking"/> <!--ebb: I'm not sure whether we'll want this immediately, but I'm including the entire module just in case it seems useful as we put our MS "particles" together and maybe try to suggest a sequence or at least connections. -->
             <moduleRef key="msdescription"/>
             <moduleRef key="transcr" except="line"/><!--ebb: We exclude <line> because we are using the empty <lb/> element instead.  -->
-           <!-- <moduleRef key="namesdates"/> ebb: I think we are not really wanting this module for now, but let's check with Paul? -->
+            <moduleRef key="namesdates"/> <!--ebb: I think we'd mainly be using this to identify editors and hands at work on the manuscript in the profileDesc of the TEI header. -->
             <!--<moduleRef key="textcrit"/> ebb: Is it safe to disallow this for markup of MS? I think we would do any critical apparatus work with standoff markup in a different kind of file, so I'd recommend handling this kind of work in a separate ODD.  -->
             
             <!-- ODD-specific elements like <elementSpec> and <classSpec>;
@@ -136,6 +137,13 @@
                   </attDef>
                </attList>
             </elementSpec>
+            <!-- <elementSpec ident="add" module="core" mode="change">
+               <desc>An add element should indicate roughly where an insertion is made relative to the flow of the text: above the line, inline, below the line etc, following the TEI's recommended values.</desc>
+               <attList>
+                  <attDef ident="place" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+               -->
             <constraintSpec ident="check-for-mods" scheme="schematron">
                <constraint>
                   <sch:rule context="tei:add | tei:del | tei:handShift">
