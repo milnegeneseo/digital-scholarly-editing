@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Customization of the TEI for the Walden MS</title>
+            <author>Elisa Beshero-Bondar</author>
+            <editor><!-- editor or secondary author --></editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Digital Scholarly Editing project</authority>
+            <availability status="free">
+               <p>In the public domain</p>
+            </availability>
+        <!-- put <publisher>, <distributor>, or <authority> here -->
+        <!-- put <availability> and other optional details about-->
+        <!-- the publisher, distributor, or release authority here -->
+      </publicationStmt>
+         <sourceDesc>
+            <p>born digital</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <head>Customization of the TEI for the Walden MS</head>
+         <p>This customization of the TEI extends the concept of <q>fluid-text</q> editing to incorporate detailed work with manuscripts. The schema is designed to facilitate encoding of the manuscripts of Walden in a way that connects it with the earlier established <q>fluid-text</q> edition, while closely studying folio surfaces and making them available with IIIF URLs. Our customization closely follows TEI Guidelines for encoding primary sources and customizes values specific to the condition of the Walden manuscripts, though the decisions encoded here may be useful for related projects that seek to mark and investigate the changing condition of a work over time.
+            <!-- -->
+            <!-- prose description of, and explanation of, markup language goes here;
+              you can use any TEI constructs you like, including multiple paragarphs,
+              tables, nested divisions, etc. Furthermore, <specGrp> elements may
+              be used to include snippets of schema definitions, and <specList>
+              can be used to include to insert a list of descriptions of elements
+              and attributes. --></p>
+         <schemaSpec ident="waldenMS">     <!-- @ident is required -->
+            <desc>A customization of the TEI prioritizing alignment of folio surface images with transcription as well as anchoring references to related editions.</desc>
+            <moduleRef key="tei"/>
+            <moduleRef key="core"/>
+            <moduleRef key="header"/>
+            <moduleRef key="textstructure"/>
+            <!-- ODD-specific elements like <elementSpec> and <classSpec>;
+             or references to <specGrp>s defined above using <specGrpRef>. -->
+         </schemaSpec>
+      </body>
+  </text>
+</TEI>
