@@ -10,7 +10,7 @@
            Medium categories:
               bluePencil (Sanborn-blue)
               pencil
-              sometimes red for deletion marks [2020-5-18 bw: I'm still trying to determine whether these are Thoreau's; Right now I think they're probably not.]
+              sometimes red for deletion marks
               ink1 (doesn't get identified, b/c it is the prevailing ink on the page)
               ink2 (any other ink used on the page that appears to be used later)
               Apply with @cert levels as we code (?)
@@ -19,13 +19,18 @@
             <p>Publication Information</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Coding experiment: Spring: MS leaves 232—235  <!--Huntington info...--></p>
+            <p>Coding experiment: Spring: MS leaves 232–235 <!--Huntington info...--></p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <projectDesc><p><!--ebb: Here we describe the purpose of our encoding, and how it is connecting the Huntington MS photo facsimiles to the fluid text edition --></p></projectDesc>
-         <samplingDecl><p><!--ebb: We can describe how we are sampling MS images to encode here and connect to well-known passages of Walden. --></p></samplingDecl>
-         <editorialDecl><p><!--ebb: We can provide some explanation of our editorial practice, like how we represent line beginnings and what we do with hyphenation, and what we're doing with various kinds of deletion marks.
+         <projectDesc>
+            <p><!--ebb: Here we describe the purpose of our encoding, and how it is connecting the Huntington MS photo facsimiles to the fluid text edition --></p>
+         </projectDesc>
+         <samplingDecl>
+            <p><!--ebb: We can describe how we are sampling MS images to encode here and connect to well-known passages of Walden. --></p>
+         </samplingDecl>
+         <editorialDecl>
+            <p><!--ebb: We can provide some explanation of our editorial practice, like how we represent line beginnings and what we do with hyphenation, and what we're doing with various kinds of deletion marks.
             How will we refer to common kinds of deletions?
                The one we see on this page, observes Beth, is often used for a passage he intends to replace.
                LOOK FOR an image elsewhere which starts with the words "muddy bottom"! 
@@ -40,109 +45,108 @@
                Questions to investigate: where to use <handShift>? And where to add medium information to the element,
                as in <del hand="pencil"/>
                -->
-         --&gt;</p></editorialDecl>
+               --&gt;</p>
+         </editorialDecl>
       </encodingDesc>
-      
+
    </teiHeader>
-      <!--See examples of sourceDoc in TEI P5 
+   <!--See examples of sourceDoc in TEI P5 
       https://www.tei-c.org/release/doc/tei-p5-doc/en/html//examples-sourceDoc.html  -->
-     <sourceDoc> <surfaceGrp n="Spring_Sand-Foliage">
+   <sourceDoc>
+      <surfaceGrp n="Spring_Sand-Foliage">
          <!--labelling the collection of leaves we'll represent here -->
-         <surface xml:id="hm924v1n232"> <!--2020-5-18 bw: Reminder that we discussed how to ID recto and verso, and further whether bifolios should be IDd as two leaves or one leaf folded. "v1" IDs the page as in A and is important for comparing versions of related passages that appear in different versions (the sand foliage passage occurs in A, G, and 8).-->
-          <graphic url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
+         <surface xml:id="hm924v1n232">
+            <graphic url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
             <zone type="margin" ulx="830" uly="1110" lrx="1580" lry="1730" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/830,1110,750,620/pct:10/0/default.jpg">
                <mod><handShift medium="bluePencil"/><add place="left-margin-top">p. 468</add></mod>
             </zone>
             <zone ulx="900" uly="8900" lrx="1650" lry="9460" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/900,8900,750,560/pct:10/0/default.jpg">
-               <mod><handShift medium="bluePencil"/><add place="left-margin-bottom">p. 469</add></mod>
+               <mod><handShift medium="bluePencil"/><add place="left-margin-bottom">p.
+                  469</add></mod>
             </zone>
             <zone type="main">
                <!--ebb: Applying this use of the @type to distinguish main from marginal areas from Shelley-Godwin Archive. 
                See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml
                -->
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. The @edRef attribute below is an attempt to stitch 
-               moments in the photo facsimile to passages in the fluid-text ed.--><!--2020-5-18 bw: Could you handle the start/end paragraph issue with milestone units?-->
-               <lb/><milestone unit="line" edRef="S-4b"/>river—and he dropped down with- 
-               <lb/>out obstruction, from Sudbury, where 
-               <lb/>he lived; to Fair Haven Pond<!--2020-5-18 bw: ink1 "p" is revised in pencil to "P"-->, which 
-               <lb/>he found<!--2020-5-18 bw: "found" is followed by a comma in pencil--> unexpectedly, <mod><handShift medium="pencil"/><del rend="hzag">was</del></mod> covered <mod type="insert"><handShift medium="ink2"/><metamark rend="caret" place="inline" function="insertion" target="#insert1"/><add xml:id="insert1" place="above">for the most part</add></mod>
-               <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"/><add>—</add></mod>
-               <lb/><mod><handShift medium="ink2"/><del rend="vzag">very</del></mod><!--2020-5-18 bw: "very" is canceled in pencil; the ink2 line could be a cancel, or an accidental swipe of the pen as he interlined "surprised".--> warm spring day, and he was
-               <lb/><mod><handShift medium="ink2"/><del rend="hstrike">astonished</del><add place="above">surprised</add></mod> to see such a body of ice
-               <lb/>remaining.<!--2020-5-18 bw: I would read the mark after "remaining" as an en dash not a period.--> Not seeing any ducks
-               <lb/>he hid his boat on the <mod type="insert"><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion" target="#insert2"/><add xml:id="insert2" place="above">North<unclear><!--2020-5-18 bw: The word in pencil after "North" is "or".--><supplied resp="#ebb">ern</supplied></unclear></add></mod> <w>back-
-                  <lb/>side</w><!--2020-05-17 ebb: Note the use of the <w> element here to indicate a word is being broken across the line.  -->  of an island in the pond, and
-               <lb/>then concealed himself in the
-               <lb/>bushes on the south side to await
-               <lb/>them. The ice was melted out
-               <lb/>3 or 4 rods from the shore, and
-               <lb/>there was a smooth and warm sheet
-               <lb/>of water, with a <zone type="blockDeletion" ulx="870" uly="5220" lrx="7870" lry="9690" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/870,5220,7000,4470/pct:10/0/default.jpg"><mod><handShift medium="pencil"/><add place="left-margin-bottom">?</add><del rend="vstrike">muddy bottom
-               <lb/>such as the ducks love within, and
-               <lb/>he thought it likely that some would 
-               <lb/>be along pretty soon. After he
-               <lb/>had lain still there about an
-               <lb/>hour he <del rend="hstrike"><handShift medium="ink2"/>suddenly</del> heard a <del rend="vstrike"><handShift medium="ink2"/>s</del>low
-               <lb/>and seemingly very distant sound,
-               <lb/>and singularly grand and <w>im-
-               <lb/>pressive</w>, and unlike anything he
-               <lb/>had ever heard before, gradually
-               <lb/>swelling and increasing as if it
-               <lb/>would have a universal and<!--2020-5-18 bw: "ni" in "universal" is underlined in pencil and there's a penciled "? in the left margin. I'm not sure these marks are Thoreau's.-->
-               <lb/>memorable ending—a sudden<!--2020-5-18 bw: Not "sudden" but "sullen"-->
-               <lb/>rush and roar, which seemed
-               <lb/>to him, all<!--2020-5-18 bw: Both ls in "all" are extended upward in pencil. Not sure this is Thoreau.--> at once, like the sound</del></mod></zone>
+               moments in the photo facsimile to passages in the fluid-text ed.-->
+               <lb/><milestone unit="line" edRef="S-4b"/>river–and he dropped down with- <lb/>out
+               obstruction, from Sudbury, where <lb/>he lived; to Fair Haven Pond, which <lb/>he
+               found unexpectedly, <mod><handShift medium="pencil"/><del rend="hzag">was</del></mod>
+               covered <mod type="insert"><handShift medium="ink2"/><metamark rend="caret" place="inline" function="insertion" target="#insert1"/><add xml:id="insert1" place="above">for the most part</add></mod>
+               <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"/><add>–</add></mod>
+               <lb/><mod><handShift medium="ink2"/><del rend="vzag">very</del></mod> warm spring
+               day, and he was <lb/><mod><handShift medium="ink2"/><del rend="hstrike">astonished</del><add place="above">surprised</add></mod> to see such a body of
+               ice <lb/>remaining. Not seeing any ducks <lb/>he hid his boat on the <mod type="insert"><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion" target="#insert2"/><add xml:id="insert2" place="above">North<unclear><supplied resp="#ebb">ern</supplied></unclear></add></mod>
+               <w>back-
+               <lb/>side</w><!--2020-05-17 ebb: Note the use of the <w> element here to indicate a word is being broken across the line.  -->
+               of an island in the pond, and <lb/>then concealed himself in the <lb/>bushes on the
+               south side to await <lb/>them. The ice was melted out <lb/>3 or 4 rods from the
+               shore, and <lb/>there was a smooth and warm sheet <lb/>of water, with a <zone type="blockDeletion" ulx="870" uly="5220" lrx="7870" lry="9690" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/870,5220,7000,4470/pct:10/0/default.jpg"><mod><handShift medium="pencil"/><add place="left-margin-bottom">?</add><del rend="vstrike">muddy bottom <lb/>such as the ducks love within, and <lb/>he thought it
+                        likely that some would <lb/>be along pretty soon. After he <lb/>had lain
+                        still there about an <lb/>hour he <del rend="hstrike"><handShift medium="ink2"/>suddenly</del> heard a <del rend="vstrike"><handShift medium="ink2"/>s</del>low <lb/>and seemingly very distant sound,
+                        <lb/>and singularly grand and <w>im- <lb/>pressive</w>, and unlike anything
+                        he <lb/>had ever heard before, gradually <lb/>swelling and increasing as if
+                        it <lb/>would have a universal and <lb/>memorable ending–a sudden <lb/>rush
+                        and roar, which seemed <lb/>to him, all at once, like the
+                  sound</del></mod></zone>
             </zone>
          </surface>
-        <surface xml:id="hm924v1n233">
+         <surface xml:id="hm924v1n233">
             <graphic url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/full/pct:10/0/default.jpg"/>
-           <zone type="margin" ulx="920" uly="770" lrx="2700" lry="1280" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/920,770,1780,510/pct:10/0/default.jpg">
-              <mod><handShift medium="bluePencil"/><add place="left-margin-top">p. 469</add></mod>
+            <zone type="margin" ulx="920" uly="770" lrx="2700" lry="1280" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/920,770,1780,510/pct:10/0/default.jpg">
+               <mod><handShift medium="bluePencil"/><add place="left-margin-top">p. 469</add></mod>
             </zone>
-           <zone type="margin" ulx="1280" uly="4990" lrx="7810" lry="5650" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/1280,4990,6530,660/pct:10/0/default.jpg"><mod><handShift medium="bluePencil"/><add place="left-margin">p. 474</add></mod></zone>
-           
+            <zone type="margin" ulx="1280" uly="4990" lrx="7810" lry="5650" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/1280,4990,6530,660/pct:10/0/default.jpg"><mod><handShift medium="bluePencil"/><add place="left-margin">p. 474</add></mod></zone>
+
             <zone type="main">
                <zone type="blockDeletion" ulx="840" uly="770" lrx="7560" lry="5210" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/840,770,6720,4440/pct:10/0/default.jpg"><mod><handShift medium="pencil"/><del rend="vstrike">
-               <lb/>of a vast body of fowl coming in
-               <lb/>to settle there—and seizing his
-               <lb/>gun he started <mod><handShift medium="pencil"/>up <add place="above">in haste &amp; excited but</add><!--2020-5-18 bw: Do you need to add handShift medium="pencil" here? "with excitement" is deleted in pencil.--><del rend="hzag">with excitement 
-                  <lb/>and</del><!--2020-5-18 bw: "he" is in pencil; add handShift, etc?--><add>he</add></mod> found <mod><handShift medium="pencil"/><add place="above">to his suprise</add><!--2020-5-18 bw: Note sideways caret in pencil to place this addition?--></mod> that the whole body
-               <lb/>of the ice had started while he
-               <lb/>lay there, and drifted in to the
-               <lb/>shore, and the sound he had heard
-               <lb/>was made by its edge grating
-               <lb/>on the shore <del rend="hzag"><handShift medium="pencil"/>and</del> at first gently
-               <lb/>nibbling and crumbling off—<mod><handShift medium="pencil"/><del rend="hstrike">and</del><add place="above">but</add></mod>
-               <lb/>at length heaving up and <w>scat<!--2020-5-18 bw: There's a hyphen under the "t"--> 
-               <lb/>tering</w> its wrecks along the island
-		       <!--2020-5-18 bw: Line skipped: <lb/>to a considerable height before-->
-                  <lb/>it <mod><handShift medium="pencil"/><del rend="hstrike">became still <del rend="hzag">and silent</del></del> <del rend="hzag">again</del><add place="above">came to a stand-still</add></mod>.
-               </del><metamark rend="caret-down" function="note-signal"/><add place="below"><note resp="#hdt" anchored="true"><!--2020-5-18 bw: Several words written in pencil, mostly erased, precede "V end"--><!--2020-5-18 bw: "V" (for "vide") precedes "end-->end of Sand foliage <milestone unit="phrase" edRef="S-5"/>At length the sun’s rays</note></add></mod>
+                        <lb/>of a vast body of fowl coming in <lb/>to settle there–and seizing his
+                        <lb/>gun he started <mod><handShift medium="pencil"/>up <add place="above">in haste &amp; excited but</add><del rend="hzag">with excitement
+                              <lb/>and</del><add>he</add></mod> found <mod><handShift medium="pencil"/><add place="above">to his suprise</add></mod> that
+                        the whole body <lb/>of the ice had started while he <lb/>lay there, and
+                        drifted in to the <lb/>shore, and the sound he had heard <lb/>was made by
+                        its edge grating <lb/>on the shore <del rend="hzag"><handShift medium="pencil"/>and</del> at first gently <lb/>nibbling and crumbling
+                              off–<mod><handShift medium="pencil"/><del rend="hstrike">and</del><add place="above">but</add></mod>
+                        <lb/>at length heaving up and <w>scat <lb/>tering</w> its wrecks along the
+                        island <lb/>it <mod><handShift medium="pencil"/><del rend="hstrike">became
+                              still <del rend="hzag">and silent</del></del>
+                           <del rend="hzag">again</del><add place="above">came to a
+                              stand-still</add></mod>. </del><metamark rend="caret-down" function="note-signal"/><add place="below"><note resp="#hdt" anchored="true">end of Sand foliage <milestone unit="phrase" edRef="S-5"/>At length the
+                           sun’s rays</note></add></mod>
                </zone>
-               
                <zone type="blockDeletion" ulx="850" uly="4990" lrx="7800" lry="9660" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/850,4990,6950,4670/pct:10/0/default.jpg">
-               <mod><handShift medium="pencil"/><del rend="vstrike"><lb/><milestone unit="paragraph-Start" edRef="S-11"/><!--2020-05-17 ebb: How shall we encode paragraph beginnings? -->But we must not let
-               <lb/>the winter go so easily.<!--2020-5-18 bw: "But . . . easily" canceled in pencil with horizontal lines.--> When
-               <lb/>the ground is <mod><handShift medium="pencil"/><del rend="hstrike">completely</del><add place="above">partially</add></mod> bare of
-               <lb/>snow and a few warm days have
-               <lb/>dried its surface <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><add place="above">here &amp; there</add></mod>, it is pleasant
-               <lb/>to compare the <mod><handShift medium="pencil"/><del rend="hzag">faint</del><add place="above">first</add></mod> tender signs
-               <lb/>of the infant year just peeping
-               <lb/>forth, with the stately beauty of
-               <lb/>the withered vegetation which has
-               <lb/>withstood the winter<mod><handShift medium="ink2"/><metamark rend="caret" place="inline" function="insertion"/><add place="above">like<!--2020-5-18 bw: "life" not "like"--> everlasting-<!--2020-5-18 bw: one en dash, not hyphen-->asters, goldenrods &amp; graceful wild grasses whose winter is more stately than their summer even, as if not till then their beauty was ripe</add></mod>—the various
-               <lb/><mod><handShift medium="pencil"/><del rend="hstrike">thistles</del><add place="above">sedges</add></mod> <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><del rend="hstrike"><add place="above"><unclear unit="char" quantity="10"><supplied resp="#ebb" cert="low">mulleins &amp;<!--2020-5-18 bw: As we discussed, it's "mulleins &c"--></supplied></unclear></add></del></mod> and other strong-stemmed
-               <lb/>plants which have not <mod><handShift medium="ink2"/><del rend="vstrike">even</del></mod> yet
-               <lb/>sown <mod><handShift medium="ink2"/><add place="below">even</add></mod> <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><!--2020-5-18 bw: "all" in pencil precedes deleted "their seeds"--><del rend="vzag vstrike"><add place="above">their seeds</add></del></mod>their seeds—<mod><handShift medium="ink2"/><del rend="hstrike">and graceful <mod><handShift medium="pencil"/><add place="above">the</add></mod>
-                  <lb/>reeds and rushes whose winter is <mod><handShift medium="pencil"/><metamark rend="caret" place="above" function="insertion"/><add place="above"><del rend="hstrike"><unclear unit="char" quantity="11"><supplied resp="ebb" cert="low">rush grass<!--2020-5-18 bw: I think this is "wool grass": cert="medium"--></supplied></unclear></del> cotton grass catt<!--2020-5-18 bw: "cat" not "catt"--> tail <mod><handShift medium="ink2"/><del rend="hstrike"><handShift medium="pencil"/><unclear unit="char" quantity="5"><add place="above"><gap reason="illegible"/><!--2020-5-18 bw: This is "& even" canceled in ink1 ink2? not sure. Probably done when careted-in "& even" in pencil was canceled in ink--></add></unclear></del></mod> mulleins &amp;c &amp;c<!--2020-5-18 bw: "&c &c" in pencil canceled in ink2. Probably done when "&c &c" was added after penciled "meadowsweet"-->
-                     <lb/>hard hack &amp; meadowsweet</add></mod><!--2020-5-18 bw: <lb/> goes here, right, before "more gay", with "hard hack &amp; meadowsweet</add></mod>" described as an insertion? Also, "meadowsweet" is followed by ink2 "&c &c", probably added when penciled "&c &c" following "mulleins" was canceled in ink2-->more gay and stately than their</del></mod> 
-               </del></mod></zone>		       
-               <zone type="margin"><mod><handShift medium="ink2"/><del rend="vstrike"><mod><handShift medium="pencil"/><note resp="#hdt">2 [ </note></mod></del></mod><note resp="#ebb">In pencil, the number two<!--2020-5-18 bw: written over the number 1-->followed by a bracket spanning the last two lines of the page, specifically surrounding the pencilled additions perhaps indicating a passage to be moved or replaced. This notation has then been cancelled in ink.</note>
+                  <mod><handShift medium="pencil"/><del rend="vstrike"><lb/><milestone unit="paragraph-Start" edRef="S-11"/><!--2020-05-17 ebb: How shall we encode paragraph beginnings? -->But we
+                        must not let <lb/>the winter go so easily. When <lb/>the ground is
+                              <mod><handShift medium="pencil"/><del rend="hstrike">completely</del><add place="above">partially</add></mod> bare of
+                        <lb/>snow and a few warm days have <lb/>dried its surface <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><add place="above">here &amp; there</add></mod>,
+                        it is pleasant <lb/>to compare the <mod><handShift medium="pencil"/><del rend="hzag">faint</del><add place="above">first</add></mod> tender
+                        signs <lb/>of the infant year just peeping <lb/>forth, with the stately
+                        beauty of <lb/>the withered vegetation which has <lb/>withstood the
+                              winter<mod><handShift medium="ink2"/><metamark rend="caret" place="inline" function="insertion"/><add place="above">like
+                              everlasting-asters, goldenrods &amp; graceful wild grasses whose
+                              winter is more stately than their summer even, as if not till then
+                              their beauty was ripe</add></mod>–the various <lb/><mod><handShift medium="pencil"/><del rend="hstrike">thistles</del><add place="above">sedges</add></mod>
+                        <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><del rend="hstrike"><add place="above"><unclear unit="char" quantity="10"><supplied resp="#ebb" cert="low">mulleins &amp;</supplied></unclear></add></del></mod> and
+                        other strong-stemmed <lb/>plants which have not <mod><handShift medium="ink2"/><del rend="vstrike">even</del></mod> yet <lb/>sown
+                              <mod><handShift medium="ink2"/><add place="below">even</add></mod>
+                        <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><del rend="vzag vstrike"><add place="above">their seeds</add></del></mod>their seeds–<mod><handShift medium="ink2"/><del rend="hstrike">and graceful <mod><handShift medium="pencil"/><add place="above">the</add></mod>
+                              <lb/>reeds and rushes whose winter is <mod><handShift medium="pencil"/><metamark rend="caret" place="above" function="insertion"/><add place="above"><del rend="hstrike"><unclear unit="char" quantity="11"><supplied resp="ebb" cert="low">rush
+                                             grass</supplied></unclear></del> cotton grass catt tail
+                                          <mod><handShift medium="ink2"/><del rend="hstrike"><handShift medium="pencil"/><unclear unit="char" quantity="5"><add place="above"><gap reason="illegible"/></add></unclear></del></mod> mulleins &amp;c
+                                    &amp;c <lb/>hard hack &amp; meadowsweet</add></mod>more gay and
+                              stately than their</del></mod>
+                     </del></mod></zone>
+               <zone type="margin"><mod><handShift medium="ink2"/><del rend="vstrike"><mod><handShift medium="pencil"/><note resp="#hdt">2 [
+                        </note></mod></del></mod><note resp="#ebb">In pencil, the number two
+                     followed by a bracket spanning the last two lines of the page, specifically
+                     surrounding the pencilled additions perhaps indicating a passage to be moved or
+                     replaced. This notation has then been cancelled in ink.</note>
                </zone>
             </zone>
-       
+
          </surface>
-      
+
       </surfaceGrp>
-     </sourceDoc>
+   </sourceDoc>
 </TEI>
