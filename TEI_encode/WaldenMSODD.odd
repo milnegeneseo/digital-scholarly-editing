@@ -35,12 +35,26 @@
               be used to include snippets of schema definitions, and <specList>
               can be used to include to insert a list of descriptions of elements
               and attributes. --></p>
-         <schemaSpec ident="waldenMS">     <!-- @ident is required -->
+         <schemaSpec ident="waldenmsODD">     <!-- @ident is required -->
             <desc>A customization of the TEI prioritizing alignment of folio surface images with transcription as well as anchoring references to related editions.</desc>
             <moduleRef key="tei"/>
-            <moduleRef key="core"/>
+            <moduleRef key="core" except="binaryObject cb divGen media meeting mentioned pb teiCorpus"/><!--ebb: NOTE: I've excluded pb here b/c I think we don't need it with markup of each <surface>. -->
             <moduleRef key="header"/>
-            <moduleRef key="textstructure"/>
+            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
+            <moduleRef key="analysis"/><!--ebb: From this we are currently using <w> to break words around line endings. I'm keeping this fully inclusive since we may want other elements from the module. -->
+            <moduleRef key="linking"/> <!--ebb: I'm not sure whether we'll want this immediately, but I'm including the entire module just in case it seems useful as we put our MS "particles" together and maybe try to suggest a sequence or at least connections. -->
+            <moduleRef key="msdescription"/>
+            <moduleRef key="transcr"/>
+           <!-- <moduleRef key="namesdates"/> ebb: I think we are not really wanting this module for now, but let's check with Paul? -->
+            <!--<moduleRef key="textcrit"/> ebb: Is it safe to disallow this for markup of MS? I think we would do any of this critical apparatus with standoff markup in a different kind of file, so I'd recommend handling this kind of work in a separate ODD.  -->
+            
+            
+            
+            
+            <!--ebb: Write a constraintSpec to prevent <p> in <text>. --> 
+            
+            
+
             <!-- ODD-specific elements like <elementSpec> and <classSpec>;
              or references to <specGrp>s defined above using <specGrpRef>. -->
          </schemaSpec>
