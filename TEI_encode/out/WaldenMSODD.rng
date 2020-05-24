@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-05-24T20:36:06Z. .
+Schema generated from ODD source 2020-05-24T21:39:19Z. .
 TEI Edition: Version 4.0.0. Last updated on
 	13th February 2020, revision ccd19b0ba
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
@@ -4736,13 +4736,41 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="note">
       <element name="note">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Use a resp attribute to indicate who is responsible for making a note. The value of the resp attribute must match an xml:id defined in the profileDesc in the TEI header, which identifies people associated with interpretive markup. Thoreau or another hand at work in the ms could be writing a note in the manuscript, in which case the @resp value will indicate that. If you are supplying a note in the digital markup for clarification, you need to identify yourself.  [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
          <ref name="macro.specialPara"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.style"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.synch"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.linking.attribute.copyOf"/>
+         <ref name="att.global.linking.attribute.next"/>
+         <ref name="att.global.linking.attribute.prev"/>
+         <ref name="att.global.linking.attribute.exclude"/>
+         <ref name="att.global.linking.attribute.select"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.change.attribute.change"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.source.attribute.source"/>
          <ref name="att.placement.attributes"/>
          <ref name="att.pointing.attributes"/>
          <ref name="att.typed.attributes"/>
          <ref name="att.written.attributes"/>
+         <attribute name="resp">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI"/>
+               </oneOrMore>
+            </list>
+         </attribute>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                        name="anchored"
@@ -4801,15 +4829,35 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
    </define>
    <define name="milestone">
       <element name="milestone">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks a boundary point separating any kind of section of a text, typically but not necessarily indicating a point at which some part of a standard reference system changes, where the change is not represented by a structural element. [3.10.3. Milestone
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">We use milestone elements to indicate moments we can definitively align with a passage holding a distinct identifier in the fluid-text edition. Milestone markers can be a phrase or line in the text, or mark a paragraph beginning. The edRef attribute value refers to a position marked in the fluid text at  [3.10.3. Milestone
 Elements]</a:documentation>
          <empty/>
          <ref name="att.global.attributes"/>
-         <ref name="att.milestoneUnit.attributes"/>
          <ref name="att.typed.attributes"/>
-         <ref name="att.edition.attributes"/>
+         <ref name="att.edition.attribute.ed"/>
          <ref name="att.spanning.attributes"/>
          <ref name="att.breaking.attributes"/>
+         <attribute name="unit">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+Suggested values include: 1] line (Use to indicate that the current line in the MS corresponds to a location marker in the fluid text edition.); 2] phrase (Use when the milestone is encoded in an element like a note that just contains a phrase, to indicate that this phrase corresponds to a location marker in the fluid text edition.); 3] paragraph-Start (Use to indicate the beginning of a paragraph, and combine with the edRef attribute to indicate that this corresponds to a location marker in the fluid text edition.)</a:documentation>
+            <choice>
+               <value>line</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to indicate that the current line in the MS corresponds to a location marker in the fluid text edition.) </a:documentation>
+               <value>phrase</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use when the milestone is encoded in an element like a note that just contains a phrase, to indicate that this phrase corresponds to a location marker in the fluid text edition.) </a:documentation>
+               <value>paragraph-Start</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Use to indicate the beginning of a paragraph, and combine with the edRef attribute to indicate that this corresponds to a location marker in the fluid text edition.) </a:documentation>
+               <data type="Name"/>
+            </choice>
+         </attribute>
+         <attribute name="edRef">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(edition reference) The value of edRef refers to a position marked in the fluid text at </a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI"/>
+               </oneOrMore>
+            </list>
+         </attribute>
          <empty/>
       </element>
    </define>
@@ -9910,8 +9958,8 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
          <ref name="att.declaring.attributes"/>
          <ref name="att.typed.attributes"/>
          <attribute name="xml:id">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <text/>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
+            <data type="ID"/>
          </attribute>
          <optional>
             <attribute name="attachment">
@@ -10363,11 +10411,39 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="supplied">
       <element name="supplied">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signifies text supplied by the transcriber or editor for any reason; for example because the original cannot be read due to physical damage, or because of an obvious omission by the author or scribe. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Use a resp attribute to indicate who is responsible for a supplied value. The value of the resp attribute must match an xml:id defined in the profileDesc in the TEI header, which identifies people associated with interpretive markup and writing in the ms. Usually this will be a member of our project team, but could also be Thoreau or another hand at work in the ms. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
          <ref name="macro.paraContent"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.rend"/>
+         <ref name="att.global.rendition.attribute.style"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.synch"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.linking.attribute.copyOf"/>
+         <ref name="att.global.linking.attribute.next"/>
+         <ref name="att.global.linking.attribute.prev"/>
+         <ref name="att.global.linking.attribute.exclude"/>
+         <ref name="att.global.linking.attribute.select"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.change.attribute.change"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.source.attribute.source"/>
          <ref name="att.editLike.attributes"/>
          <ref name="att.dimensions.attributes"/>
+         <attribute name="resp">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI"/>
+               </oneOrMore>
+            </list>
+         </attribute>
          <optional>
             <attribute name="reason">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why the text has had to be supplied, e.g. overbinding, faded-ink, lost-folio, omitted-in-original.</a:documentation>
@@ -12308,6 +12384,19 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 context="tei:add | tei:del | tei:handShift">
          <sch:assert test="ancestor::tei:mod">Every alteration (change in medium, insertion, or deletion) must be wrapped in a mod element. Wrapping these events with the mod element will help us with studying and processing alterations later.</sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="waldenmsODD-check-resp-vals-constraint-rule-14">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:supplied | tei:note">
+         <sch:let name="particIDs" value="//tei:particDesc//tei:person/@xml:id"/>
+         <sch:let name="respVals"
+                  value="for $i in tokenize(@resp, '\s+') return substring-after($i, '#')"/>
+         <sch:assert role="warning" test="every $r in $respVals satisfies $r = $particIDs">
+                        Each value of a resp attribute must refer to an xml:id defined on a person element in the profileDesc's participant list coded in the TEI header of this document.
+                     </sch:assert>
       </sch:rule>
    </pattern>
 </grammar>

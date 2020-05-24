@@ -62,19 +62,19 @@
                </person>
                <person xml:id="ps">
                   <persName>Paul Schacht</persName>
-                  <note>PI, organizer, and editor on the Walden MS project</note>
+                  <note resp="#ebb">PI, organizer, and editor on the Walden MS project</note>
                </person>
                <person xml:id="ehw">
                   <persName>Elizabeth Witherell</persName>
-                  <note>Editor-in-chief of the <bibl><title level="s">The Writings of Henry D. Thoreau</title> <ptr target="http://thoreau.library.ucsb.edu/"></ptr></bibl>, editor on the Walden MS project</note>
+                  <note resp="#ebb">Editor-in-chief of the <bibl><title level="s">The Writings of Henry D. Thoreau</title> <ptr target="http://thoreau.library.ucsb.edu/"></ptr></bibl>, editor on the Walden MS project</note>
                </person>
                <person xml:id="ebb">
                   <persName>Elisa Beshero-Bondar</persName>
-                  <note>editor on the Walden MS project</note>
+                  <note resp="#ebb">editor on the Walden MS project</note>
                </person>
                <person xml:id="nw">
                   <persName>Nikolaus Wasmoen</persName>
-                  <note>editor on the Walden MS project</note>
+                  <note resp="#ebb">editor on the Walden MS project</note>
                </person>
                <!-- Add others who work on the TEI code for this project, giving each a distinct identifier for reference in @resp attributes for <note> and <supplied> elements. -->
             </listPerson>
@@ -97,10 +97,6 @@
                   469</add></mod>
             </zone>
             <zone type="textflow">
-               <!--ebb: See the use of the @type to distinguish main from marginal areas from Shelley-Godwin Archive. 
-               See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml
-               But (after Walden meeting of 5/18) we should rethink the use of "main" and "marginal" so let's try @type values of "textflow" vs. "numbering" and "comment" for values that indicate the semantics of a zoned area. 
-               -->
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. The @edRef attribute below is an attempt to stitch 
                moments in the photo facsimile to passages in the fluid-text ed.-->
                <lb/><milestone unit="line" edRef="S-4b"/>river–and he dropped down with- <lb/>out
@@ -110,7 +106,7 @@
                      place="inline" function="insertion" target="#insert1"/><add xml:id="insert1"
                      place="above">for the most part</add></mod>
                <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"
-                  /><add>–</add></mod>
+                  /><add place="inline">–</add></mod>
                <lb/><mod><handShift medium="ink2"/><del rend="vzag">very</del></mod> warm spring
                day, and he was <lb/><mod><handShift medium="ink2"/><del rend="hstrike"
                      >astonished</del><add place="above">surprised</add></mod> to see such a body of
@@ -150,9 +146,9 @@
                <zone ulx="84" uly="77" lrx="756" lry="521" type="blockDeletion"><mod><handShift
                         medium="pencil"/><del rend="vstrike">
                         <lb/>of a vast body of fowl coming in <lb/>to settle there–and seizing his
-                        <lb/>gun he started <mod><handShift medium="pencil"/>up <add place="above"
+                        <lb/>gun he started up <mod><handShift medium="pencil"/><add place="above"
                               >in haste &amp; excited but</add><del rend="hzag">with excitement
-                              <lb/>and</del><add>he</add></mod> found <mod><handShift
+                              <lb/>and</del><add place="margin">he</add></mod> found <mod><handShift
                               medium="pencil"/><add place="above">to his suprise</add></mod> that
                         the whole body <lb/>of the ice had started while he <lb/>lay there, and
                         drifted in to the <lb/>shore, and the sound he had heard <lb/>was made by
@@ -192,7 +188,7 @@
                               >sedges</add></mod>
                         <mod><handShift medium="pencil"/><metamark rend="caret" place="inline"
                               function="insertion"/><del rend="hstrike"><add place="above"><unclear
-                                    unit="char" quantity="10"><supplied resp="#ebb" cert="low"
+                                    unit="char" quantity="10"><supplied resp="#ehw #ebb"
                                        >mulleins &amp;</supplied></unclear></add></del></mod> and
                         other strong-stemmed <lb/>plants which have not <mod><handShift
                               medium="ink2"/><del rend="vstrike">even</del></mod> yet <lb/>sown
@@ -205,7 +201,7 @@
                               <lb/>reeds and rushes whose winter is <mod><handShift medium="pencil"
                                     /><metamark rend="caret" place="above" function="insertion"
                                     /><add place="above"><del rend="hstrike"><unclear unit="char"
-                                          quantity="11"><supplied resp="ebb" cert="low">rush
+                                          quantity="11"><supplied resp="#ebb" cert="low">rush
                                              grass</supplied></unclear></del> cotton grass catt tail
                                           <mod><handShift medium="ink2"/><del rend="hstrike"
                                              ><handShift medium="pencil"/><unclear unit="char"

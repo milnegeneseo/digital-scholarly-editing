@@ -50,6 +50,35 @@
                --&gt;</p>
          </editorialDecl>
       </encodingDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson><!--ebb: This is a very rudimentary participant description just to get it started!  -->
+               <person xml:id="hdt">
+                  <persName>Henry David Thoreau</persName>
+               </person>
+               <person xml:id="fs">
+                  <persName>Franklin Sanborn</persName>
+               </person>
+               <person xml:id="ps">
+                  <persName>Paul Schacht</persName>
+                  <note resp="#ebb">PI, organizer, and editor on the Walden MS project</note>
+               </person>
+               <person xml:id="ehw">
+                  <persName>Elizabeth Witherell</persName>
+                  <note resp="#ebb">Editor-in-chief of the <bibl><title level="s">The Writings of Henry D. Thoreau</title> <ptr target="http://thoreau.library.ucsb.edu/"/></bibl>, editor on the Walden MS project</note>
+               </person>
+               <person xml:id="ebb">
+                  <persName>Elisa Beshero-Bondar</persName>
+                  <note resp="#ebb">editor on the Walden MS project</note>
+               </person>
+               <person xml:id="nw">
+                  <persName>Nikolaus Wasmoen</persName>
+                  <note resp="#ebb">editor on the Walden MS project</note>
+               </person>
+               <!-- Add others who work on the TEI code for this project, giving each a distinct identifier for reference in @resp attributes for <note> and <supplied> elements. -->
+            </listPerson>
+         </particDesc>
+      </profileDesc>
    </teiHeader>
    <!--See examples of sourceDoc in TEI P5 
       https://www.tei-c.org/release/doc/tei-p5-doc/en/html//examples-sourceDoc.html  -->
@@ -66,17 +95,13 @@
                   469</add></mod>
             </zone>
             <zone type="textflow">
-               <!--ebb: See the use of the @type to distinguish main from marginal areas from Shelley-Godwin Archive. 
-               See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml
-               But (after Walden meeting of 5/18) we should rethink the use of "main" and "marginal" so let's try @type values of "textflow" vs. "numbering" and "comment" for values that indicate the semantics of a zoned area. 
-               -->
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. The @edRef attribute below is an attempt to stitch 
                moments in the photo facsimile to passages in the fluid-text ed.-->
                <lb/><milestone unit="line" edRef="S-4b"/>river–and he dropped down with- <lb/>out
                obstruction, from Sudbury, where <lb/>he lived; to Fair Haven Pond, which <lb/>he
                found unexpectedly, <mod><handShift medium="pencil"/><del rend="hzag">was</del></mod>
                covered <mod type="insert"><handShift medium="ink2"/><metamark rend="caret" place="inline" function="insertion" target="#insert1"/><add xml:id="insert1" place="above">for the most part</add></mod>
-               <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"/><add>–</add></mod>
+               <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"/><add place="inline">–</add></mod>
                <lb/><mod><handShift medium="ink2"/><del rend="vzag">very</del></mod> warm spring
                day, and he was <lb/><mod><handShift medium="ink2"/><del rend="hstrike">astonished</del><add place="above">surprised</add></mod> to see such a body of
                ice <lb/>remaining. Not seeing any ducks <lb/>he hid his boat on the <mod type="insert"><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion" target="#insert2"/><add xml:id="insert2" place="above">North<unclear><supplied resp="#ebb">ern</supplied></unclear></add></mod>
@@ -104,8 +129,8 @@
             <zone type="textflow">
                <zone type="blockDeletion" ulx="840" uly="770" lrx="7560" lry="5210" facs="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/840,770,6720,4440/pct:10/0/default.jpg"><mod><handShift medium="pencil"/><del rend="vstrike">
                         <lb/>of a vast body of fowl coming in <lb/>to settle there–and seizing his
-                        <lb/>gun he started <mod><handShift medium="pencil"/>up <add place="above">in haste &amp; excited but</add><del rend="hzag">with excitement
-                              <lb/>and</del><add>he</add></mod> found <mod><handShift medium="pencil"/><add place="above">to his suprise</add></mod> that
+                        <lb/>gun he started up <mod><handShift medium="pencil"/><add place="above">in haste &amp; excited but</add><del rend="hzag">with excitement
+                              <lb/>and</del><add place="margin">he</add></mod> found <mod><handShift medium="pencil"/><add place="above">to his suprise</add></mod> that
                         the whole body <lb/>of the ice had started while he <lb/>lay there, and
                         drifted in to the <lb/>shore, and the sound he had heard <lb/>was made by
                         its edge grating <lb/>on the shore <del rend="hzag"><handShift medium="pencil"/>and</del> at first gently <lb/>nibbling and crumbling
@@ -129,11 +154,11 @@
                               everlasting-asters, goldenrods &amp; graceful wild grasses whose
                               winter is more stately than their summer even, as if not till then
                               their beauty was ripe</add></mod>–the various <lb/><mod><handShift medium="pencil"/><del rend="hstrike">thistles</del><add place="above">sedges</add></mod>
-                        <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><del rend="hstrike"><add place="above"><unclear unit="char" quantity="10"><supplied resp="#ebb" cert="low">mulleins &amp;</supplied></unclear></add></del></mod> and
+                        <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><del rend="hstrike"><add place="above"><unclear unit="char" quantity="10"><supplied resp="#ehw #ebb">mulleins &amp;</supplied></unclear></add></del></mod> and
                         other strong-stemmed <lb/>plants which have not <mod><handShift medium="ink2"/><del rend="vstrike">even</del></mod> yet <lb/>sown
                               <mod><handShift medium="ink2"/><add place="below">even</add></mod>
                         <mod><handShift medium="pencil"/><metamark rend="caret" place="inline" function="insertion"/><del rend="vzag vstrike"><add place="above">their seeds</add></del></mod>their seeds–<mod><handShift medium="ink2"/><del rend="hstrike">and graceful <mod><handShift medium="pencil"/><add place="above">the</add></mod>
-                              <lb/>reeds and rushes whose winter is <mod><handShift medium="pencil"/><metamark rend="caret" place="above" function="insertion"/><add place="above"><del rend="hstrike"><unclear unit="char" quantity="11"><supplied resp="ebb" cert="low">rush
+                              <lb/>reeds and rushes whose winter is <mod><handShift medium="pencil"/><metamark rend="caret" place="above" function="insertion"/><add place="above"><del rend="hstrike"><unclear unit="char" quantity="11"><supplied resp="#ebb" cert="low">rush
                                              grass</supplied></unclear></del> cotton grass catt tail
                                           <mod><handShift medium="ink2"/><del rend="hstrike"><handShift medium="pencil"/><unclear unit="char" quantity="5"><add place="above"><gap reason="illegible"/></add></unclear></del></mod> mulleins &amp;c
                                     &amp;c <lb/>hard hack &amp; meadowsweet</add></mod>more gay and

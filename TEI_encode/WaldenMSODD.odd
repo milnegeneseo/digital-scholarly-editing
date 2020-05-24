@@ -27,7 +27,7 @@
   <text>
       <body>
          <head>Customization of the TEI for the Walden MS</head>
-         <p>This customization of the TEI extends the concept of <q>fluid-text</q> editing to incorporate detailed work with manuscripts. The schema is designed to facilitate encoding of the manuscripts of Walden in a way that connects it with the earlier established <q>fluid-text</q> edition, while closely studying folio surfaces and making them available with IIIF URLs. Our customization closely follows TEI Guidelines for encoding primary sources and customizes values specific to the condition of the Walden manuscripts, though the decisions encoded here may be useful for related projects that seek to mark and investigate the changing condition of a work over time.
+         <p>This customization of the TEI extends the concept of <q>fluid-text</q> editing to incorporate detailed work with manuscripts. The schema is designed to facilitate encoding of the manuscripts of Walden in a way that connects it with the earlier established <q>fluid-text</q> edition at <ptr target="https://digitalthoreau.org/fluid-text-toc/"/>, while closely describing the manuscript text written on folio surfaces, referring to regions of images made available with IIIF URLs. Our customization closely follows TEI Guidelines for encoding primary sources and customizes values specific to the condition of the Walden manuscripts, though the decisions encoded here may be useful for related projects that seek to mark and investigate the changing condition of a work over time.
             <!-- -->
             <!-- prose description of, and explanation of, markup language goes here;
               you can use any TEI constructs you like, including multiple paragraphs,
@@ -66,7 +66,7 @@
                   </constraint>
                </constraintSpec>
                <attList>
-                  <attDef ident="xml:id" mode="replace" usage="req"/>
+                  <attDef ident="xml:id" mode="change" usage="req"/>
                </attList>
             </elementSpec>
             
@@ -89,6 +89,28 @@
                          </valItem>
                       </valList>
                    </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="milestone" module="core" mode="change">
+               <desc>We use milestone elements to indicate moments we can definitively align with a passage holding a distinct identifier in the fluid-text edition. Milestone markers can be a phrase or line in the text, or mark a paragraph beginning. The edRef attribute value refers to a position marked in the fluid text at <ptr target="https://digitalthoreau.org/fluid-text-toc/"/></desc>
+               <attList>
+                  <attDef ident="edRef" mode="change" usage="req">
+                     <desc>The value of edRef refers to a position marked in the fluid text at <ptr target="https://digitalthoreau.org/fluid-text-toc/"/></desc>
+                     <!-- ebb: NOTE: We need to output a list of the values and also provide some way to sanity check the values so when we're working on a specific chapter we've identified, we're always using only the values from that specific chapter. -->
+                  </attDef>
+                 <attDef ident="unit" mode="replace" usage="req">
+                    <valList type="semi">
+                       <valItem ident="line">
+                          <gloss>Use to indicate that the current line in the MS corresponds to a location marker in the fluid text edition.</gloss>
+                       </valItem>
+                       <valItem ident="phrase">
+                          <gloss>Use when the milestone is encoded in an element like a note that just contains a phrase, to indicate that this phrase corresponds to a location marker in the fluid text edition.</gloss>
+                       </valItem>
+                       <valItem ident="paragraph-Start">
+                          <gloss>Use to indicate the beginning of a paragraph, and combine with the edRef attribute to indicate that this corresponds to a location marker in the fluid text edition.</gloss>
+                       </valItem>
+                    </valList>
+                 </attDef>
                </attList>
             </elementSpec>
             <elementSpec ident="handShift" module="transcr" mode="change">
@@ -137,17 +159,34 @@
                   </attDef>
                </attList>
             </elementSpec>
-            <!-- <elementSpec ident="add" module="core" mode="change">
-               <desc>An add element should indicate roughly where an insertion is made relative to the flow of the text: above the line, inline, below the line etc, following the TEI's recommended values.</desc>
+           <elementSpec ident="supplied" module="transcr" mode="change">
+               <desc>Use a resp attribute to indicate who is responsible for a supplied value. The value of the resp attribute must match an xml:id defined in the profileDesc in the TEI header, which identifies people associated with interpretive markup and writing in the ms. Usually this will be a member of our project team, but could also be Thoreau or another hand at work in the ms.</desc>
                <attList>
-                  <attDef ident="place" mode="change" usage="req"/>
+                  <attDef ident="resp" mode="change" usage="req"/>
                </attList>
             </elementSpec>
-               -->
+            <elementSpec ident="note" module="core" mode="change">
+               <desc>Use a resp attribute to indicate who is responsible for making a note. The value of the resp attribute must match an xml:id defined in the profileDesc in the TEI header, which identifies people associated with interpretive markup.  Thoreau or another hand at work in the ms could be writing a note in the manuscript, in which case the @resp value will indicate that. If you are supplying a note in the digital markup for clarification, you need to identify yourself. </desc>
+               <attList>
+                  <attDef ident="resp" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            
             <constraintSpec ident="check-for-mods" scheme="schematron">
                <constraint>
                   <sch:rule context="tei:add | tei:del | tei:handShift">
                      <sch:assert test="ancestor::tei:mod">Every alteration (change in medium, insertion, or deletion) must be wrapped in a mod element. Wrapping these events with the mod element will help us with studying and processing alterations later.</sch:assert>
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+            <constraintSpec ident="check-resp-vals" scheme="schematron">
+               <constraint>
+                  <sch:rule context="tei:supplied | tei:note">
+                    <sch:let name="particIDs" value="//tei:particDesc//tei:person/@xml:id"/>
+                     <sch:let name="respVals" value="for $i in tokenize(@resp, '\s+') return substring-after($i, '#')"/>
+                     <sch:assert role="warning" test="every $r in $respVals satisfies $r = $particIDs">
+                        Each value of a resp attribute must refer to an xml:id defined on a person element in the profileDesc's participant list coded in the TEI header of this document.
+                     </sch:assert>
                   </sch:rule>
                </constraint>
             </constraintSpec>
