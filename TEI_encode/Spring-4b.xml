@@ -61,16 +61,17 @@
          <surface xml:id="hm924v1n232">
             <graphic
                url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
-            <zone ulx="83" uly="111" lrx="158" lry="173" type="margin">
+            <zone ulx="83" uly="111" lrx="158" lry="173" type="numbering">
                <mod><handShift medium="bluePencil"/><add place="left-margin-top">p. 468</add></mod>
             </zone>
-            <zone ulx="90" uly="890" lrx="165" lry="946">
+            <zone type="numbering" ulx="90" uly="890" lrx="165" lry="946">
                <mod><handShift medium="bluePencil"/><add place="left-margin-bottom">p.
                   469</add></mod>
             </zone>
-            <zone type="main">
-               <!--ebb: Applying this use of the @type to distinguish main from marginal areas from Shelley-Godwin Archive. 
+            <zone type="textflow">
+               <!--ebb: See the use of the @type to distinguish main from marginal areas from Shelley-Godwin Archive. 
                See http://shelleygodwinarchive.org/sc/oxford/prometheus_unbound/act/i/#/p1/mode/xml
+               But (after Walden meeting of 5/18) we should rethink the use of "main" and "marginal" so let's try @type values of "textflow" vs. "numbering" and "comment" for values that indicate the semantics of a zoned area. 
                -->
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. The @edRef attribute below is an attempt to stitch 
                moments in the photo facsimile to passages in the fluid-text ed.-->
@@ -111,13 +112,13 @@
          <surface xml:id="hm924v1n233">
             <graphic
                url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/full/pct:10/0/default.jpg"/>
-            <zone ulx="92" uly="77" lrx="270" lry="128" type="margin">
+            <zone ulx="92" uly="77" lrx="270" lry="128" type="numbering">
                <mod><handShift medium="bluePencil"/><add place="left-margin-top">p. 469</add></mod>
             </zone>
-            <zone ulx="128" uly="499" lrx="781" lry="565" type="margin"><mod><handShift
+            <zone ulx="128" uly="499" lrx="781" lry="565" type="numbering"><mod><handShift
                      medium="bluePencil"/><add place="left-margin">p. 474</add></mod></zone>
 
-            <zone type="main">
+            <zone type="textflow">
                <zone ulx="84" uly="77" lrx="756" lry="521" type="blockDeletion"><mod><handShift
                         medium="pencil"/><del rend="vstrike">
                         <lb/>of a vast body of fowl coming in <lb/>to settle there–and seizing his
@@ -185,7 +186,7 @@
                                     &amp;c <lb/>hard hack &amp; meadowsweet</add></mod>more gay and
                               stately than their</del></mod>
                      </del></mod></zone>
-               <zone type="margin"><mod><handShift medium="ink2"/><del rend="vstrike"
+               <zone type="comment"><mod><handShift medium="ink2"/><del rend="vstrike"
                               ><mod><handShift medium="pencil"/><note resp="#hdt">2 [
                         </note></mod></del></mod><note resp="#ebb">In pencil, the number two
                      followed by a bracket spanning the last two lines of the page, specifically
