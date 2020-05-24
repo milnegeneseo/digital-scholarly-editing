@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2020-05-24T18:44:29Z. .
+Schema generated from ODD source 2020-05-24T20:01:30Z. .
 TEI Edition: Version 4.0.0. Last updated on
 	13th February 2020, revision ccd19b0ba
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 4.0.0/
@@ -3781,24 +3781,91 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    </define>
    <define name="add">
       <element name="add">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(addition) contains letters, words, or phrases inserted in the source text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(addition) An add element should indicate roughly where an insertion is made relative to the flow of the text: above the line, inline, below the line etc, following the TEI's recommended values. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <ref name="macro.paraContent"/>
          <ref name="att.global.attributes"/>
          <ref name="att.transcriptional.attributes"/>
-         <ref name="att.placement.attributes"/>
          <ref name="att.typed.attributes"/>
          <ref name="att.dimensions.attributes"/>
+         <attribute name="place">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies where this item is placed.
+Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6] overleaf; 7] above; 8] end; 9] inline; 10] inspace</a:documentation>
+            <list>
+               <oneOrMore>
+                  <choice>
+                     <value>below</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">below the line</a:documentation>
+                     <value>bottom</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the foot of the page</a:documentation>
+                     <value>margin</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">in the margin (left, right, or both)</a:documentation>
+                     <value>top</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the top of the page</a:documentation>
+                     <value>opposite</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">on the opposite, i.e. facing, page</a:documentation>
+                     <value>overleaf</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">on the other side of the leaf</a:documentation>
+                     <value>above</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">above the line</a:documentation>
+                     <value>end</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">at the end of e.g. chapter or volume.</a:documentation>
+                     <value>inline</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">within the body of the text.</a:documentation>
+                     <value>inspace</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">in a predefined space, for example left by an earlier scribe.</a:documentation>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </choice>
+               </oneOrMore>
+            </list>
+         </attribute>
          <empty/>
       </element>
    </define>
    <define name="del">
       <element name="del">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deletion) Indicate how the deletion is rendered. This list of values for the rend attribute is a recommended short-list that is open to additions, and to combinations such as rend="vzag vstrike". [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
          <ref name="macro.paraContent"/>
-         <ref name="att.global.attributes"/>
+         <ref name="att.global.attribute.xmlid"/>
+         <ref name="att.global.attribute.n"/>
+         <ref name="att.global.attribute.xmllang"/>
+         <ref name="att.global.attribute.xmlbase"/>
+         <ref name="att.global.attribute.xmlspace"/>
+         <ref name="att.global.rendition.attribute.style"/>
+         <ref name="att.global.rendition.attribute.rendition"/>
+         <ref name="att.global.linking.attribute.corresp"/>
+         <ref name="att.global.linking.attribute.synch"/>
+         <ref name="att.global.linking.attribute.sameAs"/>
+         <ref name="att.global.linking.attribute.copyOf"/>
+         <ref name="att.global.linking.attribute.next"/>
+         <ref name="att.global.linking.attribute.prev"/>
+         <ref name="att.global.linking.attribute.exclude"/>
+         <ref name="att.global.linking.attribute.select"/>
+         <ref name="att.global.analytic.attribute.ana"/>
+         <ref name="att.global.facs.attribute.facs"/>
+         <ref name="att.global.change.attribute.change"/>
+         <ref name="att.global.responsibility.attribute.cert"/>
+         <ref name="att.global.responsibility.attribute.resp"/>
+         <ref name="att.global.source.attribute.source"/>
          <ref name="att.transcriptional.attributes"/>
          <ref name="att.typed.attributes"/>
          <ref name="att.dimensions.attributes"/>
+         <attribute name="rend">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
+Suggested values include: 1] hzag (a horizontal zigzag deletion that does not begin in a vertical direction); 2] vzag (a mainly vertical zigzag deletion that starts above and ends below, or that starts out in a vertical direction even if it resolves horizontally); 3] hstrike (a horizontal strike-through); 4] vstrike (vertical lines used to strike out a passage)</a:documentation>
+            <choice>
+               <value>hzag</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(a horizontal zigzag deletion that does not begin in a vertical direction) </a:documentation>
+               <value>vzag</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(a mainly vertical zigzag deletion that starts above and ends below, or that starts out in a vertical direction even if it resolves horizontally) </a:documentation>
+               <value>hstrike</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(a horizontal strike-through) </a:documentation>
+               <value>vstrike</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(vertical lines used to strike out a passage) </a:documentation>
+               <data type="string"/>
+            </choice>
+         </attribute>
          <empty/>
       </element>
    </define>
@@ -9320,7 +9387,7 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
    <define name="surface">
       <element name="surface">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">We are requiring an xml:id attribute on each surface element, and its value is drawn from <a xmlns="http://www.w3.org/1999/xhtml"
-               href="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</a>. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
+               href="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</a>. Also the first child of the surface element must be a graphic element that points to the IIIF URL of its corresponding facsimile image. [11.1. Digital Facsimiles 11.2.2. Embedded Transcription]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -9343,6 +9410,16 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
                </group>
             </zeroOrMore>
          </group>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="waldenmsODD-surface-graphic-as-first-child-constraint-assert-16">
+            <rule context="tei:surface">
+               <sch:assert xmlns:xi="http://www.w3.org/2001/XInclude"
+                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                           xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           test="child::*[1][local-name() = 'graphic']">The first element child of surface must be a graphic element to point to its associated IIIF URL.</sch:assert>
+            </rule>
+         </pattern>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
@@ -9527,7 +9604,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(added span of text) marks the beginning of a longer sequence of text added by an author, scribe, annotator or corrector (see also <code xmlns="http://www.w3.org/1999/xhtml">&lt;add&gt;</code>). [11.3.1.4. Additions and Deletions]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="waldenmsODD-addSpan-spanTo-constraint-assert-16">
+                  id="waldenmsODD-addSpan-spanTo-constraint-assert-17">
             <rule context="tei:addSpan">
                <sch:assert xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9537,7 +9614,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="waldenmsODD-addSpan-spanTo_fr-constraint-assert-17">
+                  id="waldenmsODD-addSpan-spanTo_fr-constraint-assert-18">
             <rule context="tei:addSpan">
                <sch:assert xmlns:xi="http://www.w3.org/2001/XInclude"
                            xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9570,7 +9647,7 @@ Sample values include: 1] glued; 2] pinned; 3] sewn</a:documentation>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(damaged span of text) marks the beginning of a longer sequence of text which is damaged in some way but still legible. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="waldenmsODD-damageSpan-spanTo-constraint-assert-18">
+                  id="waldenmsODD-damageSpan-spanTo-constraint-assert-19">
             <rule context="tei:damageSpan">
                <assert xmlns:xi="http://www.w3.org/2001/XInclude"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9580,7 +9657,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="waldenmsODD-damageSpan-spanTo_fr-constraint-assert-19">
+                  id="waldenmsODD-damageSpan-spanTo_fr-constraint-assert-20">
             <rule context="tei:damageSpan">
                <assert xmlns:xi="http://www.w3.org/2001/XInclude"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9600,7 +9677,7 @@ The @spanTo attribute of <name/> is required.</assert>
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deleted span of text) marks the beginning of a longer sequence of text deleted, marked as deleted, or otherwise signaled as superfluous or spurious by an author, scribe, annotator, or corrector. [11.3.1.4. Additions and Deletions]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="waldenmsODD-delSpan-spanTo-constraint-assert-20">
+                  id="waldenmsODD-delSpan-spanTo-constraint-assert-21">
             <rule context="tei:delSpan">
                <assert xmlns:xi="http://www.w3.org/2001/XInclude"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9609,7 +9686,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="waldenmsODD-delSpan-spanTo_fr-constraint-assert-21">
+                  id="waldenmsODD-delSpan-spanTo_fr-constraint-assert-22">
             <rule context="tei:delSpan">
                <assert xmlns:xi="http://www.w3.org/2001/XInclude"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9666,10 +9743,25 @@ The @spanTo attribute of <name/> is required.</assert>
    </define>
    <define name="handShift">
       <element name="handShift">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marks the beginning of a sequence of text written in a new hand, or the beginning of a scribal stint. [11.3.2.1. Document Hands]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">customizing the distinct writing media in the manuscript. Note that we are not so much concerned with identifying every distinct writing implement, but rather the distinct writing implements that we see engaged in a "particle" (or surfaceGrp collection of folia) that we are working with. We presume a value of "ink1" is the prevailing ink that we see in the particle grouping, so it does not require a handShift marking and is not included in the value list for medium here. [11.3.2.1. Document Hands]</a:documentation>
          <empty/>
          <ref name="att.global.attributes"/>
-         <ref name="att.handFeatures.attributes"/>
+         <ref name="att.handFeatures.attribute.scribe"/>
+         <ref name="att.handFeatures.attribute.scribeRef"/>
+         <ref name="att.handFeatures.attribute.script"/>
+         <ref name="att.handFeatures.attribute.scriptRef"/>
+         <ref name="att.handFeatures.attribute.scope"/>
+         <attribute name="medium">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>bluePencil</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Usually applied by Sanborn in pagination notes on the ms.) </a:documentation>
+               <value>ink2</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(As distinct from the prevailing ink on the page, "ink2" refers to any other ink used on the page that appears to be used later.) </a:documentation>
+               <value>pencil</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Grey pencil notations.) </a:documentation>
+            </choice>
+         </attribute>
          <optional>
             <attribute name="new">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates a <code xmlns="http://www.w3.org/1999/xhtml">&lt;handNote&gt;</code> element describing the hand concerned.</a:documentation>
@@ -9773,7 +9865,7 @@ The @spanTo attribute of <name/> is required.</assert>
             </choice>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="waldenmsODD-subst-substContents1-constraint-assert-22">
+                  id="waldenmsODD-subst-substContents1-constraint-assert-23">
             <rule context="tei:subst">
                <assert xmlns:xi="http://www.w3.org/2001/XInclude"
                        xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9994,4 +10086,12 @@ The @spanTo attribute of <name/> is required.</assert>
    <start>
       <ref name="TEI"/>
    </start>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="waldenmsODD-check-for-mods-constraint-rule-13">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:add | tei:del | tei:handShift">
+         <sch:assert test="ancestor::tei:mod">Every alteration (change in medium, insertion, or deletion) must be wrapped in a mod element. Wrapping these events with the mod element will help us with studying and processing alterations later.</sch:assert>
+      </sch:rule>
+   </pattern>
 </grammar>

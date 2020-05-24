@@ -7,6 +7,7 @@
          <titleStmt>
             <title>Walden MS: Spring: MS leaves 232-235</title>
             <editor>Elisa Beshero-Bondar</editor>
+            <editor><!--Others contributing to editing this "particle": add your name here, and down in the <profileDesc> below --></editor>
          </titleStmt>
          <!--We need the sourceDesc and msDesc here. And can describe the inks in much more detail. 
            Medium categories:
@@ -50,7 +51,6 @@
                --></p>
          </editorialDecl>
       </encodingDesc>
-
    </teiHeader>
    <!--See examples of sourceDoc in TEI P5 
       https://www.tei-c.org/release/doc/tei-p5-doc/en/html//examples-sourceDoc.html  -->
@@ -98,9 +98,9 @@
                         medium="pencil"/><add place="left-margin-bottom">?</add><del rend="vstrike"
                         >muddy bottom <lb/>such as the ducks love within, and <lb/>he thought it
                         likely that some would <lb/>be along pretty soon. After he <lb/>had lain
-                        still there about an <lb/>hour he <del rend="hstrike"><handShift
-                              medium="ink2"/>suddenly</del> heard a <del rend="vstrike"><handShift
-                              medium="ink2"/>s</del>low <lb/>and seemingly very distant sound,
+                        still there about an <lb/>hour he <mod><del rend="hstrike"><handShift
+                              medium="ink2"/>suddenly</del></mod> heard a <mod><del rend="vstrike"><handShift
+                              medium="ink2"/>s</del>low <lb/></mod>and seemingly very distant sound,
                         <lb/>and singularly grand and <w>im- <lb/>pressive</w>, and unlike anything
                         he <lb/>had ever heard before, gradually <lb/>swelling and increasing as if
                         it <lb/>would have a universal and <lb/>memorable ending–a sudden <lb/>rush

@@ -57,9 +57,13 @@
                   <attDef ident="n" mode="change" usage="req"/>
                </attList>
             </elementSpec>
-            
             <elementSpec ident="surface" module="transcr" mode="change">
-               <desc>We are requiring an xml:id attribute on each surface element, and its value is drawn from <ref target="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</ref>.</desc>
+               <desc>We are requiring an xml:id attribute on each surface element, and its value is drawn from <ref target="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</ref>. Also the first child of the surface element must be a graphic element that points to the IIIF URL of its corresponding facsimile image.</desc>
+               <constraintSpec ident="graphic-as-first-child" scheme="schematron">
+                  <constraint>
+                     <sch:assert test="child::*[1][local-name() = 'graphic']">The first element child of surface must be a graphic element to point to its associated IIIF URL.</sch:assert>
+                  </constraint>
+               </constraintSpec>
                <attList>
                   <attDef ident="xml:id" mode="replace" usage="req"/>
                </attList>
@@ -86,6 +90,59 @@
                    </attDef>
                </attList>
             </elementSpec>
+            <elementSpec ident="handShift" module="transcr" mode="change">
+               <desc>customizing the distinct writing media in the manuscript. Note that we are not so much concerned with identifying every distinct writing implement, but rather the distinct writing implements that we see engaged in a "particle" (or surfaceGrp collection of folia) that we are working with. We presume a value of "ink1" is the prevailing ink that we see in the particle grouping, so it does not require a handShift marking and is not included in the value list for medium here.</desc>
+               <attList>
+                  <attDef ident="medium" mode="replace" usage="req">
+                      <valList type="closed">
+                         <valItem ident="bluePencil">
+                            <gloss>Usually applied by Sanborn in pagination notes on the ms.</gloss>
+                         </valItem>
+                         <valItem ident="ink2">
+                            <gloss>As distinct from the prevailing ink on the page, "ink2" refers to any other ink used on the page that appears to be used later.</gloss>
+                         </valItem>
+                         <valItem ident="pencil">
+                            <gloss>Grey pencil notations.</gloss>
+                         </valItem>
+                      </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="add" module="core" mode="change">
+               <desc>An add element should indicate roughly where an insertion is made relative to the flow of the text: above the line, inline, below the line etc, following the TEI's recommended values.</desc>
+               <attList>
+                  <attDef ident="place" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="del" module="core" mode="change">
+               <desc>Indicate how the deletion is rendered. This list of values for the rend attribute is a recommended short-list that is open to additions, and to combinations such as rend="vzag vstrike".</desc>
+               <attList>
+                  <attDef ident="rend" mode="replace" usage="req">
+                     <datatype><dataRef key="teidata.text"/></datatype>
+                     <valList type="semi">
+                        <valItem ident="hzag">
+                           <gloss>a horizontal zigzag deletion that does not begin in a vertical direction</gloss>
+                        </valItem>
+                        <valItem ident="vzag">
+                           <gloss>a mainly vertical zigzag deletion that starts above and ends below, or that starts out in a vertical direction even if it resolves horizontally</gloss>
+                        </valItem>
+                        <valItem ident="hstrike">
+                           <gloss>a horizontal strike-through</gloss>
+                        </valItem>
+                        <valItem ident="vstrike">
+                           <gloss>vertical lines used to strike out a passage</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <constraintSpec ident="check-for-mods" scheme="schematron">
+               <constraint>
+                  <sch:rule context="tei:add | tei:del | tei:handShift">
+                     <sch:assert test="ancestor::tei:mod">Every alteration (change in medium, insertion, or deletion) must be wrapped in a mod element. Wrapping these events with the mod element will help us with studying and processing alterations later.</sch:assert>
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
             
          </schemaSpec>
       </body>
