@@ -2,7 +2,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:lang="en">
   <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -30,7 +30,7 @@
          <p>This customization of the TEI extends the concept of <q>fluid-text</q> editing to incorporate detailed work with manuscripts. The schema is designed to facilitate encoding of the manuscripts of Walden in a way that connects it with the earlier established <q>fluid-text</q> edition, while closely studying folio surfaces and making them available with IIIF URLs. Our customization closely follows TEI Guidelines for encoding primary sources and customizes values specific to the condition of the Walden manuscripts, though the decisions encoded here may be useful for related projects that seek to mark and investigate the changing condition of a work over time.
             <!-- -->
             <!-- prose description of, and explanation of, markup language goes here;
-              you can use any TEI constructs you like, including multiple paragarphs,
+              you can use any TEI constructs you like, including multiple paragraphs,
               tables, nested divisions, etc. Furthermore, <specGrp> elements may
               be used to include snippets of schema definitions, and <specList>
               can be used to include to insert a list of descriptions of elements
@@ -40,23 +40,53 @@
             <moduleRef key="tei"/>
             <moduleRef key="core" except="binaryObject cb divGen media meeting mentioned pb teiCorpus"/><!--ebb: NOTE: I've excluded pb here b/c I think we don't need it with markup of each <surface>. -->
             <moduleRef key="header"/>
-            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7"/>
+            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7 text"/>
             <moduleRef key="analysis"/><!--ebb: From this we are currently using <w> to break words around line endings. I'm keeping this fully inclusive since we may want other elements from the module. -->
             <moduleRef key="linking"/> <!--ebb: I'm not sure whether we'll want this immediately, but I'm including the entire module just in case it seems useful as we put our MS "particles" together and maybe try to suggest a sequence or at least connections. -->
             <moduleRef key="msdescription"/>
-            <moduleRef key="transcr"/>
+            <moduleRef key="transcr" except="line"/><!--ebb: We exclude <line> because we are using the empty <lb/> element instead.  -->
            <!-- <moduleRef key="namesdates"/> ebb: I think we are not really wanting this module for now, but let's check with Paul? -->
-            <!--<moduleRef key="textcrit"/> ebb: Is it safe to disallow this for markup of MS? I think we would do any of this critical apparatus with standoff markup in a different kind of file, so I'd recommend handling this kind of work in a separate ODD.  -->
+            <!--<moduleRef key="textcrit"/> ebb: Is it safe to disallow this for markup of MS? I think we would do any critical apparatus work with standoff markup in a different kind of file, so I'd recommend handling this kind of work in a separate ODD.  -->
             
-            
-            
-            
-            <!--ebb: Write a constraintSpec to prevent <p> in <text>. --> 
-            
-            
-
             <!-- ODD-specific elements like <elementSpec> and <classSpec>;
              or references to <specGrp>s defined above using <specGrpRef>. -->
+            
+            <elementSpec ident="surfaceGrp" module="transcr" mode="change">
+               <desc>requiring the n attribute to label a surfaceGrp. Note: the surfaceGrp in this project bundles together any folio surfaces associated with a <q>particle</q> that we can map to a specific passage in the fluid text edition. It is different from the usual usage of bundling recto and verso surfaces.</desc>
+               <attList>
+                  <attDef ident="n" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            
+            <elementSpec ident="surface" module="transcr" mode="change">
+               <desc>We are requiring an xml:id attribute on each surface element, and its value is drawn from <ref target="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</ref>.</desc>
+               <attList>
+                  <attDef ident="xml:id" mode="replace" usage="req"/>
+               </attList>
+            </elementSpec>
+            
+            <elementSpec ident="zone" module="transcr" mode="change">
+               <desc>customizing the attributes to be used in delineating zones</desc>
+               <attList>
+                   <attDef ident="type" mode="replace" usage="req">
+                      <valList type="closed">
+                          <valItem ident="blockDeletion">
+                             <gloss>to mark large struck-out passages</gloss>
+                          </valItem>
+                         <valItem ident="comment">
+                             <gloss>to mark any commentary (other than simple numbering) made about content of the running flow of the text.</gloss>
+                         </valItem>
+                         <valItem ident="numbering">
+                             <gloss>to indicate page numbering applied usually in blue pencil and not in Thoreau's hand</gloss>
+                         </valItem>
+                         <valItem ident="textflow">
+                            <gloss>to mark an area dedicated to writing the runing flow of text.</gloss>
+                         </valItem>
+                      </valList>
+                   </attDef>
+               </attList>
+            </elementSpec>
+            
          </schemaSpec>
       </body>
   </text>
