@@ -60,11 +60,21 @@
             </elementSpec>
             <elementSpec ident="surface" module="transcr" mode="change">
                <desc>We are requiring an xml:id attribute on each surface element, and its value is drawn from <ref target="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</ref>. Also the first child of the surface element must be a graphic element that points to the IIIF URL of its corresponding facsimile image.</desc>
-               <constraintSpec ident="graphic-as-first-child" scheme="schematron">
-                  <constraint>
-                     <sch:assert test="child::*[1][local-name() = 'graphic']">The first element child of surface must be a graphic element to point to its associated IIIF URL.</sch:assert>
-                  </constraint>
-               </constraintSpec>
+               <content>
+                  <sequence>
+                     <elementRef key="graphic" minOccurs="1" maxOccurs="unbounded"/><!-- ebb: Here we are updating the content model of the TEI surface element to require that at least one <graphic> element appear first (as opposed to the optional list of alternate elements that the TEI provides.) -->
+                     <sequence minOccurs="0" maxOccurs="unbounded">   
+                        <alternate>
+                           <elementRef key="zone"/>
+                           <elementRef key="line"/>
+                           <elementRef key="path"/>
+                           <elementRef key="surface"/>
+                           <elementRef key="surfaceGrp"/>
+                        </alternate>
+                        <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/> 
+                     </sequence>
+                  </sequence>
+               </content>
                <attList>
                   <attDef ident="xml:id" mode="change" usage="req"/>
                </attList>
