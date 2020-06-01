@@ -7,6 +7,7 @@
          <titleStmt>
             <title>Walden MS: Spring: MS leaves 232-235</title>
             <editor>Elisa Beshero-Bondar</editor>
+            <editor>Nikolaus Wasmoen</editor>
             <editor><!--Others contributing to editing this "particle": add your name here, and down in the <profileDesc> below --></editor>
          </titleStmt>
          <!--We need the sourceDesc and msDesc here. And can describe the inks in much more detail. 
@@ -53,7 +54,8 @@
       </encodingDesc>
       <profileDesc>
          <particDesc>
-            <listPerson><!--ebb: This is a very rudimentary participant description just to get it started!  -->
+            <listPerson>
+               <!--ebb: This is a very rudimentary participant description just to get it started!  -->
                <person xml:id="hdt">
                   <persName>Henry David Thoreau</persName>
                </person>
@@ -66,7 +68,10 @@
                </person>
                <person xml:id="ehw">
                   <persName>Elizabeth Witherell</persName>
-                  <note resp="#ebb">Editor-in-chief of the <bibl><title level="s">The Writings of Henry D. Thoreau</title> <ptr target="http://thoreau.library.ucsb.edu/"></ptr></bibl>, editor on the Walden MS project</note>
+                  <note resp="#ebb">Editor-in-chief of the <bibl><title level="s">The Writings of
+                           Henry D. Thoreau</title>
+                        <ptr target="http://thoreau.library.ucsb.edu/"/></bibl>, editor on the
+                     Walden MS project</note>
                </person>
                <person xml:id="ebb">
                   <persName>Elisa Beshero-Bondar</persName>
@@ -90,11 +95,16 @@
             <graphic
                url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/232/full/pct:10/0/default.jpg"/>
             <zone ulx="83" uly="111" lrx="158" lry="173" type="numbering">
-               <mod><handShift medium="bluePencil"/><add place="left-margin-top">p. 468</add></mod>
+               <mod>
+                  <handShift medium="bluePencil"/>
+                  <add place="left-margin-top">p. 468</add>
+               </mod>
             </zone>
             <zone type="numbering" ulx="90" uly="890" lrx="165" lry="946">
-               <mod><handShift medium="bluePencil"/><add place="left-margin-bottom">p.
-                  469</add></mod>
+               <mod>
+                  <handShift medium="bluePencil"/>
+                  <add place="left-margin-bottom">p. 469</add>
+               </mod>
             </zone>
             <zone type="textflow">
                <!--ebb: On the milestone element, let's think about the attributes we want to apply. The @edRef attribute below is an attempt to stitch 
@@ -105,8 +115,8 @@
                covered <mod type="insert"><handShift medium="ink2"/><metamark rend="caret"
                      place="inline" function="insertion" target="#insert1"/><add xml:id="insert1"
                      place="above">for the most part</add></mod>
-               <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"
-                  /><add place="inline">–</add></mod>
+               <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"/><add
+                     place="inline">–</add></mod>
                <lb/><mod><handShift medium="ink2"/><del rend="vzag">very</del></mod> warm spring
                day, and he was <lb/><mod><handShift medium="ink2"/><del rend="hstrike"
                      >astonished</del><add place="above">surprised</add></mod> to see such a body of
@@ -124,27 +134,35 @@
                         >muddy bottom <lb/>such as the ducks love within, and <lb/>he thought it
                         likely that some would <lb/>be along pretty soon. After he <lb/>had lain
                         still there about an <lb/>hour he <mod><del rend="hstrike"><handShift
-                              medium="ink2"/>suddenly</del></mod> heard a <mod><del rend="vstrike"><handShift
-                              medium="ink2"/>s</del>low <lb/></mod>and seemingly very distant sound,
-                        <lb/>and singularly grand and <w>im- <lb/>pressive</w>, and unlike anything
-                        he <lb/>had ever heard before, gradually <lb/>swelling and increasing as if
-                        it <lb/>would have a universal and <lb/>memorable ending–a sudden <lb/>rush
-                        and roar, which seemed <lb/>to him, all at once, like the
-                  sound</del></mod></zone>
+                                 medium="ink2"/>suddenly</del></mod> heard a <mod><del
+                              rend="vstrike"><handShift medium="ink2"/>s</del>low <lb/></mod>and
+                        seemingly very distant sound, <lb/>and singularly grand and <w>im-
+                           <lb/>pressive</w>, and unlike anything he <lb/>had ever heard before,
+                        gradually <lb/>swelling and increasing as if it <lb/>would have a universal
+                        and <lb/>memorable ending–a sudden <lb/>rush and roar, which seemed <lb/>to
+                        him, all at once, like the sound</del></mod></zone>
             </zone>
          </surface>
          <surface xml:id="hm924v1n233">
             <graphic
                url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/233/full/pct:10/0/default.jpg"/>
             <zone ulx="92" uly="77" lrx="270" lry="128" type="numbering">
-               <mod><handShift medium="bluePencil"/><add place="left-margin-top">p. 469</add></mod>
+               <mod>
+                  <handShift medium="bluePencil"/>
+                  <add place="left-margin-top">p. 469</add>
+               </mod>
             </zone>
-            <zone ulx="128" uly="499" lrx="781" lry="565" type="numbering"><mod><handShift
-                     medium="bluePencil"/><add place="left-margin">p. 474</add></mod></zone>
-
+            <zone ulx="128" uly="499" lrx="781" lry="565" type="numbering">
+               <mod>
+                  <handShift medium="bluePencil"/>
+                  <add place="left-margin">p. 474</add>
+               </mod>
+            </zone>
             <zone type="textflow">
-               <zone ulx="84" uly="77" lrx="756" lry="521" type="blockDeletion"><mod><handShift
-                        medium="pencil"/><del rend="vstrike">
+               <zone ulx="84" uly="77" lrx="756" lry="521" type="blockDeletion">
+                  <mod>
+                     <handShift medium="pencil"/>
+                     <del rend="vstrike">
                         <lb/>of a vast body of fowl coming in <lb/>to settle there–and seizing his
                         <lb/>gun he started up <mod><handShift medium="pencil"/><add place="above"
                               >in haste &amp; excited but</add><del rend="hzag">with excitement
@@ -160,14 +178,18 @@
                         island <lb/>it <mod><handShift medium="pencil"/><del rend="hstrike">became
                               still <del rend="hzag">and silent</del></del>
                            <del rend="hzag">again</del><add place="above">came to a
-                              stand-still</add></mod>. </del><metamark rend="caret-down"
-                        function="note-signal"/><add place="below"><note resp="#hdt" anchored="true"
-                           >end of Sand foliage <milestone unit="phrase" edRef="S-5"/>At length the
-                           sun’s rays</note></add></mod>
+                              stand-still</add></mod>. </del>
+                     <metamark rend="caret-down" function="note-signal"/>
+                     <add place="below">
+                        <note resp="#hdt" anchored="true">end of Sand foliage <milestone
+                              unit="phrase" edRef="S-5"/>At length the sun’s rays</note>
+                     </add>
+                  </mod>
                </zone>
                <zone ulx="85" uly="499" lrx="780" lry="966" type="blockDeletion">
-                  <mod><handShift medium="pencil"/><del rend="vstrike"><lb/><milestone
-                           unit="paragraph-Start" edRef="S-11"
+                  <mod>
+                     <handShift medium="pencil"/>
+                     <del rend="vstrike"><lb/><milestone unit="paragraph-Start" edRef="S-11"
                         /><!--2020-05-17 ebb: How shall we encode paragraph beginnings? -->But we
                         must not let <lb/>the winter go so easily. When <lb/>the ground is
                               <mod><handShift medium="pencil"/><del rend="hstrike"
@@ -188,11 +210,11 @@
                               >sedges</add></mod>
                         <mod><handShift medium="pencil"/><metamark rend="caret" place="inline"
                               function="insertion"/><del rend="hstrike"><add place="above"><unclear
-                                    unit="char" quantity="10"><supplied resp="#ehw #ebb"
-                                       >mulleins &amp;</supplied></unclear></add></del></mod> and
-                        other strong-stemmed <lb/>plants which have not <mod><handShift
-                              medium="ink2"/><del rend="vstrike">even</del></mod> yet <lb/>sown
-                              <mod><handShift medium="ink2"/><add place="below">even</add></mod>
+                                    unit="char" quantity="10"><supplied resp="#ehw #ebb">mulleins
+                                       &amp;</supplied></unclear></add></del></mod> and other
+                        strong-stemmed <lb/>plants which have not <mod><handShift medium="ink2"
+                              /><del rend="vstrike">even</del></mod> yet <lb/>sown <mod><handShift
+                              medium="ink2"/><add place="below">even</add></mod>
                         <mod><handShift medium="pencil"/><metamark rend="caret" place="inline"
                               function="insertion"/><del rend="vzag vstrike"><add place="above"
                                  >their seeds</add></del></mod>their seeds–<mod><handShift
@@ -209,18 +231,88 @@
                                                 /></add></unclear></del></mod> mulleins &amp;c
                                     &amp;c <lb/>hard hack &amp; meadowsweet</add></mod>more gay and
                               stately than their</del></mod>
-                     </del></mod></zone>
-               <zone type="comment"><mod><handShift medium="ink2"/><del rend="vstrike"
-                              ><mod><handShift medium="pencil"/><note resp="#hdt">2 [
-                        </note></mod></del></mod><note resp="#ebb">In pencil, the number two
-                     followed by a bracket spanning the last two lines of the page, specifically
-                     surrounding the pencilled additions perhaps indicating a passage to be moved or
-                     replaced. This notation has then been cancelled in ink.</note>
+                     </del>
+                  </mod>
+               </zone>
+               <zone type="comment">
+                  <mod>
+                     <handShift medium="ink2"/>
+                     <del rend="vstrike">
+                        <mod>
+                           <handShift medium="pencil"/>
+                           <note resp="#hdt">2 [ </note>
+                        </mod>
+                     </del>
+                  </mod>
+                  <note resp="#ebb">In pencil, the number two followed by a bracket spanning the
+                     last two lines of the page, specifically surrounding the pencilled additions
+                     perhaps indicating a passage to be moved or replaced. This notation has then
+                     been cancelled in ink.</note>
                </zone>
             </zone>
-
          </surface>
-
+         <surface xml:id="hm924v1n234">
+            <graphic
+               url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/234/full/pct:10/0/default.jpg"/>
+            <zone ulx="80" uly="255" lrx="156" lry="367" type="numbering">
+               <mod>
+                  <handShift medium="pencil"/>
+                  <add place="left-margin">478</add>
+               </mod>
+            </zone>
+            <zone ulx="721" uly="79" lrx="765" lry="104" type="numbering">
+               <mod>
+                  <handShift medium="pencil"/>
+                  <add place="right-margin-top">223</add>
+               </mod>
+            </zone>
+            <zone type="textflow">
+               <lb/><milestone unit="phrase" edRef="S-11"/>summer–as if not till then was <lb/>their
+               beauty ripe.— wild oats <w>per<lb/>chance</w> and life-everlasting whose <lb/>autumn
+               has now arrived–those <w>un<lb/>exhausted</w> granaries of winter, whose <lb/>seeds
+               entertain the earliest birds. <lb/>I never tire of admiring their <lb/>arching
+               drooping and sheaflike tops <lb/>They bring back the summer to our<lb/> winter
+               memories–and are among<lb/> the forms which art loves to <w>perpetu-<lb/>ate</w>.
+               They are an antique style–older <lb/>than Greek or Egyptian–a lighter <lb/>and more
+               graceful Ionic–a richer<lb/>
+               <!--NW: Are the two curvy lines in this section cancellations or transpositions possibly? 
+                  I couldn't work out what they would be if so intended. Should these be noted?-->Corinthian–a
+               simpler Doric–a more<lb/> various Composite. The beauty of the <lb/>drooping and
+               sheaf-like head of the <lb/>rush all men have admired in all <lb/>ages–and it must
+               have some such <lb/>near and unaccountable relation to <lb/>human life, as astronomy
+               has to <lb/>those laws and figures which first <lb/>existed in the mind of man.
+               <lb/>All the phenomena of winter are <lb/>suggestive of an inexpressible
+                  <w>tender<lb/>ness</w>, and fragile delicacy–We are <lb/>accustomed to hear this
+               king almost <lb/> tyrant described as rude and <lb/>boisterous–but with the
+               gentleness <lb/>of a lover he adorns the tresses of summer.</zone>
+         </surface>
+         <surface xml:id="hm924v1n235">
+            <graphic
+               url="https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/235/full/pct:10/0/default.jpg"/>
+            <zone ulx="160" uly="85" lrx="240" lry="135" type="numbering">
+               <mod>
+                  <handShift medium="bluePencil"/>
+                  <add place="left-margin-top">p 469</add>
+               </mod>
+            </zone>
+            <zone type="textflow">
+               <lb/><milestone unit="paragraph-Start" edRef="S-5"/>At length the sun’s rays
+               <lb/>have attained the right angle, <lb/>and warm winds blow up mist <lb/>and rain
+               and melt the snow banks <lb/>–and the sun dispersing the mist <lb/>smiles on a
+               checkered landscape of <lb/>russet and white–smoking with <lb/>incense–through which
+               the traveller <lb/>picks his way from islet to islet<lb/> cheered by the music of a
+               myriad <lb/>rills and rivulets whose veins <lb/>are filled with the blood of winter
+               <lb/>which they are bearing off.–<lb/>As I go back and forth over <lb/>the rail-road
+               through the deep <lb/>cut I have seen where the clayey <lb/>sand <mod><metamark
+                     rend="caret" place="below" function="insertion"/><add place="above">like
+                     lava</add></mod> had flowed down when it thawed <lb/>and as it streamed it
+               assumed the <lb/>forms of vegetation, of vines and <lb/>stout pulpy
+                  leaves—<w>unaccount-<lb/>ably</w> interesting and beautiful—which <lb/>methinks I
+               have seen imitated <lb/>somewhere in bronze—as if its <lb/>course were so to speak a
+               diagonal <lb/>between fluids &amp; solids—and it were <lb/>hesitating whether to
+               stream in to a <lb/>river, or into vegetation—for <lb/>vegetation too is such a
+               stream as <lb/>a river, only of slower current.</zone>
+         </surface>
       </surfaceGrp>
    </sourceDoc>
 </TEI>
