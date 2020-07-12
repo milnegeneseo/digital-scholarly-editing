@@ -1,17 +1,17 @@
 # Built with Jekyll 3.6.0
 
 # Setup
-title:               Ed.
-tagline:             'a jekyll theme for minimal editions'
-description:         'Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.'
-url:                 'http://minicomp.github.io'
-baseurl:             '/ed'
+title:               Digital Scholarly Editing
+tagline:             'Online Modules'
+description:         'Built on Ed.'
+url:                 'http://milnegeneseo.github.io'
+baseurl:             '/digital-scholarly-editing'
 
 # About/contact
 author:
-  name:              Alex Gil
-  url:               https://twitter.com/elotroalex
-  email:             colibri.alex@gmail.com
+  name:              Paul Schacht
+  url:               https://twitter.com/whatthedickens
+  email:             cdl@geneseo.edu
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
 color-scheme:
@@ -23,9 +23,21 @@ permalink: /:title/
 # Set encoding to UTF-8
 encoding: utf-8
 
-# Collections for texts
+# Collections for texts - adding in some testing ones, who - what - why
 collections:
   texts:
+    output: true
+  history:
+    output: true
+  design:
+    output: true
+  encode:
+    output: true
+  manage:
+    output: true
+  publish:
+    output: true
+  teach:
     output: true
 
 # Markdown specs
