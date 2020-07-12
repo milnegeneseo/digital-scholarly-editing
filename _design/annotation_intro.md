@@ -1,4 +1,9 @@
-# Introduction to scholarly annotation
+---
+layout: page
+title: "Scholarly Annotation"
+description: some description
+page-order: 600
+---
 
 Scholarly annotation can take many forms, from footnotes or endnotes in a printed book to embedded comments within an electronic document. What ties all of these varieties of annotation together is that they allow an author or editor of a work to increase the amount of information available to a reader, which in turn can enable a deeper understanding of and engagement with the underlying content. When reading Thoreau's *Walden* MS a contemporary reader unfamiliar with outdated terminology [example of archaism?] or the geography around Concord, Massachussets [example of placename?] where the narrative is set, is likely to need some help. By annotating a historical text such as *Walden*, its editors can allow a greater number of readers to comprehend the text without the need to constantly turn back and forth to a dictionary, an atlas, or, most likely, an unreliable Google search.
 

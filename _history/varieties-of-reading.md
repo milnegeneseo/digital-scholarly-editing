@@ -1,5 +1,9 @@
-## Varieties of reading
-
+---
+layout: page
+title: "Varieties of Reading"
+description: some description
+page-order: 100
+---
 In her essay “How We Read: Close, Hyper, Machine,” N. Katherine Hayles describes three ways of reading. Each has something to offer us. None is the “wrong” way to read.
 
   - The term *close reading* usually refers to a kind of reading that identifies meaningful patterns in a text — of diction, imagery, symbols, structure, etc. — for the purpose of generating interpretations.
