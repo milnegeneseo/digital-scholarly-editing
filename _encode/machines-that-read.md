@@ -1,4 +1,9 @@
-## Machines that read
+---
+layout: page
+title: "Machines that read"
+description: some description
+page-order: 820
+---
 
 What’s the value in describing texts so that machines can read our descriptions? A full answer to that question would take up a lot of — pages? screens? (take your pick) — but here’s a partial one. For one thing, a machine-readable description enables a computer program to *display* the marked-up text in multiple ways. We’re not locked into any one way of displaying the text. The program simply needs to understand our metalanguage — TEI in this case — and follow whatever instructions we’ve given it for *transforming* the contents into a display-oriented metalanguage that a browser will understand, such as HTML.
 

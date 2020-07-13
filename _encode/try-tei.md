@@ -1,8 +1,13 @@
-## Trying your hand at TEI
+---
+layout: page
+title: "Try TEI"
+description: some description
+page-order: 850
+---
 
 Encoding textual variants of a fluid text using the method described on the previous page is difficult work. We won’t attempt it here. Instead we'll try to encode some of the changes we might see on a single manuscript page from just one of the draft versions of *Walden*. To do this, we’ll need to employ just a handful of elements. You've seen these before, and you may have already guessed their purpose.
 
-### The \<del\> element
+## The \<del\> element
 
 The `<del>` element is used to indicate deleted text. For example, to represent a bit of writing on a manuscript page where the author originally wrote
 
@@ -12,7 +17,7 @@ but then drew a line through the word “Wednesday” we would write:
 
     <p>She bought the apples on <del>Wednesday</del>, April 16.</p>
 
-### The \<add\> element
+## The \<add\> element
 
 Let’s say the author didn’t just delete (or, to use the technical editorial term, *cancel*) “Wednesday” but also inserted “Thursday” above or beside the canceled text. We would represent that change this way:
 

@@ -1,4 +1,9 @@
-## Practice: Edit your own TEI file
+---
+layout: page
+title: "Practice TEI"
+description: some description
+page-order: 860
+---
 
 Download the template TEI file named `sample.xml` (link TBD) together with the pdf containing a short sample of handwritten text.
 
