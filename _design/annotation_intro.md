@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Scholarly Annotation"
+title: "Scholarly annotation"
 description: some description
 page-order: 600
 ---
@@ -32,3 +32,7 @@ Creating an annotation strategy, then, requires careful attention to the needs a
 - How to encode these types of annotation (using examples following Walden MS TEI customization)
 - Further readings
 - Activities or Exercises
+
+<div class="pagination">
+<a class="pagination-item older" href="{{ site.baseurl }}/history/tell-a-story">Previous</a> <a class="pagination-item newer" href="{{ site.baseurl }}/design/working-with-images">Next</a>
+</div>

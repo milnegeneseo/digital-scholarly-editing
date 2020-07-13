@@ -710,6 +710,30 @@ li.prose-indent {
   text-indent: 2rem;
 }
 
+/* Pagination (borrowed from Lanyon for faux-pagination here. Items can be `span`s or `a`s */
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+.pagination-item {
+  display: inline;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
 
 /*
   Themes
