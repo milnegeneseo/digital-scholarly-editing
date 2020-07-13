@@ -20,8 +20,8 @@
         <ul>
           {% assign pages_list = site[section] | sort: "page-order" %}
           {%- for item in pages_list -%}
-            <li class="sidebar-nav-item" style="border-top:none;padding:0 0 0 0;">
-                <a href="{{ item.url | relative_url }}" class="sidebar-nav-item" style="border-top:none;padding:0 0 0 0;">{{ item.title }}</a>
+            <li class="sidebar-nav-item" style="border-top:none;padding:0 0 .15rem 0;">
+                <a href="{{ item.url | relative_url }}" class="sidebar-nav-item" style="border-top:none;padding:0 0 .15rem 0;">{{ item.title }}</a>
               </li>
           {%- endfor -%}
           </ul>
