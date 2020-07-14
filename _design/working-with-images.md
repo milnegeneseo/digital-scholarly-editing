@@ -31,7 +31,7 @@ The URI you entered in your browser’s location bar above should have (eventual
 
 You could do that by replacing the original URI you typed with the following:
 
-> https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/pct:10/0/default.jpg
+> https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/pct:10/0/default.jpg .
 
 When you hit `Return/Enter`, the image should load much, much faster. This image is 870 x 1160 pixels, with a file size of 136 KB — just under 2% of the original’s size.
 
@@ -83,7 +83,7 @@ To display a section of an image — in other words, a *region* other than `full
 
 So to display the bracketed and canceled passage on this page, we might call 
 
-`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/1150,6200,7000,2000/pct:30/0/default.jpg`
+`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/1150,6200,7000,2000/pct:30/0/default.jpg`.
 
 yielding this:
 
@@ -97,7 +97,7 @@ To rotate an image region, replace the `0` with the desired rotation (e.g., `90`
 
 For example, the URI 
 
-`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/434/800,737,1450,5870/pct:30/90/default.jpg` 
+`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/434/800,737,1450,5870/pct:30/90/default.jpg`.
 
 will bring up the region with coordinates `800,737,1450,5870` on p. 1 of the B-C Version (xml:id hm924v3n434 in the Google sheet manifest) rotated 90 degrees at 30%, making it easier to read what Thoreau has written vertically in the left margin:
 
