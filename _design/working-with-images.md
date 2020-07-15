@@ -17,7 +17,9 @@ Let’s take a look at the different ways you can display a manuscript image usi
 
 Type the following address (also known as a “URI”) into your web browser’s location bar and hit `Return` or `Enter`:
 
-`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/full/0/default.jpg`
+```
+https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/full/0/default.jpg
+```
 
 It will take some time for the image to load, especially if you don’t have a high-speed internet connection. High-quality scans of manuscript images have large file sizes so that researchers and other users can examine them in fine detail. The image you’ve just loaded is 7.4 MB. It’s 6751 pixels wide by 9000 pixels long.
 
@@ -31,7 +33,9 @@ The URI you entered in your browser’s location bar above should have (eventual
 
 You could do that by replacing the original URI you typed with the following:
 
-`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/pct:10/0/default.jpg`
+```
+https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/pct:10/0/default.jpg
+```
 
 When you hit `Return/Enter`, the image should load much, much faster. This image is 870 x 1160 pixels, with a file size of 136 KB — just under 2% of the original’s size.
 
@@ -39,7 +43,9 @@ How do the two URIs differ? You have to look closely to see. Start at the end (�
 
 We can bring the reduced-size image into the present page by typing
 
-`![Page 1 of *Walden* Version A](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/pct:10/0/default.jpg)`
+```
+![Page 1 of *Walden* Version A](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/full/pct:10/0/default.jpg)
+```
  
 and it will be displayed as below:
 
@@ -51,7 +57,9 @@ There’s a regular pattern to the IIIF URIs, as explained on [this page explain
 
 The basic template looks like this:
 
-`{scheme}://{server}{/prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}`
+```
+{scheme}://{server}{/prefix}/{identifier}/{region}/{size}/{rotation}/{quality}.{format}
+```
 
 In the URIs we’ve been looking at,
 
@@ -83,7 +91,9 @@ To display a section of an image — in other words, a *region* other than `full
 
 So to display the bracketed and canceled passage on this page, we might call 
 
-`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/1150,6200,7000,2000/pct:30/0/default.jpg`
+```
+https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/1150,6200,7000,2000/pct:30/0/default.jpg
+```
 
 yielding this:
 
@@ -97,7 +107,9 @@ To rotate an image region, replace the `0` with the desired rotation (e.g., `90`
 
 For example, the URI 
 
-`https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/434/800,737,1450,5870/pct:30/90/default.jpg`
+```
+https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/434/800,737,1450,5870/pct:30/90/default.jpg
+```
 
 will bring up the region with coordinates `800,737,1450,5870` on p. 1 of the B-C Version (xml:id hm924v3n434 in the Google sheet manifest) rotated 90 degrees at 30%, making it easier to read what Thoreau has written vertically in the left margin:
 
