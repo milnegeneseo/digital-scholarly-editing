@@ -1,0 +1,48 @@
+<!--
+  Target for toggling the sidebar `.sidebar-checkbox` is for regular styles, `#sidebar-checkbox` for
+  behavior.
+-->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">HOME</a>
+
+  {%- assign sections = "history, design, encode" | split: ", " -%}
+      {%- for section in sections -%}
+        <p id="{{ section }}" class="sidebar-nav-item">{{ section | upcase }}</h3>
+
+        <ul>
+          {% assign pages_list = site[section] | sort: "page-order" %}
+          {%- for item in pages_list -%}
+            <li class="sidebar-nav-item" style="border-top:none;padding:0 0 .15rem 0;">
+                <a href="{{ item.url | relative_url }}" class="sidebar-nav-item" style="border-top:none;padding:0 0 .15rem 0;">{{ item.title }}</a>
+              </li>
+          {%- endfor -%}
+          </ul>
+      {%- endfor -%}
+
+    <!-- The code below is used for manually entered links  -->
+    <span style='cursor:pointer;' onclick="javascript:var hypothesis = document.createElement('script');
+      hypothesis.setAttribute('src','https://hypothes.is/embed.js');
+      document.head.appendChild(hypothesis);"><a class="sidebar-nav-item">Annotate me</a></span>
+
+  <!--
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/{{ site.url }}{{ site.baseurl }}{{page.url}}/" data-proofer-ignore>Annotate me</a>
+    <script src="https://hypothes.is/embed.js" async></script>
+  -->
+
+    <a class="sidebar-nav-item" href="https://github.com/milnegeneseo/digital-scholarly-editing" target="_blank">GitHub</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      Built with <a href="https://minicomp.github.io/ed/">Ed.</a> Distributed under an MIT license.
+    </p>
+  </div>
+</aside>

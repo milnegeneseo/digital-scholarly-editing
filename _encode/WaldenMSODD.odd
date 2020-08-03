@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_customization.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:lang="en">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Customization of the TEI for the Walden MS</title>
+            <author>Elisa Beshero-Bondar</author>
+            <editor><!-- editor or secondary author --></editor>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Digital Scholarly Editing project</authority>
+            <availability status="free">
+               <p>In the public domain</p>
+            </availability>
+        <!-- put <publisher>, <distributor>, or <authority> here -->
+        <!-- put <availability> and other optional details about-->
+        <!-- the publisher, distributor, or release authority here -->
+      </publicationStmt>
+         <sourceDesc>
+            <p>born digital</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <head>Customization of the TEI for the Walden MS</head>
+         <p>This customization of the TEI extends the concept of <q>fluid-text</q> editing to incorporate detailed work with manuscripts. The schema is designed to facilitate encoding of the manuscripts of Walden in a way that connects it with the earlier established <q>fluid-text</q> edition at <ptr target="https://digitalthoreau.org/fluid-text-toc/"/>, while closely describing the manuscript text written on folio surfaces, referring to regions of images made available with IIIF URLs. Our customization closely follows TEI Guidelines for encoding primary sources and customizes values specific to the condition of the Walden manuscripts, though the decisions encoded here may be useful for related projects that seek to mark and investigate the changing condition of a work over time.
+            <!-- -->
+            <!-- prose description of, and explanation of, markup language goes here;
+              you can use any TEI constructs you like, including multiple paragraphs,
+              tables, nested divisions, etc. Furthermore, <specGrp> elements may
+              be used to include snippets of schema definitions, and <specList>
+              can be used to include to insert a list of descriptions of elements
+              and attributes. --></p>
+         <schemaSpec ident="waldenmsODD">     <!-- @ident is required -->
+            <desc>A customization of the TEI prioritizing alignment of folio surface images with transcription as well as anchoring references to related editions.</desc>
+            <moduleRef key="tei"/>
+            <moduleRef key="core" except="binaryObject cb divGen media meeting mentioned pb teiCorpus"/><!--ebb: NOTE: I've excluded pb here b/c I think we don't need it with markup of each <surface>. -->
+            <moduleRef key="header"/>
+            <moduleRef key="corpus" include="particDesc"/><!--ebb: We need this for the participant list to include in the profileDesc of the TEI Header. -->
+            <moduleRef key="textstructure" except="div1 div2 div3 div4 div5 div6 div7 text"/>
+            <moduleRef key="analysis"/><!--ebb: From this we are currently using <w> to break words around line endings. I'm keeping this fully inclusive since we may want other elements from the module. -->
+            <moduleRef key="linking"/> <!--ebb: I'm not sure whether we'll want this immediately, but I'm including the entire module just in case it seems useful as we put our MS "particles" together and maybe try to suggest a sequence or at least connections. -->
+            <moduleRef key="msdescription"/>
+            <moduleRef key="transcr" except="line"/><!--ebb: We exclude <line> because we are using the empty <lb/> element instead.  -->
+            <moduleRef key="namesdates"/> <!--ebb: I think we'd mainly be using this to identify editors and hands at work on the manuscript in the profileDesc of the TEI header. -->
+            <!--<moduleRef key="textcrit"/> ebb: Is it safe to disallow this for markup of MS? I think we would do any critical apparatus work with standoff markup in a different kind of file, so I'd recommend handling this kind of work in a separate ODD.  -->
+            
+            <!-- ODD-specific elements like <elementSpec> and <classSpec>;
+             or references to <specGrp>s defined above using <specGrpRef>. -->
+            
+            <elementSpec ident="surfaceGrp" module="transcr" mode="change">
+               <desc>requiring the n attribute to label a surfaceGrp. Note: the surfaceGrp in this project bundles together any folio surfaces associated with a <q>particle</q> that we can map to a specific passage in the fluid text edition. It is different from the usual usage of bundling recto and verso surfaces.</desc>
+               <attList>
+                  <attDef ident="n" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="surface" module="transcr" mode="change">
+               <desc>We are requiring an xml:id attribute on each surface element, and its value is drawn from <ref target="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</ref>. Also the first child of the surface element must be a graphic element that points to the IIIF URL of its corresponding facsimile image.</desc>
+               <content>
+                  <sequence>
+                     <elementRef key="graphic" minOccurs="1" maxOccurs="unbounded"/><!-- ebb: Here we are updating the content model of the TEI surface element to require that at least one <graphic> element appear first (as opposed to the optional list of alternate elements that the TEI provides.) -->
+                     <sequence minOccurs="0" maxOccurs="unbounded">   
+                        <alternate>
+                           <elementRef key="zone"/>
+                           <elementRef key="line"/>
+                           <elementRef key="path"/>
+                           <elementRef key="surface"/>
+                           <elementRef key="surfaceGrp"/>
+                        </alternate>
+                        <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/> 
+                     </sequence>
+                  </sequence>
+               </content>
+               <attList>
+                  <attDef ident="xml:id" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            
+            <elementSpec ident="zone" module="transcr" mode="change">
+               <desc>customizing the attributes to be used in delineating zones</desc>
+               <attList>
+                   <attDef ident="type" mode="replace" usage="req">
+                      <valList type="closed">
+                          <valItem ident="blockDeletion">
+                             <gloss>to mark large struck-out passages</gloss>
+                          </valItem>
+                         <valItem ident="comment">
+                             <gloss>to mark any commentary (other than simple numbering) made about content of the running flow of the text.</gloss>
+                         </valItem>
+                         <valItem ident="numbering">
+                             <gloss>to indicate page numbering applied usually in blue pencil and not in Thoreau's hand</gloss>
+                         </valItem>
+                         <valItem ident="textflow">
+                            <gloss>to mark an area dedicated to writing the runing flow of text.</gloss>
+                         </valItem>
+                      </valList>
+                   </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="milestone" module="core" mode="change">
+               <desc>We use milestone elements to indicate moments we can definitively align with a passage holding a distinct identifier in the fluid-text edition. Milestone markers can be a phrase or line in the text, or mark a paragraph beginning. The edRef attribute value refers to a position marked in the fluid text at <ptr target="https://digitalthoreau.org/fluid-text-toc/"/></desc>
+               <attList>
+                  <attDef ident="edRef" mode="change" usage="req">
+                     <desc>The value of edRef refers to a position marked in the fluid text at <ptr target="https://digitalthoreau.org/fluid-text-toc/"/></desc>
+                     <!-- ebb: NOTE: We need to output a list of the values and also provide some way to sanity check the values so when we're working on a specific chapter we've identified, we're always using only the values from that specific chapter. -->
+                  </attDef>
+                 <attDef ident="unit" mode="replace" usage="req">
+                    <valList type="semi">
+                       <valItem ident="line">
+                          <gloss>Use to indicate that the current line in the MS corresponds to a location marker in the fluid text edition.</gloss>
+                       </valItem>
+                       <valItem ident="phrase">
+                          <gloss>Use when the milestone is encoded in an element like a note that just contains a phrase, to indicate that this phrase corresponds to a location marker in the fluid text edition.</gloss>
+                       </valItem>
+                       <valItem ident="paragraph-Start">
+                          <gloss>Use to indicate the beginning of a paragraph, and combine with the edRef attribute to indicate that this corresponds to a location marker in the fluid text edition.</gloss>
+                       </valItem>
+                    </valList>
+                 </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="handShift" module="transcr" mode="change">
+               <desc>customizing the distinct writing media in the manuscript. Note that we are not so much concerned with identifying every distinct writing implement, but rather the distinct writing implements that we see engaged in a "particle" (or surfaceGrp collection of folia) that we are working with. We presume a value of "ink1" is the prevailing ink that we see in the particle grouping, so it does not require a handShift marking and is not included in the value list for medium here.</desc>
+               <attList>
+                  <attDef ident="medium" mode="replace" usage="req">
+                      <valList type="closed">
+                         <valItem ident="bluePencil">
+                            <gloss>Usually applied by Sanborn in pagination notes on the ms.</gloss>
+                         </valItem>
+                         <valItem ident="ink2">
+                            <gloss>As distinct from the prevailing ink on the page, "ink2" refers to any other ink used on the page that appears to be used later.</gloss>
+                         </valItem>
+                         <valItem ident="pencil">
+                            <gloss>Grey pencil notations.</gloss>
+                         </valItem>
+                      </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="add" module="core" mode="change">
+               <desc>An add element should indicate roughly where an insertion is made relative to the flow of the text: above the line, inline, below the line etc, following the TEI's recommended values.</desc>
+               <attList>
+                  <attDef ident="place" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="del" module="core" mode="change">
+               <desc>Indicate how the deletion is rendered. This list of values for the rend attribute is a recommended short-list that is open to additions, and to combinations such as rend="vzag vstrike".</desc>
+               <attList>
+                  <attDef ident="rend" mode="replace" usage="req">
+                     <datatype><dataRef key="teidata.text"/></datatype>
+                     <valList type="semi">
+                        <valItem ident="hzag">
+                           <gloss>a horizontal zigzag deletion that does not begin in a vertical direction</gloss>
+                        </valItem>
+                        <valItem ident="vzag">
+                           <gloss>a mainly vertical zigzag deletion that starts above and ends below, or that starts out in a vertical direction even if it resolves horizontally</gloss>
+                        </valItem>
+                        <valItem ident="hstrike">
+                           <gloss>a horizontal strike-through</gloss>
+                        </valItem>
+                        <valItem ident="vstrike">
+                           <gloss>vertical lines used to strike out a passage</gloss>
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+           <elementSpec ident="supplied" module="transcr" mode="change">
+               <desc>Use a resp attribute to indicate who is responsible for a supplied value. The value of the resp attribute must match an xml:id defined in the profileDesc in the TEI header, which identifies people associated with interpretive markup and writing in the ms. Usually this will be a member of our project team, but could also be Thoreau or another hand at work in the ms.</desc>
+               <attList>
+                  <attDef ident="resp" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            <elementSpec ident="note" module="core" mode="change">
+               <desc>Use a resp attribute to indicate who is responsible for making a note. The value of the resp attribute must match an xml:id defined in the profileDesc in the TEI header, which identifies people associated with interpretive markup.  Thoreau or another hand at work in the ms could be writing a note in the manuscript, in which case the @resp value will indicate that. If you are supplying a note in the digital markup for clarification, you need to identify yourself. </desc>
+               <attList>
+                  <attDef ident="resp" mode="change" usage="req"/>
+               </attList>
+            </elementSpec>
+            
+            <constraintSpec ident="check-for-mods" scheme="schematron">
+               <constraint>
+                  <sch:rule context="tei:add | tei:del | tei:handShift">
+                     <sch:assert test="ancestor::tei:mod">Every alteration (change in medium, insertion, or deletion) must be wrapped in a mod element. Wrapping these events with the mod element will help us with studying and processing alterations later.</sch:assert>
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+            <constraintSpec ident="check-resp-vals" scheme="schematron">
+               <constraint>
+                  <sch:rule context="tei:supplied | tei:note">
+                    <sch:let name="particIDs" value="//tei:particDesc//tei:person/@xml:id"/>
+                     <sch:let name="respVals" value="for $i in tokenize(@resp, '\s+') return substring-after($i, '#')"/>
+                     <sch:assert role="warning" test="every $r in $respVals satisfies $r = $particIDs">
+                        Each value of a resp attribute must refer to an xml:id defined on a person element in the profileDesc's participant list coded in the TEI header of this document.
+                     </sch:assert>
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+            
+         </schemaSpec>
+      </body>
+  </text>
+</TEI>

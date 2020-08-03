@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Digital Scholarly Editing"
+---
+<div class="introduction">
+  <h1>Welcome</h1>
+
+<p>
+  This is our site about digital scholarly editing. We've broken it down into the categories below.
+</p>
+</div>
+
+<hr>
+
+{%- assign sections = "history, design, encode" | split: ", " -%}
+      {%- for section in sections -%}
+        <h3 id="{{ section }}">{{ section | capitalize }}</h3>
+
+        <ul>
+          {% assign pages_list = site[section] | sort: "page-order" %}
+          {%- for item in pages_list -%}
+              <li>
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              </li>
+          {%- endfor -%}
+          </ul>
+      {%- endfor -%}
