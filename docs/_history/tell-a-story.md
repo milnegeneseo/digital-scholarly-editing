@@ -1,8 +1,6 @@
 ---
 layout: page
 title: "More about TimelineJS"
-description: some description
-page-order: 500
 ---
 
 In the previous pages, we’ve covered

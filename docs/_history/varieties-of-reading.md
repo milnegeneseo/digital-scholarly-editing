@@ -1,8 +1,6 @@
 ---
 layout: page
-title: "Varieties of Reading"
-description: some description
-page-order: 100
+title: "Varieties of reading"
 ---
 In her essay “How We Read: Close, Hyper, Machine,” N. Katherine Hayles describes three ways of reading. Each has something to offer us. None is the “wrong” way to read.
 
