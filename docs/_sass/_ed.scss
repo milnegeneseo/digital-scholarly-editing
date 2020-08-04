@@ -330,6 +330,12 @@ tbody tr:nth-child(odd) th {
   border-top: 1px solid rgba(255,255,255,.1);
 }
 
+.sidebar-nav-sub-item {
+  display: block;
+  padding: 0 0 .15rem 0;
+  border-top: none;
+}
+
 a.sidebar-nav-item-toc {
   color: rgba(255,255,255,.8);
 }
@@ -337,6 +343,14 @@ a.sidebar-nav-item-toc {
 .sidebar-nav-item.active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
+  text-decoration: none;
+  background-color: rgba(255,255,255,.1);
+  border-color: transparent;
+}
+
+.sidebar-nav-sub-item.active,
+a.sidebar-nav-sub-item:hover,
+a.sidebar-nav-sub-item:focus {
   text-decoration: none;
   background-color: rgba(255,255,255,.1);
   border-color: transparent;

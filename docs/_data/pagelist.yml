@@ -1,0 +1,21 @@
+toc:
+  - title: Introduction to DSE
+    subfolderitems:
+      - page: Varieties of reading
+        url: /history/varieties-of-reading
+      - page: More about metareading
+        url: /history/metareading
+      - page: Tell story
+        url: /history/tell-a-story
+  - title: Designing an Edition
+    subfolderitems:
+      - page: Scholarly annotation
+        url: /design/annotation_intro
+      - page: Working IIIF images
+        url: /design/working-with-images
+  - title: Encoding Basics
+    subfolderitems:
+      - page: Introduction to text encoding
+        url: /encode/intro-to-encoding
+      - page: Why TEI?
+        url: /encode/why-tei
