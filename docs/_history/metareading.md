@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "More about metareading"
+title: More about metareading
 ---
 
 The previous page introduced the idea of *metareading* as a type of reading we should consider as important to the humanities, alongside such other types of reading as *close reading*, *hyperreading*, and *distant reading*.

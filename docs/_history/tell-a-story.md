@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "More about TimelineJS"
+title: More about TimelineJS
 ---
 
 In the previous pages, we’ve covered

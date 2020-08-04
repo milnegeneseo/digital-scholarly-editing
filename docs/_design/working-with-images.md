@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Working with IIIF images
-description: How to work with IIIF images
-page-order: 700
 ---
 
 Many manuscript images are available on the web using a standard called the “International Image Interoperability Framework,” or IIIF for short.

@@ -1,8 +1,6 @@
 ---
 layout: page
-title: "Why TEI?"
-description: some description
-page-order: 810
+title: Why TEI?
 ---
 
 You came here (if you’ve been reading the module pages in order) from a page that ended with the words, “We’ll consider those questions on the next page.”

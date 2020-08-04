@@ -1,8 +1,6 @@
 ---
 layout: page
-title: "TEI and literature"
-description: some description
-page-order: 840
+title: TEI and literature
 ---
 
 How important are XML encoding in general, and TEI encoding in particular, to literary study in the digital age? Here are just a few of the many digital humanities projects that use some version of XML, including TEI.

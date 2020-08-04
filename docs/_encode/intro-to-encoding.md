@@ -1,8 +1,6 @@
 ---
 layout: page
-title: "Introduction to text encoding"
-description: some description
-page-order: 800
+title: Introduction to text encoding
 ---
 
 The module on scholarly editing introduced the concept of *metareading* as a type of reading that makes claims about a text *as* text. Although not the same as *close reading*, which focuses on generating interpretations of a text through attention to patterns (of words, imagery, narrative elements, character, etc.), metareading certainly requires close attention to detail. And because declarations about a text as text require judgment and are always subject to debate, metareading is, in its own way, interpretive.

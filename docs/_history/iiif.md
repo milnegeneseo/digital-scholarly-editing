@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Using manuscript images in a timeline"
+title: Using manuscript images in a timeline
 ---
 
 The previous page explained how to build a basic timeline using TimelineJS. You saw there that the only way to include an image in your timeline is to point to the image file on the web. You do that by typing (or copy-pasting) the web address of the image file in the “Media” column of the spreadsheet for the appropriate row of the spreadsheet.
