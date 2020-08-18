@@ -14,4 +14,4 @@ The varieties of editing that aim to improve a text before it's published (inclu
 
 Rather than working to help authors prepare new works for publication, scholarly editors work to help readers understand texts of the past. Some scholarly editors concern themselves with texts that were published in the modern sense of being issued by a commercial or non-commercial entity calling itself a "publisher" and devoted to putting texts in circulation. However, many scholarly editors work with texts that circulated before the era of modern publishing, and some concern themselves with texts that remained in private hands and never circulated at all. Scholarly editing arose, in fact, from the need to better understand texts from ancient and medieval times, before the existence of publishing as we understand it today.  
 
-Still, scholarly editing, like all editing, starts with something that already exists — a text from the past — and, from it, brings forth something new.
+Still, scholarly editing, like all editing, starts with something that already exists — a text or texts from the past — and, from it, brings forth something new.
