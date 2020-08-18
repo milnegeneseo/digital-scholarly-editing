@@ -14,6 +14,12 @@ Here, however, we come to a point of departure between the several varieties of 
 
 ## Types of scholarly editing
 
-\[Coming soon\]
+Scholarly editing concerns itself with texts that exist, or are presumed to exist, in more than one version. Before the print era, the practice of copying texts by hand led inevitably to errors of transmission and raised questions about the best way to establish an authoritative reading text from the resulting variants. With the widespread adoption of movable type from the 15th-century onwards, textual transmission became more, but still not completely, reliable. Unauthorized and pirated editions of popular texts might contain errors or deliberate alterations. In the anglophone world, British and American editions of the same work might differ for a variety of reasons, including differing publishing-house policies with respect to subject-matter that might offend readers' sensibilities. The relative ease of producing a new print edition of an already published work enabled writers to revise and republish their own texts, putting new versions in circulation alongside previous ones.
+
+Whether dealing with manuscripts or printed works, scholarly editors face the task of bringing forth, from the multiple states of a given text, an "edition" for readers to read or scholars to study. The task requires knowledge about such matters as handwriting, scribal practice, editorial practice (of the pre-publication type described above) within different publishing houses, and authors' biographies. It also involves making critical judgments about matters like authorial intention. For this reason, scholarly editions are also sometimes called *critical editions*, and the systematic study of texts *as texts* — with attention to the material and historical dimensions of their production — is sometimes referred to as *textual criticism*. 
+
+\[Up next: textual recovery, genetic editing\]
+
+
 
 
