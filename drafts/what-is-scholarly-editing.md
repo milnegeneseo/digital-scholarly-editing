@@ -10,7 +10,7 @@ But there are, of course, other purposes, and it's worth stopping for a moment t
 We also already have the idea of editing as a process intended to improve through change. DNA may be
 ["inserted, deleted, modified or replaced in the genome of a living organism"](https://en.wikipedia.org/wiki/Genome_editing#Gene_therapy) for the purpose improving the organism's ability to fight disease, just as words may be inserted, deleted, modified, or replaced in an author's manuscript by a publishing-house editor seeking to help the author produce a better short story.
 
-Here, however, we come to a point of departure between the several varieties of editing aimed at improving a text before it's published (such as copyediting to improve fluency and eliminate errors of grammar, usage and punctuation), and scholarly editing, which, if it aims to improve at all, do so in a very different way. Scholarly editing, like all textual editing, brings forth something new from an existing text or texts. But it does this for particular reasons, and in a particular way.
+Here, however, we come to a point of departure between the several varieties of editing aimed at improving a text before it's published (such as copyediting to improve fluency and eliminate errors of grammar, usage and punctuation), and scholarly editing, which, if it aims to improve at all, does so in a very different way. Scholarly editing, like all textual editing, brings forth something new from an existing text or texts. But it does this for particular reasons, and in a particular way.
 
 ## Types of scholarly editing
 
