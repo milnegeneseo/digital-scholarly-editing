@@ -32,14 +32,12 @@ In cases where an author's drafts have been preserved — in manuscripts, typesc
 
 For his 1967 PhD dissertation, "The Development of *Walden*: A Genetic Text," Ronald E. Clapper used the manuscript of *Walden* at the Huntington Library (HM 924) to produce a scholarly edition of Thoreau's text that we can read with an eye toward understanding creativity or Thoreau or both. The dissertation prints the first edition of *Walden*, published by Ticknor and Fields in 1854, with a footnote at every point where the wording or the ordering of content varies from one or more of the seven manuscript versions Thoreau drafted between 1846, while he was still living at Walden Pond, and the published text.
 
-An important consideration for all scholarly editions that incorporate multiple pre- or post-publication versions of a text is how to display the textual variants so that readers can easily understand them. In genetic editing, the number and complexity of variants can make the task can a monumental one. The options for editors here have been profoundly affected by the development of digital interfaces displaying text.
+An important consideration for all scholarly editions that incorporate multiple pre- or post-publication versions of a text is how to display the textual variants so that readers can easily understand them. In genetic editing, the number and complexity of variants can make the task a monumental one. The options for editors here have been profoundly affected by the development of digital interfaces displaying text.
 
 We'll have more to say about digital interfaces in a subsequent module.
 
 ## Fluid-text editing
 
-Lorem ipsum
+Bryant's *The Fluid Text*, cited above, extends the geneticists' conception of text-as-process, challenging readers to consider the post-publication life of a text as part of its continuous development, including cultural re-mixes of published works by follow-on authors, either in words (print or digital) or other media such as film or video. In attempting to articulate a theory of textual fluidity, Bryant makes a strong case for considering authorial intention to distinguish between "variants" and "versions" of a text. In exploring the possibilities of fluid-text editing opened up by digital interfaces, he emphasizes the opportunity to construct "revision narratives" tied to particular sites of textual change. In a manuscript-based scholarly edition, these sites become locations for critical editorial intervention to hypothesize about how the changes visible there might reflect a host of influences, from deliberate choices related to form and theme to interventions from a publisher to cultural pressures operating above or below the level of conscious decision-making.
 
-
-
-
+"Fluid-text editing" isn't a school or category of scholarly editing so much as it's Bryant's proposal for a more author-focused, nuanced, interventionist, and reader-friendly approach to treating texts as works-in-process than genetic editing. We've made a point of describing it here, and will have more to say about it in later modules, because Bryant's thinking has informed our approach to editing the manuscript of *Walden*. 
