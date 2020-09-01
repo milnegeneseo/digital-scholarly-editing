@@ -23,11 +23,16 @@ Without metareading there would be no library databases (or their predecessors, 
 
 But without metareading, there would also be none of the rich interpretive discussion that we find in sophisticated literary close readings that turn on questions of genre. If we claim that a text represents an instance of a type such as *novel, romance, epic, lyric, pastoral, tragedy, satire, magic realism*, or *speculative fiction*, here again we're making a statement about what the text *is*. In this case, the statement isn't a mere observation but rather a critical judgment, and one with the power to completely re-order our understanding of what the texts *says*. 
 
-Without metareading ...
+Without metareading, we'd have no way to understand a text's meaning or cutural significance in relation to its publishing history (did the author make changes to later editions?), its material self-presentation (three-volume novel or inexpensive, paperbound numbers in a serial?), or its treatment of paratextual features such as the title page (did it display the author's real name? a pseudonym? "Anonymous"? no name at all?).
 
-<!-- consider how the publishing history of a novel might have shaped its content -->
+We'd have no way to think about the text in relation to its date (or dates) of publication and everything else that was going on at that moment in the author's life or the world at large. 
 
 ## Metareading and metadata
 
-The proper name for this kind of information is *metadata*. It's not a term you hear often in the humanities classroom
+One might say that the kind of information we're attending to when we're metareading is *metadata*. It's information *about* the objects humanities scholars study. *Metadata* may strike some humanists as a coldly scientific or inappropriately quantitative term to apply to objects as profoundly moving and richly meaningful as, say, the plays of Shakespeare. It shouldn't. 
+
+## Metareading and scholarly editing
+
+
+
 
