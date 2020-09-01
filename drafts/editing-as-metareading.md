@@ -33,9 +33,9 @@ One might say that the kind of information we're attending to when we're metarea
 
 ## Metareading and scholarly editing
 
-As we've already seen, though, metareading isn't something we do only when we want to build catalogs and databases, or write bibliographies and citations. We do it naturally when we ask (or make assumptions about) what a text *is* in our effort to understand what it *says*. 
+As we've already seen, though, metareading isn't something done only by those who build catalogs and databases, or write bibliographies and citations. Literary critics do it, whether consciously or not, when they ask (or make assumptions about) what a text is in their effort to understand what it says. 
 
-Scholarly editors are metareaders. Rather than recording and organizing information about texts, however, or explicating a particular text based on assumptions or claims about its identity, scholarly editors are most often looking to *establish* information relevant to the edition they're looking to produce. For example:
+Scholarly editors are metareaders, too, and highly conscious of it. Rather than recording and organizing information about texts or explicating them based on assumptions or claims about their identity, however, scholarly editors are most often looking to *establish* information about a text so that they can decide how to represent that text in an edition. For example:
 
 - Who, actually, is the author of the poem “A Visit from St. Nicholas” (aka “’Twas the Night Before Christmas”), published anonymously in 1837. It's usually attributed to Clement Clark Moore, but not everyone agrees. See [Wikipedia](https://en.wikipedia.org/wiki/A_Visit_from_St._Nicholas). (Scroll down to "Authorship controversy.")
 - What title should be used for Henry David Thoreau's essay variously printed as "Resistance to Civil Government," "On the Duty of Civil Disobedience," or simply "Civil Disobedience"? (See [this note to Thoreau’s essay “Resistance to Civil Government”](https://commons.digitalthoreau.org/civil/a-note-on-the-text/), particularly [the second paragraph](https://commons.digitalthoreau.org/civil/a-note-on-the-text/#pTtdosftoWGpafthieRPvWHDTPUPFietrtaaaphcHWRpoNCEWCDaOsslsvarWshtrtiu) and [this note on the paragraph](https://commons.digitalthoreau.org/civil/a-note-on-the-text/#comment-6).
