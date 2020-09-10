@@ -1,12 +1,14 @@
 toc:
-  - title: Introduction to DSE
+  - title: Introduction
     subfolderitems:
-      - page: Varieties of reading
-        url: /history/varieties-of-reading
-      - page: More about metareading
-        url: /history/metareading
-      - page: Tell story
-        url: /history/tell-a-story
+      - page: What is scholarly editing?
+        url: /introduction/what-is-scholarly-editing
+      - page: Types of scholarly editing
+        url: /introduction/types-of-scholarly-editing
+      - page: Editing as metareading
+        url: /introduction/editing-as-metareading
+      - page: Digital scholarly editing
+        url: /introduction/digital-scholarly-editing
   - title: Designing an Edition
     subfolderitems:
       - page: Scholarly annotation

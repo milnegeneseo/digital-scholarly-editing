@@ -27,7 +27,7 @@ encoding: utf-8
 collections:
   texts:
     output: true
-  history:
+  introduction:
     output: true
   design:
     output: true
