@@ -20,7 +20,7 @@ I made a Word file for each version:
 
 | Version | Location of MS (filename for transcript and edited versions) |
 |---------|--------------------------------------------------------------|
-| 1 | Journal entry (Winter/Spring 1848), located in HM 924, volume 5, draft F; published in PE Journal 2, pp. 383, 577-578 (`Spring_para7_1_in J_1848_HM924v6_F.docx`) |
+| 1 | Journal entry (Winter/Spring 1848), located in HM 924, volume 5, draft F; published in PE Journal 2, pp. 383, 577-578 (`Spring_para7_1_in_J_1848_HM924v6_F.docx`) |
 | 2 | Journal entries (December 29 and 31, 1851), located in MA 1302.14, published in PE *Journal 4* (`Spring_para7_2_in_J_1851_12.docx`) |
 | 3 |  Journal entry (March 15, 1852), located in MA 1302.15, published in PE *Journal 4* (`Spring_para7_3_in_J_1852_3.docx`) |
 | 4 | Draft F (Late 1853 to Early 1854), volume 6 in HM 924 (`Spring_para7_4_in_HM924v6_F_1853-54.docx`) |
