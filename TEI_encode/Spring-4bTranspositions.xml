@@ -285,9 +285,9 @@
                of which are recorded as a list of transpose elements, pointing to the associated
                seg elements with @n values that match the transpose@target values. -->
                <mod>
-                  <seg n="01">a <w>ric<metamark rend="number" place="above">2</metamark>her</w>
-                     <lb/>Corinthian–</seg><metamark rend="transposition"/>
-                  <seg n="02">a <w>simp<metamark rend="number" place="below">1</metamark>ler</w>
+                  <seg xml:id="hm924v1n234-t01">a <w>ric<metamark rend="number" place="above">2</metamark>her</w>
+                     <lb/>Corinthian–</seg><metamark function="transposition"/>
+                  <seg xml:id="hm924v1n234-t02">a <w>simp<metamark rend="number" place="below">1</metamark>ler</w>
                      Doric</seg>
                   <listTranspose>
                      <!-- If we always transcribe text as it appears on the page, regardless of the 
@@ -306,8 +306,8 @@
                         <ptr target="02"/>
                      </transpose> -->
                      <transpose>
-                        <ptr target="02"/>
-                        <ptr target="01"/>
+                        <ptr target="#hm924v1n234-t02"/>
+                        <ptr target="#hm924v1n234-t01"/>
                      </transpose>
                   </listTranspose>
                </mod> –a more<lb/> various Composite. The beauty of the <lb/>drooping and sheaf-like
@@ -363,16 +363,16 @@
                <!-- bottom 1/3 of page, last paragraph -->
                <lb/>I long age lost a hound— <lb/>
                <mod><del rend="hstrike">and a</del></mod>
-               <mod><seg n="01"><w>turtl<metamark rend="number" place="above">2</metamark>e</w>
+               <mod><seg xml:id="hm924v1n26-t01"><w>turtl<metamark rend="number" place="above">2</metamark>e</w>
                      dove</seg>
-                  <metamark rend="transposition"/>
+                  <metamark function="transposition"/>
                   <mod><del rend="hstrike">and</del>
                   </mod>
-                  <seg n="02">a <w>b<metamark rend="number" place="below"/>ay</w> horse—</seg>
+                  <seg xml:id="hm924v1n26-t02">a <w>b<metamark rend="number" place="below"/>ay</w> horse—</seg>
                   <listTranspose>
                      <transpose>
-                        <ptr target="02"/>
-                        <ptr target="01"/>
+                        <ptr target="#hm924v1n26-t02"/>
+                        <ptr target="#hm924v1n26-t01"/>
                      </transpose>
                   </listTranspose>
                </mod><lb/>and am still on their trail.</zone>
@@ -385,14 +385,14 @@
             <zone type="textflow">
                <!-- top 1/4 of page, first paragraph -->
                <lb/>many mornings <mod><del rend="hstrike">before yet</del></mod> summer &amp;
-               winter <lb/>before yet any man was stirring about <lb/> his business <mod><seg n="01"
+               winter <lb/>before yet any man was stirring about <lb/> his business <mod><seg xml:id="hm924v1n27-t01"
                      >I</seg>
-                  <metamark rend="transposition"/>
-                  <seg n="02">have</seg>
+                  <metamark function="transposition"/>
+                  <seg xml:id="hm924v1n27-t02">have</seg>
                   <listTranspose>
                      <transpose>
-                        <ptr target="02"/>
-                        <ptr target="01"/>
+                        <ptr target="#hm924v1n27-t02"/>
+                        <ptr target="#hm924v1n27-t01"/>
                      </transpose>
                   </listTranspose>
                </mod>been about mine. No</zone>
