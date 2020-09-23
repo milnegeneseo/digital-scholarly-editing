@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/milnegeneseo/digital-scholarly-editing/master/TEI_encode/out/WaldenMSODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://raw.githubusercontent.com/milnegeneseo/digital-scholarly-editing/master/TEI_encode/out/WaldenMSODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="out/WaldenMSODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="out/WaldenMSODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/css" href="https://cwrc.ca/templates/css/tei.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
@@ -114,7 +114,7 @@
                obstruction, from Sudbury, where <lb/>he lived; to Fair Haven Pond, which <lb/>he
                found unexpectedly, <mod><handShift medium="pencil"/><del rend="hzag">was</del></mod>
                covered <mod type="insert"><handShift medium="ink2"/><metamark rend="caret"
-                     place="inline" function="insertion" target="#insert1"/><add xml:id="insert1"
+                  place="inline" function="insertion" target="#insert1"/><add xml:id="hm924v1n232-insert1"
                      place="above">for the most part</add></mod>
                <lb/>with a firm field of ice. It was a <mod><handShift medium="pencil"/><add
                      place="inline">–</add></mod>
@@ -123,7 +123,7 @@
                      >astonished</del><add place="above">surprised</add></mod> to see such a body of
                ice <lb/>remaining. Not seeing any ducks <lb/>he hid his boat on the <mod
                   type="insert"><handShift medium="pencil"/><metamark rend="caret" place="inline"
-                     function="insertion" target="#insert2"/><add xml:id="insert2" place="above"
+                     function="insertion" target="#insert2"/><add xml:id="hm924v1n232-insert2" place="above"
                            >North<unclear><supplied resp="#ebb">ern</supplied></unclear></add></mod>
                <w>back-
                <lb/>side</w><!--2020-05-17 ebb: Note the use of the <w> element here to indicate a word is being broken across the line.  -->

@@ -201,6 +201,16 @@
                </constraint>
             </constraintSpec>
             
+            <constraintSpec ident="check-inner-xmlids" scheme="schematron">
+               <constraint>
+                  <sch:rule context="tei:*[ancestor::tei:surface]/@xml:id">
+                     <sch:assert test="starts-with(., ancestor::tei:surface/@xml:id)">
+                        The first part of this xml:id must hold the xml:id from its surface element.
+                     </sch:assert>
+                  </sch:rule>
+               </constraint>
+            </constraintSpec>
+            
          </schemaSpec>
       </body>
   </text>
