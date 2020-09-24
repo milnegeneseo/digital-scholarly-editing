@@ -7,7 +7,7 @@ How has the advent of computers changed the practice of scholarly editing?
 
 Since the 1970s, scholarly editors have used word-processing software rather than typewriters to prepare copy for publishing, and publishers  have used computers and photography, rather than metal type and forms, to turn the copy into a printed book. These changes have had profound consequences for the workflow and products of scholarly editing, increasing flexibility for editors, publishers, and readers alike. Among other results, readers can now often choose whether to read a scholarly edition on paper or on a screen — as an ebook, for example, or a pdf.
 
-Yet these changes have had little if any impact on the aims and methods of scholarly editing compared to another one that began taking place around the same time. This change involved looking consciously and systematically at texts and their contents as *data* worthy of scholarly attention, and leveraging the power of computers to work with this data so as to facilitate new scholarly insights.
+Yet these changes have had little if any impact on the aims and methods of scholarly editing compared to another one that began taking place around the same time. This other change involved looking consciously and systematically at texts and their contents as *data* worthy of scholarly attention, and leveraging the power of computers to work with this data so as to facilitate new scholarly insights.
 
 When we speak here of *digital scholarly editing*, we mean scholarly editing that takes such a data-oriented approach. It's an approach that's simultaneously old and new, building on longstanding textual traditions even as it entails new methods and opens the door to new ways of conceiving the edition as a scholarly product.
 
