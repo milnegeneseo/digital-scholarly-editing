@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="theme-base-{{site.color-scheme}}">
+  <body class="theme-base-{{site.color-scheme}} sidebar-overlay">
 
     <!-- This if statement decides which sidebar to use -->
     {% if page.toc %}
@@ -62,10 +62,11 @@
              !sidebar.contains(target) ||
              (target === checkbox || target === toggle)) return;
 
-          checkbox.checked = false;
-        }, false);
+          checkbox.checked = true;
+        }, true);
       })(document);
     </script>
+
 
 <!-- Facebook SDK for JavaScript -->
 <script>

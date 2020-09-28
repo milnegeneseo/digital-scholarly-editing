@@ -140,6 +140,7 @@ h3 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  /*width: 45em;*/
 }
 
 /* Lists */
@@ -377,7 +378,7 @@ a.sidebar-nav-sub-item:focus {
   position: absolute;
   top:  .8rem;
   left: 1rem;
-  display: block;
+  display: flex;
   padding: .25rem .75rem;
   color: #505050;
   background-color: #fff;
