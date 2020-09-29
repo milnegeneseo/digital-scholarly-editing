@@ -1,23 +1,15 @@
 toc:
-  - title: Introduction
+  - title: Editing
     subfolderitems:
       - page: What is scholarly editing?
-        url: /introduction/what-is-scholarly-editing
+        url: /editing/what-is-scholarly-editing
       - page: Types of scholarly editing
-        url: /introduction/types-of-scholarly-editing
+        url: /editing/types-of-scholarly-editing
       - page: Editing as metareading
-        url: /introduction/editing-as-metareading
+        url: /editing/editing-as-metareading
       - page: Digital scholarly editing
-        url: /introduction/digital-scholarly-editing
-  - title: Designing an Edition
+        url: /editing/digital-scholarly-editing
+  - title: Encoding
     subfolderitems:
-      - page: Scholarly annotation
-        url: /design/annotation_intro
-      - page: Working IIIF images
-        url: /design/working-with-images
-  - title: Encoding Basics
-    subfolderitems:
-      - page: Introduction to text encoding
-        url: /encode/intro-to-encoding
-      - page: Why TEI?
-        url: /encode/why-tei
+      - page: From metareading to markup
+        url: /encoding/from-metareading-to-markup

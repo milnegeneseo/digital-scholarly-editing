@@ -27,17 +27,9 @@ encoding: utf-8
 collections:
   texts:
     output: true
-  introduction:
+  editing:
     output: true
-  design:
-    output: true
-  encode:
-    output: true
-  manage:
-    output: true
-  publish:
-    output: true
-  teach:
+  encoding:
     output: true
 
 # Markdown specs
