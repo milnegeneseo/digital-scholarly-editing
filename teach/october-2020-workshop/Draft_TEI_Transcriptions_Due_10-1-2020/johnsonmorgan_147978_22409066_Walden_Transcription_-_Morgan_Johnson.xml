@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="m"><hi rend="italic">Transcription of a Page from Huntington MS 924</hi></title>
+            <title level="a"><hi rend="italic">Walden Drafts</hi></title>
+            <author>Henry David Thoreau</author>
+           <editor>Morgan Johnson</editor>
+                        
+            <respStmt>
+               <resp>Transcribed and Encoded By</resp>
+               <name>Morgan Johnson</name>
+            </respStmt>
+         </titleStmt>
+      
+         <publicationStmt>
+            <p>Not for public circulation.</p>
+         </publicationStmt>
+         
+         <sourceDesc>
+            <p><bibl><author>Thoreau, Henry David.</author> <title level="a">Walden Material from Huntington MS 924</title> <biblScope unit="vol">6</biblScope> <biblScope unit="page">140</biblScope>
+               
+               <date type="earliest" when="1853">1853</date><date type="latest" when="1854">1854</date>
+                                           
+                     </bibl>
+            </p>
+                   </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <p>Transcribed from HM 924 and encoded in XML in accordance with the TEI Guidelines.</p>
+     </encodingDesc>
+     <profileDesc>
+        <langUsage>
+           <language ident="en">English</language>
+        </langUsage>
+     </profileDesc>
+     <revisionDesc>
+     <list><item><date when="2017-11-26" resp="#rnes">26 Nov 2017</date>Encoding shell drafted.</item>
+        <item><date when="2020-09-27">27 September 2020</date>Transcribed the text with markup to show revisions</item>
+        
+        </list>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="volume" n="6">
+            <div type="page" n="140">
+               
+               <p><hi rend="blue ink"> </hi> up by hadn't as if they were himself, upon his raised plank bed. His pipe lay broken on the hearth instead of a bowl broken at the fountain. The last could never have been the symbol of his death, for<del type="pencilslashes"> he XXX XXX the fountain, but </del> he can - 
+             
+                 
+       
+            
+            </p> </div>
+            </div>
+
+         
+      </body>
+     <back>
+        <p>Critical Commentary</p><!--paste your critical commentary within the paragraph tags below. You may add additional paragraphs if you wish. By now, you should know how.-->
+     <p>                            
+     
+     
+     
+     
+     
+     
+     
+     
+     </p>
+     </back>
+  </text>
+</TEI>

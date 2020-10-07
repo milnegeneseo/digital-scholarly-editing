@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="m"><hi rend="italic">Transcription of a Page from Huntington MS 924</hi></title>
+            <title level="a"><hi rend="italic">Walden Drafts</hi></title>
+            <author>Henry David Thoreau</author>
+           <editor>Kristin Schlorf</editor>
+                        
+            <respStmt>
+               <resp>Transcribed and Encoded By</resp>
+               <name>Kristin Schlorf</name>
+            </respStmt>
+         </titleStmt>
+      
+         <publicationStmt>
+            <p>Not for public circulation.</p>
+         </publicationStmt>
+         
+         <sourceDesc>
+            <p><bibl><author>Thoreau, Henry David.</author> <title level="a">Walden Material from Huntington MS 924</title>.<biblScope unit="vol">5</biblScope>
+               <publisher>Charles Jones</publisher><pubPlace>, 1 &amp; 2 West Harding Street, Fetter Lane, London</pubPlace>
+               <date type="earliest" when="1853">1853</date><date type="latest" when="1854">1854</date>1854
+                             </bibl>
+            </p>
+                   </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <p>Transcribed from HM 924 and encoded in XML in accordance with the TEI Guidelines.</p>
+     </encodingDesc>
+     <profileDesc>
+        <langUsage>
+           <language ident="en">English</language>
+        </langUsage>
+     </profileDesc>
+     <revisionDesc>
+     <list><item><date when="2017-11-26" resp="#rnes">26 Nov 2017</date>Encoding shell drafted.</item>
+        <item><date when="2020-09-27">27 September 2020</date>I transcribed the Brister Freeman section from Former Inhabitants and Winter Visitors</item>
+        
+        </list>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="volume" n="5">
+            <div type="page" n="166">
+               <p>
+inhumane. One old frequenter of these woods remembers that as he passed her house one noon, he heard her muttering to herself over                   her gurgling pot, "Ye are all bones, bones!" 
+<add>I have seen bricks amid the oak corpse there.</add>
+               </p>
+               
+               <p>
+And down the road, on the right hand on Brister's Hill lived Brister Freeman a "handy negro" slave of Squire Cummings once, there                    where grow still the apple trees which Brister planted and tended, large old trees but still wild &amp; ciderish to my taste.  Not                     long since I read his epitaph in the old burying ground
+<add rend="caret">a little on one side, near the unmarked graves of some British grenadiers who fell in the retreat from                             Concord,</add>
+where he is styled Sippio Brister" Scipio Africanus he had some title to be called -- "a man of color" as if he                                      was discolored.  It also told me when he died, his death seemed 
+<add rend="caret">but</add> 
+an indi-rect way of informing one that he ever lived.  And there
+<del rend="strikethrough">was</del>
+<add rend="caret">lived</add>
+Fenda, his hospitable  
+              </p>
+            
+            </div>
+            </div>
+
+         
+      </body>
+     <back>
+        <p>Critical Commentary</p>
+     <p>                            
+This page of Walden begins with the ending of the sentence written on the previous page.  The following phrase was added later on: "I have seen bricks amid the oak corpse there."  This is indicated by the different color ink and the small writing, small to fit it within the space        provided.  I transcribed the text exactly as-is; I did not include punctuation on Thoreau's behalf, which can be seen by the grammatical errors within the passage.  
+     </p>
+        
+     <p>
+The following was added above the original writing in the same color ink and hand as the corrections previous and to follow: "a little on one   side, near the unmarked graves of some British grenadiers who fell in the retreat from Concord." One error that I attributed to Thoreau is the lack of quotations around "Sippio Brister;" in the manuscript, there is only one quotation mark, as is seen within my transcription.  
+     </p>
+        
+     <p>
+Another area where text was added was in the following sentence: "... his death seemed but an indi-rect way of informing one that he ever       lived."  The "but" in the sentence was added at the same time as the "brick amid the oak corpse" line; this is indicated by the same color ink  and similar handwriting found in both spots.  The "but" is inserted with a caret. 
+     </p>
+        
+     <p>
+The last insertion by Thoreau is in the following line: "And  there lived Fenda..."  The "lived" was added later on; it replaces "was" as the  better word choice as per Thoreau.  The word "was" was crossed out with a squiggly line and "lived" was written directly above.  Again, this addition was done at the same time as the others, as though Thoreau were editing his work after his first run-through.  This can be surmised through the use of a different ink and a slight change to the handwriting that signifies a different day instead of a different author.  The ink is black; steady dips in the ink are noted, for rarely does the ink seem to run dry.  The aforementioned corrections are made in a light blue, a blue that signifies he may have been saving ink.  The initial draft seems to have been written all at once with the corrections outlined coming later.  
+     </p>
+        
+      <p>
+The process of uncoding Thoreau's work was fairly straight-forward.  While I did struggle with some of the handwriting, I was mostly able to glean his words from The Reader's Thoreau and my own observance.  The later additions to the text seem to have occurred at the same time, though of this I cannot be one-hundred percent sure.  The blue ink used to correct his initial writings seems more faint than the black ink used in his initial writings.  I noted Thorea's steady hand and rhythmic dipping for ink; based on my observation, it didn't seem as though the ink ran dry or became faint.  I also did not note any smudges, which is quite remarkable.  Thorea strikes me as a very neat and tidy writer, meticulous to produce clean copies that are legible to himself and others.  While one word ("was") was crossed out using a squiggly line, most of the additions were added neatly above the writing, often using a caret to denote an addition.  
+      </p>
+      <p>
+Overall, I was pleased with how my transcription turned out.  Though I made some mistakes in the beginning due to poor lighting, I was able to correct them in a timely manner, almost never losing my place within the writing.  I wrote over Thorea's writing to gain a feel for his lettering and writing shape, which helped immensely.  I also was then able to read my own writing to determine the transcription more quickly.  The use of The Reader's Thoreau was indispensible; were it not for the text, I'm not sure I would have been able to decipher all of Thoreau's writings.  It was helpful to have something to which to compare his writings to learn how he forms certain letters and uses certain punctuation.  Were I on my own to decipher his writing, I'm not sure I would have done as well.  
+        </p>
+     </back>
+  </text>
+</TEI>

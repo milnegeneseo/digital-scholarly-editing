@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="m"><hi rend="italic">Transcription of a Page from Huntington MS 924</hi></title>
+                <title level="a"><hi rend="italic">Walden Drafts</hi></title>
+                <author>Henry David Thoreau</author>
+                <editor>Emily Wuest</editor>                       
+                <respStmt>
+                    <resp>Transcribed and Encoded By</resp>
+                    <name>Emily Wuest</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Not for public circulation.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p><bibl><author>Thoreau, Henry David</author> <title level="a">Walden</title>. <biblScope unit="no">Huntington MS 924</biblScope>
+                    <biblScope unit="vol">6</biblScope> <biblScope unit="page">142</biblScope>
+                    <date type="earliest" when="1853">1853</date>
+                    <date type="latest" when="1854">1854</date><!--I chose to represent the approximate date this way, but the TEI Guidelines suggests a number of other equally valid formats.-->
+                    <ref type="URL">https://cdm16003.contentdm.oclc.org/digital/collection/p16003coll16/id/1149</ref>
+                </bibl>
+                </p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Transcribed from HM 924 and encoded in XML in accordance with the TEI Guidelines.</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            </profileDesc>
+    </teiHeader>
+    <text>
+        <body>     
+            <p>by the very corner of my field, still nearer to town, Zilpha, colored woman had her little house where she spun linen for the townsfolk, making the Walden Woods ring with her shrill singing, for she had a loud and notable voice.</p>
+        </body>  
+        <back>
+            <p>Although I have some background in computer coding, I found this more difficult in application than I thought I would.  Reading Thoreau’s handwriting and interpreting it was not as hard as I anticipated, but the coding had me stumped quite a few times along the way.  I am thankful I could go back to examples posted because I definitely needed them.  I also learned that I need to give myself more time for things like this.  I will be honest, I was cocky at the beginning of this lesson because of my previous coding knowledge; I thought I would catch on as easily as I did back in high school, but that was four years ago.  I also was unfamiliar with oXygen since I had only used coding in the Notes application before.  I did not give myself enough time to truly become familiar with oXygen and re-familiarize myself with coding.</p>
+            <p>I also had no idea people used coding for things besides creating websites and video games, which is what I did in my previous class involving coding.  When I did my previous class, I fell in love with coding, but never saw it as a part of my future because the web design industry is not as easy to get into as I was hoping for.  This opportunity led me to a community of people that use coding in other ways, and I find it so fascinating that they are able to combine older literature with something that seems so new and modern.  This gives me hope that I might be able to fall in love with coding once again, and I may be able to use it in future endeavors. Transcribing seems like something I would enjoy doing at some point in my career, so I am very thankful I was able to be introduced to the community through this class.</p>
+            <p>The guidelines themselves were again a little hard for me to follow.  I think it was mostly because there are so many aspects of coding that I did not previously know about or remember that I felt a little overwhelmed.  It is hard to remember all of the little things that can make or break the finished product. Again, patience is a valuable tool when it comes to learning these guidelines.</p>
+            <p>When I took a look at Thoreau’s transcripts, I really enjoyed being able to see what he crossed out and edited along the way.  As a reader, I always tend to think that the famous works out there were written perfectly the first time, even though I know that is most likely not true.  Seeing the way he went back in and crossed things out or added things in reminds me that he is human, too, and not just some perfect being who writes every sentence beautifully.  Going through each page and reading the sentences that Thoreau thought were flaws makes me wonder what he saw in each thing he edited out.  It helps me try to see more into his mind and what he was really trying to do with this novel.</p>
+            <p>All in all, I found this a rather enjoyable experience.  I think I would really enjoy trying to interpret more of Thoreau’s writing or writings of other authors in the future, I just have to get more used to coding again.  I can see why this community would be one to join, and I hope that maybe I will be able to do something like this in the future.  I definitely plan on trying to get through more of the page I was assigned, and I may try and do the entire thing if I can.</p>
+        </back>
+    </text>
+</TEI>     

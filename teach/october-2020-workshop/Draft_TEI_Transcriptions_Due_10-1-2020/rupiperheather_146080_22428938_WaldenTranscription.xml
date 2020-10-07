@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="m"><hi rend="italic">Transcription of a Page from Huntington MS 924</hi></title>
+                <title level="a"><hi rend="italic">Walden Drafts</hi></title>
+                <author>Henry David Thoreau</author>
+                <editor>Heather Rupiper</editor>                       
+                <respStmt>
+                    <resp>Transcribed and Encoded By</resp>
+                    <name>Heather Rupiper</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p>Not for public circulation.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p><bibl><author>Thoreau, Henry David</author> <title level="a">Walden</title>. <biblScope unit="no">Huntington MS 924</biblScope>
+                    <biblScope unit="vol">5</biblScope> <biblScope unit="page">166</biblScope>
+                    <date type="earliest" when="1853">1853</date>
+                    <date type="latest" when="1854">1854</date>
+                    <ref type="URL">https://cdm16003.contentdm.oclc.org/digital/collection/p16003coll16/id/833</ref>
+                </bibl>
+                </p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Transcribed from HM 924 and encoded in XML in accordance with the TEI Guidelines.</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <list><item><date when="2017-11-26" resp="#rnes">26 Nov 2017</date>Encoding shell drafted.</item>
+                <item><date when="2020-08-30">30 August 2020</date>Filled in the header.</item>
+                <item><date when="2020-09-01">01 September 2020</date>Transcribed the text with markup to show revisions</item>
+                <item><date when="2020-09-02">02 September 2020</date>Corrected a mistake.</item>
+            </list> </revisionDesc></teiHeader>
+    <text>
+        <body><p><del rend="crossout">witch like</del><add rend="penciled above">inhumane</add>. One old frequenter <add rend="penciled right margin">R398-9</add> of these woods remembers that as he passed her house one <del rend="crossout">day</del> noon, heard her muttering to herself over her gurgling pot "ye are all bones-bones." <add rend="penciled below">I have seen bricks amid the oak copse there.</add></p>
+        <p>And down the road on the right hand on Brister's Hill lived Brister Freeman a, "handy negro" slave of Squire Cummings once, there where grow still the apple trees which Brister planted and tended, large old trees but still wild [ampersand?] ciderish to my taste.</p></body>
+    </text>
+</TEI>    

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="m"><hi rend="italic">Transcription of a Page from Huntington MS 924</hi></title>
+            <title level="a"><hi rend="italic">Walden Drafts</hi></title>
+            <author>Henry David Thoreau</author>
+           <editor>Amelia Boylan-Knorr</editor>
+                        
+            <respStmt>
+               <resp>Transcribed and Encoded By</resp>
+               <name>Amelia Boylan-Knorr</name>
+            </respStmt>
+         </titleStmt>
+      
+         <publicationStmt>
+            <p>Not for public circulation.</p>
+         </publicationStmt>
+         
+         <sourceDesc>
+            <p><bibl><author>Thoreau, Henry David.</author> <title level="a">Walden; or life in the woods</title>.<biblScope unit="vol">5</biblScope>.<biblScope unit="page">165</biblScope>
+               
+               <date type="earliest" when="1852">1852</date><date type="latest" when="1853">1853</date>
+               <ref type="URL"> https://cdm16003.contentdm.oclc.org/iiif/info/p16003coll16/898/manifest.json</ref>
+                             </bibl>
+            </p>
+                   </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <p>Transcribed from HM 924 and encoded in XML in accordance with the TEI Guidelines.</p>
+     </encodingDesc>
+     <profileDesc>
+        <langUsage>
+           <language ident="en">English</language>
+        </langUsage>
+     </profileDesc>
+     <revisionDesc>
+     <list><item><date when="2017-11-26" resp="#rnes">26 Nov 2017</date>Encoding shell drafted.</item>
+        <item><date when="2020-09-25">01 September 2020</date>Filled in the header.</item>
+        <item><date when="2020-09-25">01 September 2020</date>Transcribed the text with markup to show revisions</item>
+        </list>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="volume" n="5">
+            <div type="page" n="5">
+               <p> <add rend="pagenumber">P.397-8</add> of Duncan Igraham Esqu,
+                  <del type="wavedline">gentleman of Concord village,</del>
+                  who built his slave a house
+                  and gave him permission
+                  to live in Walden Woods <add rend="'a'line">Cato not Uticensis but Concordinasis</add>. Some
+                  say he was a Guinea negro. There
+                  are those who remember his little
+                  patch among the walnuts, and
+                  the tree which he let grow up
+                  till he should be old and need
+                  them, but a younger white
+                  speculator got them at last.<add rend="writtenbetweenlines">He too however occupies an equally narrow house at present</add>
+               <add rend="penciledin"><del rend="horozontalstrikes">His</del>Cato's half obliterated cellar hole still remains though known to
+               few being concealed from the traveler by a fringe of pines.
+               It was filled with the smooth sumac <gap reason="illegible"></gap>and one of the earlier species of Golden rod grows there luxuriantly.</add></p>
+               <p> But here by the very
+                     corner of my field still nearer
+                     to town, Zilpha, colored wo-
+                     man had her little house
+                     where she spun linen for the 
+                     townsfolk, making the
+                     Walden Woods ring with her
+                     shrill singing, for she had
+                     a loud and notable voice,
+                     at length, in the war of
+                     1812, her dwelling was set on
+                     fire by English soldiers, 
+                     prisoners on parole,<add rend="inkedin">when she was away,</add> and
+                     her cat &amp; dog &amp; hens were
+                     all burned up together. She
+                     lead a hard life &amp; somewhat<gap reason="endofpage"></gap>
+                                
+                  
+                 
+                 
+                 
+                 
+                 
+                 
+              </p>
+            
+            </div>
+            </div>
+
+         
+      </body>
+     <back>
+        <p>Critical Commentary</p><!--paste your critical commentary within the paragraph tags below. You may add additional paragraphs if you wish. By now, you should know how.-->
+     <p>                            
+     
+     
+     
+     
+     
+     
+     
+     
+     </p>
+     </back>
+  </text>
+</TEI>
