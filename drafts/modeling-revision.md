@@ -3,8 +3,6 @@ layout: page
 title: The *Walden* manuscript
 ---
 
-The *Walden* manuscript has interested scholars for many years as a source of insight into the meaning of a signal work of American literature.
-
 In light of Thoreau's repeated and extensive re-workings of his initial conception, some scholars have argued that its meaning can't be found by reading the published words alone but only through a careful examination of its progressive evolution in relation to the biographical evolution that accompanied it. *Walden*, on this view, is as much the record of that evolution as its triumphant end result. In the words of Robert Sattelmeyer, "*Walden* is, in this respect, an archetypal Romantic text, like [Walt Whitman's] *Leaves of Grass*, that developed as its author developed and that preserves experience while continually re-interpreting it" ("The Remaking of *Walden*," 75).
 
 We can recognize this developmental or evolutionary approach to understanding *Walden* as the same one that [genetic scholarly editing](/editing/types-of-scholarly-editing#genetic-editing) and [fluid-text editing](/editing/types-of-scholarly-editing#fluid-text-editing) take toward texts in general. Where there's a manuscript that preserves a text's process of becoming, a complete understanding of the text will require us to follow that process. 

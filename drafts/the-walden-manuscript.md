@@ -1,7 +1,9 @@
 ---
 layout: page
-title: The *Walden* manuscript
+title: The <em>Walden</em> manuscript
 ---
+
+The *Walden* manuscript has interested scholars for many years as a source of insight into the meaning of a signal work of American literature. <!-- Something about its being a excellent candidate for formalized markup because it's a complicated textual object. Let's take a moment to examine its history. -->
 
 ## Composition (1846-1854)
 
