@@ -32,4 +32,4 @@ Hopefully it's clear by now why we said [earlier](/digital-scholarly-editing/enc
 
 But the process is no different: all we need is a markup language adequate to the task and a clear sense of what we want to do with it. There isn't a single right way to model a manuscript or any other textual object, and there's probably no way to model *everything* about any object worth modeling. So before we dive into modeling with any kind of markup, we need to take a good look at the object and decide what there is about it — and in it — that we want to describe.
 
-So before we look at some ways we might model the *Walden* manuscript, then, let's learn a little bit about its history. 
+Before we look at some ways we might model the *Walden* manuscript, then, let's learn a little bit about its history. 
