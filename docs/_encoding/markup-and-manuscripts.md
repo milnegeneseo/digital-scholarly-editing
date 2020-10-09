@@ -26,8 +26,10 @@ Here's how it looks on the manuscipt page:
 
 You may want to look at [how this sentence looks on the full page](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/full/pct:30/0/default.jpg), where you'll see quite a few other marks and acts of revision.
 
-Hopefully it's clear by now why we said [earler](/encoding/from-metareading-to-markup) that a manuscript is a complex textual object containing data (aka *things*) that there may be no obvious or simple way to describe. Modeling this data is a much more complicated and difficult task than modeling the basic structure of Blake's poem. 
+One of the most interesting changes in this revision is that Thoreau changed the word *choice* to *choicest* simply by adding the *st* onto letters he'd already put on the page. How should we describe what he did? Did he delete *choice* and replace it with *choicest*? Even though he didn't physically cross-out or erase *choice*, that might be one way to describe his action. But perhaps it would be better to describe the action as adding *st*? Also: should his deletion of *most* be described as part of the same act of revision (*most* becomes redundant once *choice* becomes *choicest*) or a separate one?
+
+Hopefully it's clear by now why we said [earlier](/encoding/from-metareading-to-markup) that a manuscript is a complex textual object containing data (aka *things*) that there may be no obvious or simple way to describe. Modeling this data is a much more complicated and difficult task than modeling the basic structure of Blake's poem. 
 
 But the process is no different: all we need is a markup language adequate to the task and a clear sense of what we want to do with it. There isn't a single right way to model a manuscript or any other textual object, and there's probably no way to model *everything* about any object worth modeling. So before we dive into modeling with any kind of markup, we need to take a good look at the object and decide what there is about it — and in it — that we want to describe.
 
-So before we look at some ways we might model the *Walden* manuscript, let's learn a little bit about its history. 
+So before we look at some ways we might model the *Walden* manuscript, then, let's learn a little bit about its history. 

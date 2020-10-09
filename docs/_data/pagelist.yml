@@ -13,5 +13,7 @@ toc:
     subfolderitems:
       - page: From metareading to markup
         url: /encoding/from-metareading-to-markup
-  #    - page: The <em>Walden</em> manuscript
-  #      url: /encoding/the-walden-manuscript
+      - page: Markup and manuscripts
+        url: /encoding/markup-and-manuscripts
+      - page: The <em>Walden</em> manuscript
+        url: /encoding/the-walden-manuscript
