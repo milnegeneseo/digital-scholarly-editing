@@ -3,8 +3,6 @@ layout: page
 title: The <em>Walden</em> manuscript
 ---
 
-The *Walden* manuscript has interested scholars for many years as a source of insight into the meaning of a signal work of American literature. <!-- Something about its being a excellent candidate for formalized markup because it's a complicated textual object. Let's take a moment to examine its history. -->
-
 ## Composition (1846-1854)
 
 In 1845, Henry David Thoreau built a small house near the shore of Walden Pond in Concord, Massachusetts, on land owned by his neighbor Ralph Waldo Emerson. He moved in on July 4, 1845, and moved back to town on September 6, 1847. The house was his writer’s retreat: there he finished a draft of his first book, *A Week on the Concord and Merrimack Rivers*, and began his second, *Walden*.
