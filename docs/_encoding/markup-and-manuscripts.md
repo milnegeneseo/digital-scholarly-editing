@@ -5,7 +5,7 @@ title: Markup and manuscripts
 
 In an early draft of his classic work *Walden*, Henry David Thoreau wrote, "A word fitly written is the most choice and select of things."
 
-As we've seen, words are one type of thing we find within the thing that is a text. They're easily recognizable in a printed text by the space that typically separates them — [a kind of informal markup](/encoding/from-metareading-to-markup), we've said.
+As we've seen, words are one type of thing we find within the thing that is a text. They're easily recognizable in a printed text by the space that typically separates them — [a kind of informal markup](/digital-scholarly-editing/encoding/from-metareading-to-markup), we've said.
 
 We tend to value writers who care deeply about their words as things — who want their words to be "fitly written" and who consequently choose their words deliberately. Manuscripts that are drafts of published works often offer the opportunity to see those choices being made. 
 
@@ -24,11 +24,11 @@ Here's how it looks on the manuscipt page:
 [![Image excerpt from the manuscript of Walden](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/108/800,5500,7000,820/pct:30/0/default.jpg)](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/108/800,5500,7000,820/pct:30/0/default.jpg)  
 *Click the image to see a larger view.*
 
-You may want to look at [how this sentence looks on the full page](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/full/pct:30/0/default.jpg), where you'll see quite a few other marks and acts of revision.
+You may want to look at [how this sentence looks on the full page](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/108/full/pct:30/0/default.jpg), where you'll see quite a few other marks and acts of revision.
 
 One of the most interesting changes in this revision is that Thoreau changed the word *choice* to *choicest* simply by adding the *st* onto letters he'd already put on the page. How should we describe what he did? Did he delete *choice* and replace it with *choicest*? Even though he didn't physically cross-out or erase *choice*, that might be one way to describe his action. But perhaps it would be better to describe the action as adding *st*? Also: should his deletion of *most* be described as part of the same act of revision (*most* becomes redundant once *choice* becomes *choicest*) or a separate one?
 
-Hopefully it's clear by now why we said [earlier](/encoding/from-metareading-to-markup) that a manuscript is a complex textual object containing data (aka *things*) that there may be no obvious or simple way to describe. Modeling this data is a much more complicated and difficult task than modeling the basic structure of Blake's poem. 
+Hopefully it's clear by now why we said [earlier](/digital-scholarly-editing/encoding/from-metareading-to-markup) that a manuscript is a complex textual object containing data (aka *things*) that there may be no obvious or simple way to describe. Modeling this data is a much more complicated and difficult task than modeling the basic structure of Blake's poem. 
 
 But the process is no different: all we need is a markup language adequate to the task and a clear sense of what we want to do with it. There isn't a single right way to model a manuscript or any other textual object, and there's probably no way to model *everything* about any object worth modeling. So before we dive into modeling with any kind of markup, we need to take a good look at the object and decide what there is about it — and in it — that we want to describe.
 
