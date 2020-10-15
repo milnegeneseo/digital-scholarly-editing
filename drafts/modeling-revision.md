@@ -9,8 +9,7 @@ Perhaps we might say the same of any text that's undergone significant revision,
 
 Together, the record and the care brought Ronald E. Clapper, a PhD candidate in English Literature at UCLA, to the Huntington Library in the 1960s to study HM 924, the manuscript of *Walden*. In the years since, scholars like Sattelmeyer who've argued for an evolutionary interpretation of *Walden* have routinely relied on Clapper's 1967 dissertation, "The Development of *Walden*: A Genetic Text."
 
-For his genetic edition of *Walden*, Clapper devised a set of symbols to indicate places where Thoreau inserted or canceled words and phrases and to distinguish between insertions made in ink and pencil. We can recognize these symbols as a kind of homegrown markup language. Clapper's markup even employs angle brackets — though in a very different way from XML. Here's an example of his code:
-
+For his genetic edition of *Walden*, Clapper devised a set of symbols to indicate places where Thoreau made changes on a manuscript page and to distinguish the way a string of text read in one version as opposed to another. Some years later, he re-typed the dissertation on a computer and introduced additional symbols — for example, to identify text that Thoreau inserted in pencil as opposed to ink. We can recognize Clapper's symbols as a kind of homegrown markup language. Here's an example of his code:
 
 <blockquote style="font-style:normal;">
 <h3 style="color:#000;">Economy 2a &nbsp;written: A; rewritten: C,C</h3>  
@@ -18,15 +17,22 @@ For his genetic edition of *Walden*, Clapper devised a set of symbols to indicat
 <hr style="border-top:1px solid black;" />
 <p><sup>6</sup><em>obtrude my affairs so much on the notice of my readers</em> [A:] presume to talk so much about myself and my affairs as I shall in this &lt;lecture&gt; &lt;&uparrow;book&downarrow;&gt; &lt;&uparrow;work&downarrow;&gt;book [C2:] obtrude &lt;myself and&gt; my affairs so much on the notice of my readers</p>
 <p><sup>7</sup><em>particular</em> [A:] particular and personal</p>
+<p><sup>8</sup><em>by my townsmen</em> [A: not in ms.] [C2: interlined in pencil]</p>
+<p><sup>9</sup><em>which</em> [A:] what [C2:] &lt;what&gt; &uparrow;<em>p</em> which&downarrow;</p>
+<p><sup>10</sup><em>though they do not appear to me at all impertinent, but, considering the circumstances, very natural and pertinent</em> [A:] but they are by no means impertinent to me, but, on the contrary very natural and pertinent, considering the circumstances [C2:] though they do not appear &uparrow;<em>p</em> to me&downarrow; at all impertinent &lt;to me&gt;, but &lt;on the contrary&gt; &uparrow;considering the circumstances&downarrow; very natural and pertinent &lt;, considering the circumstances&gt;</p>
 </blockquote>
 
-<!-- We can recognize this developmental or evolutionary approach to understanding *Walden* as the same one that [genetic scholarly editing](/editing/types-of-scholarly-editing#genetic-editing) and [fluid-text editing](/editing/types-of-scholarly-editing#fluid-text-editing) take toward texts in general. Where there's a manuscript that preserves a text's process of becoming, a complete understanding of the text will require us to follow that process. 
+Clapper is here representing changes to a portion of the second paragraph of "Economy," the first chapter of *Walden*. He labels this portion "2a" to distinguish it from two other portions ("2b" and "2c") that have separate revision histories. Above the text, he's indicated that paragraph 2a was "written" (that is, first added to the manuscript) in the first, or "A" draft, then "rewritten" twice in the third or "C" draft. 
 
-Whether we come to the *Walden* manuscript seeking to re-focus our understanding of a classic or to illustrate the general proposition that a text's being — whether a Romantic one or not — resides in its becoming (and we can do both at once), our starting point has to be the manuscript as an object. To understand it as an object, we have to build a model of it: to describe it *as a thing* and to describe *the things within it*, such as the types of structural and conceptual features we discussed on the previous page.
+Above the line, we read the words of *Walden* as they were published in 1854. At each point where there are differences between the published version and the text as it reads in the "A" draft, the "C" draft, or both, he places a number that corresponds to a footnote below the line. In a footnote, the string in question is repeated in italics, the symbol "[A:]" is used to introduce the wording as it appears in Version A, and the symbol "[C2:]" is used to introduce the wording as it appears in the second writing of the passage within Version C. Text that Thoreau deleted appears within angle brackets (&lt; &gt;), text that he inserted appears between arrows (&uparrow; &downarrow;), and inserted text written in pencil is preceded by an italic *p*.
 
-That's exactly what Ronald E. Clapper set out to do in his 1967 PhD dissertation, "The Development of *Walden*: A Genetic Text." He did it without computers (which existed at the time but not in a form that would have helped him) and without XML (which did not yet exist). He did it using something we can recognize as *markup*, even though he didn't call it that. 
+Taking one of the simpler examples, Clapper's markup tells us that the word <em>which</em> annotated in footnote 9 was <em>what</em> in Version A and again in Version C, but that in C, Thoreau deleted <em>what</em> and replaced it, in pencil, with <em>which</em>.
 
-<!-- Next page: Clapper's dissertation as attempt to "mark up" the changes to Walden. How it looks in fluid-text TEI. Examples of xpath results. Data-modeling and Thoreau. -->
+We can see the change Clapper has marked up by comparing these two manuscript images, the first from Version A, the second from Version C.
+
+[![Walden MS image](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/1410,2920,6490,600/pct:30/0/default.jpg)](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/8/1410,2920,6490,600/full/0/default.jpg)
+
+[![Walden MS image](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/435/680,1850,6557,735/pct:30/0/default.jpg)](https://cdm16003.contentdm.oclc.org/digital/iiif/p16003coll16/435/680,1850,6557,735/full/0/default.jpg)
 
 <!-- Next after: TEI as a standard for XML; history, etc. -->
 

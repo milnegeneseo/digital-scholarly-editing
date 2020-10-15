@@ -25,7 +25,7 @@ Consider this poem by British romantic poet William Blake.
 
 Now, here's one way that we might encode Blake's poem in the computer-readable markup language *XML* (which stands for *eXtensible Markup Language*):
 
-```
+```xml
 <title>The Shepherd</title>
     <lg type="stanza">
     <l>How sweet is the Shepherd's sweet lot! </l>
