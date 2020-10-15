@@ -11,7 +11,7 @@ A great deal of scholarly editing concerns itself with texts that exist in more 
 
 Whether dealing with manuscripts or printed works, scholarly editors face the task of bringing forth, from the multiple states of a given text, an edition for readers to read or scholars to study. The task requires deep knowledge about the history of writing, books, and publishing, together with a critical understanding of the political, economic, and social contexts surrounding the production of the text in question. If the author or authors are known, it’s important to understand as much as possible about the biography, the intellectual and educational background, the other works, and the customary diction of the author or authors. Making an edition also involves choosing among alternative theoretical approaches and making critical judgments about matters such as textual authenticity and authorial intention. For these reasons, scholarly editions of this type are sometimes called *critical editions*, and the systematic study of texts *as texts* — with attention to the material and historical dimensions of their production, and informed by a consideration of differing textual and editorial theories — is sometimes referred to as *textual criticism* or *textual scholarship*.
 
-## Documentary editing
+## [Documentary editing](id:documentary-editing)
 
 By bringing forth a single edition of a work from multiple sources, particularly a literary work, critical scholarly editing, as described above, facilitates the close study and interpretation of that work, usually with the aim of helping readers arrive at the best possible understanding of the author's intentions in writing it. If we want to talk about the meaning of a poem by William Blake or Emily Dickinson, or a novel by Herman Melville or Richard Wright, we might well feel that we first need to establish just what words we should be interpreting — just what the text *is* that we're talking about. (We might not feel that way, and there are certainly scholars who don't. More about them below.)
 
@@ -25,7 +25,7 @@ Some of the most important scholarly editing taking place today has as its aim t
 
 The kind of edition that scholarly editing for textual recovery brings forth may or may not be based on multiple versions of a text or require commitment to a particular theory of textuality. It is, however, typically critical in the important sense of providing scholarly context in the form of an editorial introduction and annotations, and sometimes in the form of ancillary materials, such as contemporary documents or original reviews, that provide important perspective on the work's genesis, significance, or reception.
 
-## Genetic editing
+## [Genetic editing](id:genetic-editing)
 
 In cases where an author's drafts have been preserved — in manuscripts, typescripts, or digital files — it's possible to take an editorial approach aimed at representing and illuminating how a particular text came to be. "The geneticists get their name," writes John Bryant in *The Fluid Text: A Theory of Revision and Editing for Book and Screen* (1988), "from their basic assumption that a literary work is equivalent to the processes of genesis that create it and that a *genetic edition* of a work must display that process as it progresses through its various stages of composition and revision, in manuscript and print." Genetic editing, especially as practiced in France from the mid-1960s onward under the influence of structuralism and post-structuralism, may concern itself less with uncovering authorial meaning and more with shedding light on the creative process itself. But it offers the possibility, as well, of re-focusing our view of particular texts and the authorial intentions that inhabit them, so that, even as we retain an understanding of some text as manifesting its author's unique, personal outlook, we appreciate that neither the text nor the outlook can  be regarded as fixed, stable, or unitary.
 
@@ -35,7 +35,7 @@ An important consideration for all scholarly editions that incorporate multiple 
 
 We'll have more to say about digital interfaces in a subsequent module.
 
-## Fluid-text editing
+## [Fluid-text editing](id:fluid-text-editing)
 
 Bryant's *The Fluid Text*, cited above, extends the geneticists' conception of text-as-process, challenging readers to consider the post-publication life of a text as part of its continuous development, including cultural re-mixes of published works by follow-on authors, either in words (print or digital) or other media such as film or video. In attempting to articulate a theory of textual fluidity, Bryant makes a strong case for considering authorial intention to distinguish between variants of a text and versions of a text. In exploring the possibilities of fluid-text editing opened up by digital interfaces, he emphasizes the opportunity to construct what he calls "revision narratives" tied to particular sites of textual change. In a manuscript-based scholarly edition, these sites become locations for critical editorial intervention to hypothesize about how the changes visible there might reflect a host of influences, from deliberate choices related to form and theme to interventions from a publisher to cultural pressures operating above or below the level of conscious decision-making.
 
