@@ -1,0 +1,10 @@
+{
+    "servers": {
+        "localhost": {
+            "server": "http://exist.newtfire.org",
+            "user": "admin",
+            "password": "",
+            "root": "/db/apps/my-app"
+        }
+    }
+}
