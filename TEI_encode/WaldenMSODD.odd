@@ -59,7 +59,7 @@
                </attList>
             </elementSpec>
             <elementSpec ident="surface" module="transcr" mode="change">
-               <desc>We are requiring an xml:id attribute on each surface element, and its value is drawn from <ref target="https://docs.google.com/spreadsheets/d/1wXReDHbE6ZIQWuEikgA-t--Z2wlG_Rp_N_FuC78kj8c/edit#gid=1938909689">column A of the project's Google Sheet curating details about the Walden MS Images</ref>. Also the first child of the surface element must be a graphic element that points to the IIIF URL of its corresponding facsimile image.</desc>
+               <desc>We are requiring an xml:id attribute on each surface element, and its value is drawn from <ref target="https://docs.google.com/spreadsheets/d/1eJUlzPSLozEWouzyyDf4_t6W26OYMTDiJ0KhrHD5O3I/edit?usp=sharing">column A of the project's Google Sheet curating details about the Walden MS Images</ref>. Also the first child of the surface element must be a graphic element that points to the IIIF URL of its corresponding facsimile image.</desc>
                <content>
                   <sequence>
                      <elementRef key="graphic" minOccurs="1" maxOccurs="unbounded"/><!-- ebb: Here we are updating the content model of the TEI surface element to require that at least one <graphic> element appear first (as opposed to the optional list of alternate elements that the TEI provides.) -->
@@ -95,7 +95,7 @@
                              <gloss>to indicate page numbering applied usually in blue pencil and not in Thoreau's hand</gloss>
                          </valItem>
                          <valItem ident="textflow">
-                            <gloss>to mark an area dedicated to writing the runing flow of text.</gloss>
+                            <gloss>to mark an area dedicated to writing the running flow of text.</gloss>
                          </valItem>
                       </valList>
                    </attDef>
@@ -109,7 +109,7 @@
                      <!-- ebb: NOTE: We need to output a list of the values and also provide some way to sanity check the values so when we're working on a specific chapter we've identified, we're always using only the values from that specific chapter. -->
                   </attDef>
                  <attDef ident="unit" mode="replace" usage="req">
-                    <valList type="semi">
+                    <valList type="closed">
                        <valItem ident="line">
                           <gloss>Use to indicate that the current line in the MS corresponds to a location marker in the fluid text edition.</gloss>
                        </valItem>
@@ -135,7 +135,7 @@
                             <gloss>As distinct from the prevailing ink on the page, "ink2" refers to any other ink used on the page that appears to be used later.</gloss>
                          </valItem>
                          <valItem ident="pencil">
-                            <gloss>Grey pencil notations.</gloss>
+                            <gloss>Gray pencil notations.</gloss>
                          </valItem>
                       </valList>
                   </attDef>
